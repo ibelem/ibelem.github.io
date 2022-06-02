@@ -30,7 +30,7 @@
     <app-index></app-index>
   </fluent-design-system-provider>
 
-  <script>
+  <script type="module">
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register(
         import.meta.env.MODE === 'production' ? '/sw.js' : '/sw.js?dev-sw'
