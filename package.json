@@ -8,8 +8,7 @@
     "dev-task": "vite",
     "build": "tsc && vite build",
     "start": "npm run build && vite preview --host",
-    "start-remote": "vite --host",
-    "deploy": "npm run build && gh-pages -d dist"
+    "start-remote": "vite --host"
   },
   "author": "",
   "license": "ISC",
