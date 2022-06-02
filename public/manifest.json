@@ -4,7 +4,7 @@
   "name": "中国 PWA 开发者日",
   "display": "standalone",
   "start_url": "/",
-  "short_name": "pwa-developer-day",
+  "short_name": "中国 PWA 开发者日",
   "theme_color": "#3d1488",
   "description": "2022 中国 PWA 开发者日",
   "orientation": "any",
