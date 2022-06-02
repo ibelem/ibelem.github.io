@@ -371,11 +371,11 @@ found at http://polymer.github.io/PATENTS.txt
           opacity: 1;
         }
       }
-    `}constructor(){super()}firstUpdated(){var e;new U((e=this.shadowRoot)==null?void 0:e.querySelector("#routerOutlet")).setRoutes([{path:"",animate:!0,children:[{path:"/",component:"app-home"},{path:"/about",component:"app-about",action:async()=>{await Cn(()=>import("./app-about.94494798.js"),[])}}]}]),Oi({immediate:!0})}render(){return Q`
+    `}constructor(){super()}firstUpdated(){var e;new U((e=this.shadowRoot)==null?void 0:e.querySelector("#routerOutlet")).setRoutes([{path:"",animate:!0,children:[{path:"/",component:"app-home"},{path:"/about",component:"app-about",action:async()=>{await Cn(()=>import("./app-about.05de8e2c.js"),[])}}]}]),Oi({immediate:!0})}render(){return Q`
       <div>
         <main>
           <div id="routerOutlet"></div>
         </main>
       </div>
-    `}};Lt=er([He("app-index")],Lt);export{Q as $,He as n,De as r,L as s};
-//# sourceMappingURL=index.e9c4501f.js.map
+    `}};Lt=er([He("app-index")],Lt);"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js");export{Q as $,He as n,De as r,L as s};
+//# sourceMappingURL=index.eab78a6a.js.map
