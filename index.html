@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>中国 PWA 开发者日</title>
+
+  <base href="/" />
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <meta name="description" content="中国 PWA 开发者日" />
+  <meta name="keywords" content="PWA, Progressive Web Apps, Progressive Web Applications, 渐进式网页应用, 渐进式 Web 应用，渐进式网络应用">
+  <meta name="author" content="Belem Zhang">
+  <meta name="theme-color" content="#3d1488" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="中国 PWA 开发者日" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <link rel="icon" href="/assets/icons/icon_32.png" type="image/x-icon" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <script type="module" src="https://unpkg.com/@fluentui/web-components" crossorigin="anonymous"></script>
+
+  <script type="module" src="/src/app-index.ts"></script>
+</head>
+
+<body>
+  <fluent-design-system-provider>
+    <app-index></app-index>
+  </fluent-design-system-provider>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register(
+        import.meta.env.MODE === 'production' ? '/sw.js' : '/sw.js?dev-sw'
+      );
+    }
+  </script>
+</body>
+
+</html>

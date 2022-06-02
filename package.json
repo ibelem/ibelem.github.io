@@ -1,0 +1,40 @@
+{
+  "name": "pwa-developer-day",
+  "version": "0.0.1",
+  "description": "中国 PWA 开发者日",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open",
+    "dev-task": "vite",
+    "build": "tsc && vite build",
+    "start": "npm run build && vite preview --host",
+    "start-remote": "vite --host",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pwabuilder/pwainstall": "^1.6.7",
+    "@vaadin/router": "^1.7.4",
+    "lit": "^2.2.5",
+    "workbox-build": "^6.5.3",
+    "workbox-core": "^6.5.3",
+    "workbox-precaching": "^6.5.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.2",
+    "vite": "^2.9.9",
+    "vite-plugin-pwa": "^0.12.0",
+    "gh-pages": "^4.0.0"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "quoteProps": "consistent",
+    "trailingComma": "es5",
+    "endOfLine": "crlf",
+    "bracketSpacing": true
+  }
+}

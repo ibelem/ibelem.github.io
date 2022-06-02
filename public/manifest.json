@@ -1,0 +1,62 @@
+{
+  "id": "/",
+  "scope": "/",
+  "name": "中国 PWA 开发者日",
+  "display": "standalone",
+  "start_url": "/",
+  "short_name": "pwa-developer-day",
+  "theme_color": "#3d1488",
+  "description": "2022 中国 PWA 开发者日",
+  "orientation": "any",
+  "background_color": "#3d1488",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "assets/icons/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon_32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon_16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshots/screen.png",
+      "sizes": "1617x1012",
+      "type": "image/png"
+    }
+  ],
+  "features": [
+    "PWA",
+    "渐进式 Web 应用",
+    "Web 开发",
+    "Web 技术",
+    "PWA 商业落地"
+  ],
+  "categories": [
+    "utility"
+  ],
+  "shortcuts": [
+    {
+      "name": "Open About",
+      "short_name": "About",
+      "description": "Open the about page",
+      "url": "/about",
+      "icons": [{ "src": "assets/icons/icon_192.png", "sizes": "192x192" }]
+    }
+  ]
+}
