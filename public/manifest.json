@@ -6,7 +6,7 @@
   "start_url": "/",
   "short_name": "中国 PWA 开发者日",
   "theme_color": "#3d1488",
-  "description": "2022 中国 PWA 开发者日",
+  "description": "2022 中国 PWA 开发者日，分享 PWA 技术进展及 PWA 生态的实践与落地。",
   "orientation": "any",
   "background_color": "#3d1488",
   "related_applications": [],
@@ -23,6 +23,31 @@
       "type": "image/png"
     },
     {
+      "src": "assets/icons/icon_168.png",
+      "sizes": "168x168",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon_144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon_96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon_72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon_48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
       "src": "assets/icons/icon_32.png",
       "sizes": "32x32",
       "type": "image/png"
@@ -35,27 +60,25 @@
   ],
   "screenshots": [
     {
-      "src": "assets/screenshots/screen.png",
-      "sizes": "1617x1012",
+      "src": "assets/icons/icon_512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "features": [
-    "PWA",
-    "渐进式 Web 应用",
-    "Web 开发",
-    "Web 技术",
-    "PWA 商业落地"
+    "渐进式 Web 应用 (PWA)",
+    "历届中国 PWA 开发者日资料",
+    "PWA 技术及商业落地"
   ],
   "categories": [
     "utility"
   ],
   "shortcuts": [
     {
-      "name": "Open About",
-      "short_name": "About",
-      "description": "Open the about page",
-      "url": "/about",
+      "name": "Open Home",
+      "short_name": "Home",
+      "description": "Open the Home page",
+      "url": "/",
       "icons": [{ "src": "assets/icons/icon_192.png", "sizes": "192x192" }]
     }
   ]

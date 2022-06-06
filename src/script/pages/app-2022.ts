@@ -18,6 +18,7 @@ export class App2022 extends LitElement {
       <div>
         <h2>2022 中国 PWA 开发者日</h2>
       </div>
+      <app-footer></app-footer>
     `;
   }
 }

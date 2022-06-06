@@ -7,27 +7,17 @@ export class AppAbout extends LitElement {
     return css`
 
     fluent-card {
-      padding: 0px 18px 18px;
+      padding: 1rem;
+      margin-top: 1rem;
     }
 
     @media(prefers-color-scheme: light) {
-      fluent-card {
-        --fill-color: #edebe9;
-      }
     }
 
     @media(prefers-color-scheme: dark) {
-      fluent-card {
-        --fill-color: #4e4e4e;
-        color: white;
-        border: none;
-      }
     }
 
     @media (min-width: 1024px) {
-      fluent-card {
-        width: 54%;
-      }
     }
     `;
   }
@@ -39,14 +29,7 @@ export class AppAbout extends LitElement {
   render() {
     return html`
       <app-header ?enableBack="${true}"></app-header>
-      <fluent-breadcrumb>
-        <fluent-breadcrumb-item href="/">首页</fluent-breadcrumb-item>
-        <fluent-breadcrumb-item href="/about">关于</fluent-breadcrumb-item>
-      </fluent-breadcrumb>
-
       <div>
-        <h2>About Page</h2>
-
         <fluent-card>
           <h2>Did you know?</h2>
 
@@ -57,6 +40,7 @@ export class AppAbout extends LitElement {
           <p>Check out <fluent-anchor href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/handle-files">these docs</fluent-anchor> to learn more about the advanced features that you can use in your PWA</p>
         </fluent-card>
       </div>
+      <app-footer></app-footer>
     `;
   }
 }

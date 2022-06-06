@@ -5,6 +5,7 @@ import { registerSW } from 'virtual:pwa-register';
 
 import './script/pages/app-home';
 import './script/components/header';
+import './script/components/footer';
 import './styles/global.css';
 
 @customElement('app-index')
@@ -111,11 +112,8 @@ export class AppIndex extends LitElement {
 
   render() {
     return html`
-      <div>
-        <main>
-          <div id="routerOutlet"></div>
-        </main>
-      </div>
+      <main id="routerOutlet">
+      </main>
     `;
   }
 }

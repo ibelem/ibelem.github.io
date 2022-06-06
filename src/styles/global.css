@@ -45,7 +45,9 @@
   --type-ramp-plus-6-font-variations: "wght" 400, "opsz" 36 !important;
   --base-layer-luminance: 0.98 !important;
   --neutral-base-color: #808080 !important;
-  --accent-base-color: #0078d4 !important;
+  --accent-base-color: #3d3d3d !important;
+  --install-focus-color: #919c9c;
+  --install-button-color: #3d3d3d;
   --neutral-layer-card-container: #f3f3f3 !important;
   --neutral-layer-floating: #ffffff !important;
   --neutral-layer-1: #fbfbfb !important;
@@ -54,21 +56,21 @@
   --neutral-layer-4: #e0e0e0 !important;
   --fill-color: #fbfbfb !important;
   --accent-fill-rest: #fff !important;
-  --accent-fill-hover: #0473ce !important;
-  --accent-fill-active: #0481e0 !important;
+  --accent-fill-hover: #3d1488 !important;
+  --accent-fill-active: #3d1488 !important;
   --accent-fill-focus: #fff !important;
   --foreground-on-accent-rest: #ffffff !important;
   --foreground-on-accent-hover: #ffffff !important;
   --foreground-on-accent-active: #ffffff !important;
   --foreground-on-accent-focus: #ffffff !important;
-  --accent-foreground-rest: #023b8f !important;
-  --accent-foreground-hover: #012e7f !important;
-  --accent-foreground-active: #0360b9 !important;
-  --accent-foreground-focus: #023b8f !important;
-  --accent-stroke-control-rest: linear-gradient(#1c79ca 90%, #024885 100%) !important;
-  --accent-stroke-control-hover: linear-gradient(#1b80d2 90%, #035292 100%) !important;
-  --accent-stroke-control-active: #1b8ce3 !important;
-  --accent-stroke-control-focus: linear-gradient(#1c79ca 90%, #024885 100%) !important;
+  --accent-foreground-rest: #3d1488 !important;
+  --accent-foreground-hover: #3d1488 !important;
+  --accent-foreground-active: #3d1488 !important;
+  --accent-foreground-focus: #3d1488 !important;
+  --accent-stroke-control-rest: linear-gradient(#3d1488 90%, #3d1488 100%) !important;
+  --accent-stroke-control-hover: linear-gradient(#3d1488 90%, #3d1488 100%) !important;
+  --accent-stroke-control-active: #3d1488 !important;
+  --accent-stroke-control-focus: linear-gradient(#3d1488 90%, #3d1488 100%) !important;
   --neutral-fill-rest: #ffffff !important;
   --neutral-fill-hover: #f7f7f7 !important;
   --neutral-fill-active: #fbfbfb !important;
@@ -168,8 +170,6 @@ html, body {
   padding: 0;
   margin: 0;
 }
-
- 
 
 @media (prefers-color-scheme: dark) {
   html,
