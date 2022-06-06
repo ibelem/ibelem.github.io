@@ -39,6 +39,10 @@ export class AppAbout extends LitElement {
   render() {
     return html`
       <app-header ?enableBack="${true}"></app-header>
+      <fluent-breadcrumb>
+        <fluent-breadcrumb-item href="/">首页</fluent-breadcrumb-item>
+        <fluent-breadcrumb-item href="/about">关于</fluent-breadcrumb-item>
+      </fluent-breadcrumb>
 
       <div>
         <h2>About Page</h2>

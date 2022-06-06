@@ -68,6 +68,13 @@ export class AppIndex extends LitElement {
         children: [
           { path: '/', component: 'app-home' },
           {
+            path: '/2022',
+            component: 'app-2022',
+            action: async () => {
+              await import('./script/pages/app-2022.js');
+            },
+          },
+          {
             path: '/2021',
             component: 'app-2021',
             action: async () => {
@@ -86,6 +93,13 @@ export class AppIndex extends LitElement {
             component: 'app-about',
             action: async () => {
               await import('./script/pages/app-about.js');
+            },
+          },
+          {
+            path: '/mobile',
+            component: 'app-mobile',
+            action: async () => {
+              await import('./script/pages/app-mobile.js');
             },
           },
 

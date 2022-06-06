@@ -15,6 +15,10 @@ export class AppMediaPlayer extends LitElement {
   render() {
     return html`
       <app-header ?enableBack="${true}"></app-header>
+      <fluent-breadcrumb>
+        <fluent-breadcrumb-item href="/">首页</fluent-breadcrumb-item>
+        <fluent-breadcrumb-item href="/mediaplayer">播放</fluent-breadcrumb-item>
+      </fluent-breadcrumb>
 
       <div>
         <h2>媒体播放器</h2>
