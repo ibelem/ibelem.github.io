@@ -10,7 +10,7 @@ export class AppFooter extends LitElement {
     return css`
       footer {
         padding: 0 16px 16px 16px;
-        font-size: 11px;
+        font-size: 12px;
       }
 
       .suggest {

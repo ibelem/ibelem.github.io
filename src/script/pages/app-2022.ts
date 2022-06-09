@@ -20,13 +20,46 @@ export class App2022 extends LitElement {
     期待与您线上相聚。
     `;
 
-  @property() message = 'Welcome!';
-
-  static get properties() {
-    return {
-      data: { type: Object }
-    }
-  }
+  @property({ type: Object }) jsondata = {
+      "name": "PWA Developer Day 2022",
+      "devday": [
+        {
+          "id": 1,
+          "time": "13:00",
+          "tag": "",
+          "title": "开幕致辞",
+          "des": "",
+          "speaker": "张琦",
+          "pos": "资深技术总监",
+          "com": "英特尔 SATG Web 平台工程",
+          "iconid": "qi",
+          "icon": "assets/2022/people/120/qi.png",
+          "icon5": "assets/2022/people/500/qi.png",
+          "bio": ""
+        }
+      ],
+      "t2022" : {
+      },
+      "t2021": [
+        {
+          "id": 1,
+          "tag": "opening",
+          "title": "Web 开发的现状与未来（开场介绍）",
+          "des": "",
+          "speaker": "张琦",
+          "pos": "资深技术总监",
+          "com": "软件与先进技术事业部 Web 平台工程",
+          "icon": "",
+          "icon5": "assets/2022/people/500/qi.png",
+          "bio": "",
+          "pdf": "https://d3i5xkfad89fac.cloudfront.net/pwa/2021/slides/02.pdf",
+          "bilibili": "https://www.bilibili.com/video/BV1Kv4y1G7L8",
+          "aid": "554870624",
+          "cid": "741436422",
+          "youtube": "https://youtu.be/npMpZHMizUc" 
+        }
+      ]
+    };
 
   async connectedCallback() {
     super.connectedCallback();
@@ -37,7 +70,7 @@ export class App2022 extends LitElement {
   async fetchData() {
     await fetch('/data.json');
     const response = await fetch('/data.json');
-    this.data = await response.json();
+    this.jsondata = await response.json();
   }
 
   static get styles() {
@@ -173,6 +206,12 @@ export class App2022 extends LitElement {
         margin-top: 8px;
       }
 
+      .des {
+        margin: 16px auto;
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+
       .avatar_ {
         border: 5px solid hsl(100 100% 60%);
         border-image-slice: 1;
@@ -198,7 +237,7 @@ export class App2022 extends LitElement {
       }
 
       .team {
-        font-size: 11px;
+        font-size: 12px;
       }
 
       #icon_qi {
@@ -234,11 +273,11 @@ export class App2022 extends LitElement {
   }
 
   render() {
-    if (this.data) {
+    if (this.jsondata) {
 
       let fluentcard = '';
 
-      for(let i of this.data.event) {
+      for(let i of this.jsondata.devday) {
         let t = `
           <fluent-card>
             <div class="time">${i.time}</div>
@@ -247,6 +286,7 @@ export class App2022 extends LitElement {
             </div>
             <div class="topic">
               <div class="title">${i.title}</div>
+              <div class="des">${i.des.replace(/\n/g, '<br>')}</div>
               <div class="details">
                 <div class="avatar" id="icon_${i.iconid}"></div>
                 <div class="description">
@@ -285,6 +325,8 @@ export class App2022 extends LitElement {
           <app-footer-home></app-footer-home>
         </div>
       `;
+    } else {
+      return html`<div>No data</div>`;
     }
   }
 }

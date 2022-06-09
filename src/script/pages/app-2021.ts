@@ -7,17 +7,53 @@ export class App2021 extends LitElement {
   @property({ type: String }) description = `
     随着 PWA 技术引入以及多种 Web 平台能力的增强，PWA 技术的 Web 应用获得了与传统本地应用几乎相同的用户体验并且得到了广泛的应用，也促进了小程序生态的发展。
   `;
-  static get properties() {
-    return {
-      data: { type: Object },
-      screenwidth: { type: String },
-      screenheight: { type: String }
-    }
-  }
+
+  @property({ type: Object }) jsondata = {
+    "name": "PWA Developer Day 2022",
+    "devday": [
+      {
+        "id": 1,
+        "time": "13:00",
+        "tag": "",
+        "title": "开幕致辞",
+        "des": "",
+        "speaker": "张琦",
+        "pos": "资深技术总监",
+        "com": "英特尔 SATG Web 平台工程",
+        "iconid": "qi",
+        "icon": "assets/2022/people/120/qi.png",
+        "icon5": "assets/2022/people/500/qi.png",
+        "bio": ""
+      }
+    ],
+    "t2022" : {
+    },
+    "t2021": [
+      {
+        "id": 1,
+        "tag": "opening",
+        "title": "Web 开发的现状与未来（开场介绍）",
+        "des": "",
+        "speaker": "张琦",
+        "pos": "资深技术总监",
+        "com": "软件与先进技术事业部 Web 平台工程",
+        "icon": "",
+        "icon5": "assets/2022/people/500/qi.png",
+        "bio": "",
+        "pdf": "https://d3i5xkfad89fac.cloudfront.net/pwa/2021/slides/02.pdf",
+        "bilibili": "https://www.bilibili.com/video/BV1Kv4y1G7L8",
+        "aid": "554870624",
+        "cid": "741436422",
+        "youtube": "https://youtu.be/npMpZHMizUc" 
+      }
+    ]
+  };
+  @property({ type: String }) screenwidth = "";
+  @property({ type: String }) screenheight = "";
 
   screenres() {
     let sw = screen.availWidth;
-    let rsw = parseInt(sw) - 64;
+    let rsw = sw- 64;
     let rsh = (rsw * 9)/16;
     this.screenwidth = rsw.toString();
     this.screenheight = rsh.toString();
@@ -33,7 +69,7 @@ export class App2021 extends LitElement {
   async fetchData() {
     await fetch('/data.json');
     const response = await fetch('/data.json');
-    this.data = await response.json();
+    this.jsondata = await response.json();
   }
 
   static get styles() {
@@ -92,11 +128,11 @@ export class App2021 extends LitElement {
   }
 
   render() {
-    if (this.data) {
+    if (this.jsondata) {
 
       let fluentdata = '';
 
-      for(let t of this.data.t2021) {
+      for(let t of this.jsondata.t2021) {
         let pdf = '';
 
         if(t.pdf){
@@ -152,6 +188,8 @@ export class App2021 extends LitElement {
 
         <app-footer></app-footer>
       `;
+    } else {
+      return html`<div>No data</div>`;
     }
   }
 }
