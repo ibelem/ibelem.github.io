@@ -1,5 +1,6 @@
 import { LitElement, css, html } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
+import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 
 // For more info on the @pwabuilder/pwainstall component click here https://github.com/pwa-builder/pwa-install
 import '@pwabuilder/pwainstall';
@@ -21,11 +22,29 @@ export class AppHome extends LitElement {
 
   @property() message = 'Welcome!';
 
+  static get properties() {
+    return {
+      data: { type: Object }
+    }
+  }
+
+  async connectedCallback() {
+    super.connectedCallback();
+    await this.fetchData();
+
+  }
+
+  async fetchData() {
+    await fetch('/data.json');
+    const response = await fetch('/data.json');
+    this.data = await response.json();
+  }
+
   static get styles() {
     return css`
     .home {
       background: #62278d;
-      background: linear-gradient(to bottom,  rgba(61, 20, 136, 1) 0%, #62278d 80%, #2cc09b 100%);
+      background: linear-gradient(to bottom,  rgba(61, 20, 136, 1) 0%, #62278d 80%, #229679 100%);
       color: #fff;
     }
 
@@ -83,11 +102,12 @@ export class AppHome extends LitElement {
 
       #schedule, .box {
         background: rgba(0, 0, 0, 0.2);
+        border-bottom: 0px;
+        margin-bottom: 16px;
       }
 
       fluent-card {
         padding: 1rem;
-        margin-bottom: 1rem;
         color: #fff;
         border: 0px;
         border-radius: 0px;
@@ -95,8 +115,21 @@ export class AppHome extends LitElement {
         box-shadow: none;
       }
 
+      fluent-card:hover {
+        background: rgba(0, 0, 0, 0.4);
+      }
+
       #schedule fluent-card {
         display: flex;
+        align-items: center;
+      }
+
+      fluent-card {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      fluent-card:last-child {
+        border-bottom:0px;
       }
 
       @media (min-width: 1024px) {
@@ -119,14 +152,20 @@ export class AppHome extends LitElement {
         padding: 0 4px;
       }
 
+      .divider {
+        margin: 0px;
+      }
+
       .divider svg {
         width: 20px;
         height: 20px;
-        fill: rgba(0, 0, 0, 0.2);
+        fill: rgba(255, 255, 255, 0.9);
+        margin-bottom:-5px;
       }
 
       .title {
-        font-weight: 600;
+        font-weight: 500;
+        font-size: clamp(20px, 3vw, 28px);
       }
 
       .details {
@@ -156,6 +195,10 @@ export class AppHome extends LitElement {
 
       .description {
         align-self: center;
+      }
+
+      .team {
+        font-size: 11px;
       }
 
       #icon_qi {
@@ -191,125 +234,48 @@ export class AppHome extends LitElement {
   }
 
   render() {
-    return html`
-      <app-header></app-header>
-      <div class="home">
-        <div class="hero">
-          <h3>${this.subtitle}</h3>
-          <h2>${this.title}</h2>
-          <h3 class="h3b">${this.time}</h3>
-          <h1>在线 免费 分享</h1>
-          <h1 class="h1b">助您使用 PWA 获得成功</h1>
-        </div>
-        <fluent-card class="box"> ${this.description} </fluent-card>
+    if (this.data) {
 
-        <div id="schedule">
+      let fluentcard = '';
+
+      for(let i of this.data.event) {
+        let t = `
           <fluent-card>
-            <div class="time">13:00</div>
-            <div class="divider"></div>
+            <div class="time">${i.time}</div>
+            <div class="divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg>  
+            </div>
             <div class="topic">
-              <div class="title">开幕致辞</div>
+              <div class="title">${i.title}</div>
               <div class="details">
-                <div class="avatar" id="icon_qi"></div>
+                <div class="avatar" id="icon_${i.iconid}"></div>
                 <div class="description">
-                  <div class="nametitle">张琦 / 资深技术总监</div>
-                  <div class="team">英特尔 Web 平台工程团队</div>
+                  <div class="nametitle">${i.speaker} / ${i.pos}</div>
+                  <div class="team">${i.com}</div>
                 </div>
               </div>
             </div>
           </fluent-card>
+        `;
 
-          <fluent-card>
-            <div class="time">13:10</div>
-            <div class="divider"></div>
-            <div class="topic">
-              <div class="title">PWA 愿景</div>
-              <div class="details">
-                <div class="avatar" id="icon_alex"></div>
-                <div class="description">
-                  <div class="nametitle">Alex Russell / PWA 之父</div>
-                  <div class="team">微软 Edge 团队</div>
-                </div>
-              </div>
-            </div>
-          </fluent-card>
+        fluentcard += t;
+      }
 
-          <fluent-card>
-            <div class="time">13:40</div>
-            <div class="divider"></div>
-            <div class="topic">
-              <div class="title">微软 PWA</div>
-              <div class="details">
-                <div class="avatar" id="icon_edwin"></div>
-                <div class="description">
-                  <div class="nametitle">宋青见 / 首席产品经理</div>
-                  <div class="team">微软 Edge · 开发者生态 Bio</div>
-                </div>
-              </div>
-            </div>
-          </fluent-card>
+      return html`
+        <app-header></app-header>
+        <div class="home">
+          <div class="hero">
+            <h3>${this.subtitle}</h3>
+            <h2>${this.title}</h2>
+            <h3 class="h3b">${this.time}</h3>
+            <h1>在线 免费 分享</h1>
+            <h1 class="h1b">助您使用 PWA 获得成功</h1>
+          </div>
+          <fluent-card class="box"> ${this.description} </fluent-card>
 
-          <fluent-card>
-            <div class="time">14:30</div>
-            <div class="divider"></div>
-            <div class="topic">
-              <div class="title">Taro PWA</div>
-              <div class="details">
-                <div class="avatar" id="icon_qi"></div>
-                <div class="description">
-                  <div class="nametitle">Joy? / 资深技术总监</div>
-                  <div class="team">京东零售集团凹凸实验室</div>
-                </div>
-              </div>
-            </div>
-          </fluent-card>
-
-          <fluent-card>
-            <div class="time">15:20</div>
-            <div class="divider"></div>
-            <div class="topic">
-              <div class="title">腾讯文档 PWA 实践</div>
-              <div class="details">
-                <div class="avatar" id="icon_harry"></div>
-                <div class="description">
-                  <div class="nametitle">彭伟宏 / 前端工程师</div>
-                  <div class="team">腾讯 PCG 平台与内容事业群</div>
-                </div>
-              </div>
-            </div>
-          </fluent-card>
-
-          <fluent-card>
-            <div class="time">16:10</div>
-            <div class="divider"></div>
-            <div class="topic">
-              <div class="title">新兴 Web 技术助力 PWA</div>
-              <div class="details">
-                <div class="avatar" id="icon_belem"></div>
-                <div class="description">
-                  <div class="nametitle">张敏 / 软件技术经理</div>
-                  <div class="team">英特尔 Web 平台工程团队</div>
-                </div>
-              </div>
-            </div>
-          </fluent-card>
-
-          <fluent-card id="qa">
-            <div class="time">17:00</div>
-            <div class="divider"></div>
-            <div class="topic">
-              <div class="title">嘉宾问答</div>
-              <div class="details">
-                <div class="avatar" id="icon_qi"></div>
-                <div class="description">
-                  <div class="nametitle">张琦 / 资深技术总监</div>
-                  <div class="team">英特尔 Web 平台工程团队</div>
-                </div>
-              </div>
-            </div>
-          </fluent-card>
-        </div>
-
+          <div id="schedule">
+            ${unsafeHTML(fluentcard)}
+          </div>
           <pwa-install title="安装 中国 PWA 开发者日">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path
@@ -320,8 +286,8 @@ export class AppHome extends LitElement {
 
           <app-footer-home></app-footer-home>
         </div>
-      </div>
-    `;
+      `;
+    }
   }
 }
 

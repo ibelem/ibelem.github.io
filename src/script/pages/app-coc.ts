@@ -32,6 +32,16 @@ export class AppCoC extends LitElement {
       fill: #3D3D3D;
     }
 
+    a {
+      color: rgba(61, 20, 136, 0.9);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: rgba(61, 20, 136, 1.0);
+      border-bottom: 1px dashed rgba(61, 20, 136, 1);
+    }
+
     @media(prefers-color-scheme: light) {
     }
 

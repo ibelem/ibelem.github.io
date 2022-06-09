@@ -11,6 +11,7 @@ export class AppFooterHome extends LitElement {
 
       footer {
         padding: 0 0px 16px 0px;
+        font-size: 11px;
       }
 
       .suggest {
@@ -21,6 +22,7 @@ export class AppFooterHome extends LitElement {
       footer a {
         color: rgba(255, 255, 255, 0.9);
         text-decoration: none;
+        margin: 0 4px;
       }
 
       footer a:hover {

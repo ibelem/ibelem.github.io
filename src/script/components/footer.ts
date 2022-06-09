@@ -10,6 +10,7 @@ export class AppFooter extends LitElement {
     return css`
       footer {
         padding: 0 16px 16px 16px;
+        font-size: 11px;
       }
 
       .suggest {
@@ -18,12 +19,14 @@ export class AppFooter extends LitElement {
         padding: 16px;
       }
       footer a {
-        color: rgba(61, 20, 136, 0.8);
+        color: rgba(61, 20, 136, 0.9);
         text-decoration: none;
+        margin: 0 4px;
       }
 
       footer a:hover {
         color: rgba(61, 20, 136, 1.0);
+        border-bottom: 1px dashed rgba(61, 20, 136, 1);
       }
 
       @media(prefers-color-scheme: light) {

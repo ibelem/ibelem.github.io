@@ -5,6 +5,7 @@ import { registerSW } from 'virtual:pwa-register';
 
 import './script/pages/app-home';
 import './script/components/header';
+import './script/components/header-home';
 import './script/components/nav';
 import './script/components/footer';
 import './script/components/footer-home';
@@ -74,10 +75,20 @@ export class AppIndex extends LitElement {
           },
           {
             path: '/2021',
-            component: 'app-2021',
-            action: async () => {
-              await import('./script/pages/app-2021.js');
-            },
+            children: [
+              { path: '/', 
+                component: 'app-2021',
+                action: async () => {
+                  await import('./script/pages/app-2021.js');
+                }
+              },
+              { path: '/:topic',
+                component: 'app-2021',
+                action: async () => {
+                await import('./script/pages/app-2021.js');
+                }
+              }
+            ]
           },
           {
             path: '/mp',
@@ -101,10 +112,10 @@ export class AppIndex extends LitElement {
             },
           },
           {
-            path: '/mobile',
-            component: 'app-mobile',
+            path: '/sample',
+            component: 'app-sample',
             action: async () => {
-              await import('./script/pages/app-mobile.js');
+              await import('./script/pages/app-sample.js');
             },
           },
           {
