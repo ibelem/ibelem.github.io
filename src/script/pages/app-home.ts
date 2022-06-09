@@ -11,10 +11,10 @@ export class AppHome extends LitElement {
 
   @property({ type: String }) subtitle = '第二届';
   @property({ type: String }) title = '中国 PWA 开发者日';
-  @property({ type: String }) time = '2022年8月6日 13:00-17:00';
+  @property({ type: String }) time = '8 月 6 日 13:00 - 17:00';
   @property({ type: String }) description = `
     为加速推动渐进式 Web 应用 (PWA) 在中国的发展，微软与英特尔携手举办“第二届中国 PWA 开发者日”。
-    本次活动邀请一众业界大咖围绕 PWA 技术展开探讨，分享技术进展，切实地融入 PWA 生态的实践与落地。
+    本次活动邀请一众业界大咖围绕 PWA 展开分享，探讨最新技术进展，及 PWA 生态的实践与落地。
     
     期待与您线上相聚。
     `;
@@ -23,15 +23,22 @@ export class AppHome extends LitElement {
 
   static get styles() {
     return css`
+    .home {
+      background: #62278d;
+      background: linear-gradient(to bottom,  rgba(61, 20, 136, 1) 0%, #62278d 80%, #2cc09b 100%);
+      color: #fff;
+    }
+
       pwa-install {
-        position: absolute;
+        position: fixed;
         bottom: 16px;
         right: 16px;
-        --install-button-color: #3d1488;
+        --install-button-color: transparent;
       }
 
       pwa-install:hover {
-        --install-button-color: rgba(61, 20, 136, 0.8);
+        border: 2px solid #fff;
+        border-radius: 50% 50%;
       }
 
       #openButton:hover {
@@ -45,20 +52,47 @@ export class AppHome extends LitElement {
         margin: 4px 0px -2px 0px;
       }
 
+      .hero {
+        padding: 3rem 0;
+        text-align: center;
+        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+      }
+
       .hero h1 {
+        margin: 2rem;
+        font-size: clamp(36px, 6vw, 82px);
+        letter-spacing: 4px;
+        line-height: 1.2;
+        font-weight: 900;
+      }
+
+      .hero .h1b {
+        margin-top: -2rem;
+      }
+
+      .hero h2 {
         margin: 0px;
-        font-size: 2rem;
+        font-size: clamp(26px, 4vw, 44px);
         letter-spacing: 4px;
       }
-      .hero h2 {
-        margin: 0.5rem auto;
-        font-size: 1rem;
+      .hero h3 {
+        margin: 0rem auto;
+        font-size: clamp(20px, 3vw, 28px);
         letter-spacing: 2px;
+      }
+
+      #schedule, .box {
+        background: rgba(0, 0, 0, 0.2);
       }
 
       fluent-card {
         padding: 1rem;
-        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: #fff;
+        border: 0px;
+        border-radius: 0px;
+        background: transparent;
+        box-shadow: none;
       }
 
       #schedule fluent-card {
@@ -81,12 +115,8 @@ export class AppHome extends LitElement {
         --install-button-color: #3d1488;
       }
 
-      .time {
-        width: 200px;
-      }
-
-      .divider {
-        margin: 0 40px;
+      .time, .divider, .topic {
+        padding: 0 4px;
       }
 
       .divider svg {
@@ -101,6 +131,18 @@ export class AppHome extends LitElement {
 
       .details {
         display: flex;
+        margin-top: 8px;
+      }
+
+      .avatar_ {
+        border: 5px solid hsl(100 100% 60%);
+        border-image-slice: 1;
+        border-image-source: conic-gradient(
+          from var(--startDeg, 0deg),
+          hsl(100 100% 60%), 
+          hsl(200 100% 60%),
+          hsl(100 100% 60%)
+        );
       }
 
       .avatar {
@@ -108,6 +150,8 @@ export class AppHome extends LitElement {
         height: 60px;
         background-size: 60px 60px;
         margin-right: 10px;
+        border: 4px solid hsl(100 100% 60%);
+        border-radius: 50px;
       }
 
       .description {
@@ -129,7 +173,11 @@ export class AppHome extends LitElement {
       #icon_belem {
         background-image: url('assets/2022/people/120/belem.png');
       }
-    `;
+
+      .home {
+        padding: 16px;
+      }
+     `;
   }
 
   constructor() {
@@ -145,25 +193,20 @@ export class AppHome extends LitElement {
   render() {
     return html`
       <app-header></app-header>
-
-      <div>
+      <div class="home">
         <div class="hero">
-          <h2>${this.subtitle}</h2>
-          <h1>${this.title}</h1>
-          <h2>${this.time}</h2>
+          <h3>${this.subtitle}</h3>
+          <h2>${this.title}</h2>
+          <h3 class="h3b">${this.time}</h3>
+          <h1>在线 免费 分享</h1>
+          <h1 class="h1b">助您使用 PWA 获得成功</h1>
         </div>
-        <fluent-card> ${this.description} </fluent-card>
+        <fluent-card class="box"> ${this.description} </fluent-card>
 
         <div id="schedule">
           <fluent-card>
             <div class="time">13:00</div>
-            <div class="divider">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                  d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
-                />
-              </svg>
-            </div>
+            <div class="divider"></div>
             <div class="topic">
               <div class="title">开幕致辞</div>
               <div class="details">
@@ -178,13 +221,7 @@ export class AppHome extends LitElement {
 
           <fluent-card>
             <div class="time">13:10</div>
-            <div class="divider">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                  d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
-                />
-              </svg>
-            </div>
+            <div class="divider"></div>
             <div class="topic">
               <div class="title">PWA 愿景</div>
               <div class="details">
@@ -199,13 +236,7 @@ export class AppHome extends LitElement {
 
           <fluent-card>
             <div class="time">13:40</div>
-            <div class="divider">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                  d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
-                />
-              </svg>
-            </div>
+            <div class="divider"></div>
             <div class="topic">
               <div class="title">微软 PWA</div>
               <div class="details">
@@ -220,13 +251,7 @@ export class AppHome extends LitElement {
 
           <fluent-card>
             <div class="time">14:30</div>
-            <div class="divider">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                  d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
-                />
-              </svg>
-            </div>
+            <div class="divider"></div>
             <div class="topic">
               <div class="title">Taro PWA</div>
               <div class="details">
@@ -241,13 +266,7 @@ export class AppHome extends LitElement {
 
           <fluent-card>
             <div class="time">15:20</div>
-            <div class="divider">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                  d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
-                />
-              </svg>
-            </div>
+            <div class="divider"></div>
             <div class="topic">
               <div class="title">腾讯文档 PWA 实践</div>
               <div class="details">
@@ -262,13 +281,7 @@ export class AppHome extends LitElement {
 
           <fluent-card>
             <div class="time">16:10</div>
-            <div class="divider">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                  d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
-                />
-              </svg>
-            </div>
+            <div class="divider"></div>
             <div class="topic">
               <div class="title">新兴 Web 技术助力 PWA</div>
               <div class="details">
@@ -281,15 +294,9 @@ export class AppHome extends LitElement {
             </div>
           </fluent-card>
 
-          <fluent-card>
+          <fluent-card id="qa">
             <div class="time">17:00</div>
-            <div class="divider">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                  d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
-                />
-              </svg>
-            </div>
+            <div class="divider"></div>
             <div class="topic">
               <div class="title">嘉宾问答</div>
               <div class="details">
@@ -301,8 +308,7 @@ export class AppHome extends LitElement {
               </div>
             </div>
           </fluent-card>
-
-          <div></div>
+        </div>
 
           <pwa-install title="安装 中国 PWA 开发者日">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -312,7 +318,7 @@ export class AppHome extends LitElement {
             </svg>
           </pwa-install>
 
-          <app-footer></app-footer>
+          <app-footer-home></app-footer-home>
         </div>
       </div>
     `;

@@ -1,8 +1,8 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
-@customElement('app-about')
-export class AppAbout extends LitElement {
+@customElement('app-privacy')
+export class AppPrivacy extends LitElement {
   static get styles() {
     return css`
     .about {
@@ -44,7 +44,7 @@ export class AppAbout extends LitElement {
     return html`
       <app-header ?enableBack="${true}"></app-header>
       <div class="about">
-        <h2>关于中国 PWA 开发者日</h2>
+        <h2>隐私条款</h2>
         <fluent-card>
           <h3>为什么要参加中国 PWA 开发者日？</h3>
           <p>中国 PWA 开发者日的使命是帮助您使用渐进式 Web 应用（PWA）取得成功。

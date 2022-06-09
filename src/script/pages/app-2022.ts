@@ -5,6 +5,9 @@ import { customElement } from 'lit/decorators.js';
 export class App2022 extends LitElement {
   static get styles() {
     return css`
+    .p2022 {
+      padding: 0 16px;
+    }
     `;
   }
 
@@ -15,7 +18,7 @@ export class App2022 extends LitElement {
   render() {
     return html`
       <app-header ?enableBack="${true}"></app-header>
-      <div>
+      <div class="p2022">
         <h2>2022 中国 PWA 开发者日</h2>
       </div>
       <app-footer></app-footer>

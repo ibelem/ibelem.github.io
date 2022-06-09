@@ -1,15 +1,16 @@
 import { LitElement, css, html } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
 
-@customElement('app-footer')
-export class AppFooter extends LitElement {
+@customElement('app-footer-home')
+export class AppFooterHome extends LitElement {
 
   @property({ type: Boolean}) enableBack: boolean = false;
 
   static get styles() {
     return css`
+
       footer {
-        padding: 0 16px 16px 16px;
+        padding: 0 0px 16px 0px;
       }
 
       .suggest {
@@ -18,12 +19,12 @@ export class AppFooter extends LitElement {
         padding: 16px;
       }
       footer a {
-        color: rgba(61, 20, 136, 0.8);
+        color: rgba(255, 255, 255, 0.9);
         text-decoration: none;
       }
 
       footer a:hover {
-        color: rgba(61, 20, 136, 1.0);
+        color: rgba(255, 255, 255, 1);
       }
 
       @media(prefers-color-scheme: light) {

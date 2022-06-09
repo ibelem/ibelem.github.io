@@ -5,18 +5,15 @@ import { registerSW } from 'virtual:pwa-register';
 
 import './script/pages/app-home';
 import './script/components/header';
+import './script/components/nav';
 import './script/components/footer';
+import './script/components/footer-home';
 import './styles/global.css';
 
 @customElement('app-index')
 export class AppIndex extends LitElement {
   static get styles() {
     return css`
-      main {
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-bottom: 16px;
-      }
       #routerOutlet > * {
         width: 100% !important;
       }
@@ -97,13 +94,40 @@ export class AppIndex extends LitElement {
             },
           },
           {
+            path: '/news',
+            component: 'app-news',
+            action: async () => {
+              await import('./script/pages/app-news.js');
+            },
+          },
+          {
             path: '/mobile',
             component: 'app-mobile',
             action: async () => {
               await import('./script/pages/app-mobile.js');
             },
           },
-
+          {
+            path: '/tutorial',
+            component: 'app-tutorial',
+            action: async () => {
+              await import('./script/pages/app-tutorial.js');
+            },
+          },
+          {
+            path: '/code-of-conduct',
+            component: 'app-coc',
+            action: async () => {
+              await import('./script/pages/app-coc.js');
+            },
+          },
+          {
+            path: '/privacy',
+            component: 'app-privacy',
+            action: async () => {
+              await import('./script/pages/app-privacy.js');
+            },
+          },
         ],
       } as any,
     ]);

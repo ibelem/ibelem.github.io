@@ -26,6 +26,9 @@ export class AppMobile extends LitElement {
     body {
       margin: 0;
     }
+    #bg {
+      background-image: url('https://d3i5xkfad89fac.cloudfront.net/pwa/image/bg/logo_512.png');
+    }
     `;
   }
 
@@ -36,11 +39,14 @@ export class AppMobile extends LitElement {
   render() {
     return html`
       <app-header ?enableBack="${true}"></app-header>
+      <div id="bg"></div>
 
       <div class="scroll-container">
+        <img class="section" crossorigin="Anonymous" src="https://d3i5xkfad89fac.cloudfront.net/pwa/image/bg/logo_512.png">
+        <img class="section" src="https://d3i5xkfad89fac.cloudfront.net/pwa/image/bg/logo_512.png">
         <!-- https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70 -->
-        <img class="section" src="">
-        <img class="section" src="">
+        <img class="section" crossorigin="Anonymous" src="https://d3i5xkfad89fac.cloudfront.net/pwa/image/bg/bg.jpg">
+        <img class="section" src="https://d3i5xkfad89fac.cloudfront.net/pwa/image/bg/bg.jpg">
        </div>
     `;
   }

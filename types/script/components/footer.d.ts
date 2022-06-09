@@ -1,7 +1,8 @@
 import { LitElement } from 'lit';
-export declare class App2021 extends LitElement {
-    description: string;
+export declare class AppFooter extends LitElement {
+    enableBack: boolean;
     static get styles(): import("lit").CSSResult;
     constructor();
+    updated(changedProperties: any): void;
     render(): import("lit-html").TemplateResult<1>;
 }
