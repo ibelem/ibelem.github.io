@@ -22,24 +22,27 @@ export class App2022 extends LitElement {
 
   @property({ type: Object }) jsondata = {
       "name": "PWA Developer Day 2022",
-      "devday": [
+      "t2022" : [
         {
-          "id": 1,
-          "time": "13:00",
-          "tag": "",
-          "title": "开幕致辞",
-          "des": "",
-          "speaker": "张琦",
-          "pos": "资深技术总监",
-          "com": "英特尔 SATG Web 平台工程",
-          "iconid": "qi",
-          "icon": "assets/2022/people/120/qi.png",
-          "icon5": "assets/2022/people/500/qi.png",
-          "bio": ""
-        }
-      ],
-      "t2022" : {
-      },
+            "id": 1,
+            "time": "13:00",
+            "tag": "",
+            "title": "开幕致辞",
+            "des": "",
+            "speaker": "张琦",
+            "pos": "资深技术总监",
+            "com": "英特尔 SATG Web 平台工程",
+            "iconid": "qi",
+            "icon": "assets/2022/people/120/qi.png",
+            "icon5": "assets/2022/people/500/qi.png",
+            "bio": "",
+            "pdf": "",
+            "bilibili": "",
+            "aid": "",
+            "cid": "",
+            "youtube": ""
+          }
+        ],
       "t2021": [
         {
           "id": 1,
@@ -277,7 +280,7 @@ export class App2022 extends LitElement {
 
       let fluentcard = '';
 
-      for(let i of this.jsondata.devday) {
+      for(let i of this.jsondata.t2022) {
         let t = `
           <fluent-card>
             <div class="time">${i.time}</div>

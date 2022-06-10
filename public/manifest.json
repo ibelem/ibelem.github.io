@@ -60,7 +60,7 @@
   ],
   "screenshots": [
     {
-      "src": "assets/icons/icon_512.png",
+      "src": "assets/screenshots/screen.png",
       "sizes": "512x512",
       "type": "image/png"
     }

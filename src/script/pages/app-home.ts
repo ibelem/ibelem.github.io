@@ -1,18 +1,10 @@
 import { LitElement, css, html } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
-
-// For more info on the @pwabuilder/pwainstall component click here https://github.com/pwa-builder/pwa-install
 import '@pwabuilder/pwainstall';
 
 @customElement('app-home')
 export class AppHome extends LitElement {
-  // For more information on using properties and state in lit
-  // check out this link https://lit.dev/docs/components/properties/
-
-  @property({ type: String }) subtitle = '第二届';
-  @property({ type: String }) title = '中国 PWA 开发者日';
-  @property({ type: String }) time = '8 月 6 日 13:00 - 17:00';
   @property({ type: String }) description = `
     为加速推动渐进式 Web 应用 (PWA) 在中国的发展，微软与英特尔携手举办“第二届中国 PWA 开发者日”。
     本次活动邀请一众业界大咖围绕 PWA 展开分享，探讨最新技术进展，及 PWA 生态的实践与落地。
@@ -22,24 +14,27 @@ export class AppHome extends LitElement {
 
   @property({ type: Object }) jsondata = {
     "name": "PWA Developer Day 2022",
-    "devday": [
+    "t2022" : [
       {
-        "id": 1,
-        "time": "13:00",
-        "tag": "",
-        "title": "开幕致辞",
-        "des": "",
-        "speaker": "张琦",
-        "pos": "资深技术总监",
-        "com": "英特尔 SATG Web 平台工程",
-        "iconid": "qi",
-        "icon": "assets/2022/people/120/qi.png",
-        "icon5": "assets/2022/people/500/qi.png",
-        "bio": ""
-      }
-    ],
-    "t2022" : {
-    },
+          "id": 1,
+          "time": "13:00",
+          "tag": "",
+          "title": "开幕致辞",
+          "des": "",
+          "speaker": "张琦",
+          "pos": "资深技术总监",
+          "com": "英特尔 SATG Web 平台工程",
+          "iconid": "qi",
+          "icon": "assets/2022/people/120/qi.png",
+          "icon5": "assets/2022/people/500/qi.png",
+          "bio": "",
+          "pdf": "",
+          "bilibili": "",
+          "aid": "",
+          "cid": "",
+          "youtube": ""
+        }
+      ],
     "t2021": [
       {
         "id": 1,
@@ -75,6 +70,30 @@ export class AppHome extends LitElement {
 
   static get styles() {
     return css`
+    #superhero {
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      overflow: hidden;
+      background: url(/assets/img/vbg.png) no-repeat center center/cover;
+      z-index: -1000;
+    }
+
+    video {
+      min-width: 100%;
+      min-height: 100vh;
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(0deg, rgba(61, 20, 136, .5) 5%, rgba(0, 0, 0, .8) 20%, rgba(0, 0, 0, .3) 100%);
+      /* bbackground-size: 20px 20px; */
+    }
+
     .home {
       background: #62278d;
       background: linear-gradient(to bottom,  rgba(61, 20, 136, 1) 0%, #62278d 80%, #229679 100%);
@@ -102,35 +121,6 @@ export class AppHome extends LitElement {
         width: 20px;
         height: 20px;
         margin: 4px 0px -2px 0px;
-      }
-
-      .hero {
-        padding: 3rem 0;
-        text-align: center;
-        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
-      }
-
-      .hero h1 {
-        margin: 2rem;
-        font-size: clamp(36px, 6vw, 82px);
-        letter-spacing: 4px;
-        line-height: 1.2;
-        font-weight: 900;
-      }
-
-      .hero .h1b {
-        margin-top: -2rem;
-      }
-
-      .hero h2 {
-        margin: 0px;
-        font-size: clamp(26px, 4vw, 44px);
-        letter-spacing: 4px;
-      }
-      .hero h3 {
-        margin: 0rem auto;
-        font-size: clamp(20px, 3vw, 28px);
-        letter-spacing: 2px;
       }
 
       #schedule, .box {
@@ -271,7 +261,7 @@ export class AppHome extends LitElement {
 
       let fluentcard = '';
 
-      for(let i of this.jsondata.devday) {
+      for(let i of this.jsondata.t2022) {
         let t = `
           <fluent-card>
             <div class="time">${i.time}</div>
@@ -295,17 +285,16 @@ export class AppHome extends LitElement {
       }
 
       return html`
-        <app-header></app-header>
-        <div class="home">
-          <div class="hero">
-            <h3>${this.subtitle}</h3>
-            <h2>${this.title}</h2>
-            <h3 class="h3b">${this.time}</h3>
-            <h1>在线 免费 分享</h1>
-            <h1 class="h1b">助您使用 PWA 获得成功</h1>
+        <div>
+          <div id="superhero">
+            <video src="/assets/img/vbg.mp4" loop muted autoplay></video>
+            <div class="overlay"></div>
           </div>
+          <app-header-home></app-header-home>
+        </div>
+        
+        <div class="home">
           <fluent-card class="box"> ${this.description} </fluent-card>
-
           <div id="schedule">
             ${unsafeHTML(fluentcard)}
           </div>

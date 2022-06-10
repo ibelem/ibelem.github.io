@@ -10,8 +10,8 @@ export class App2021 extends LitElement {
 
   @property({ type: Object }) jsondata = {
     "name": "PWA Developer Day 2022",
-    "devday": [
-      {
+    "t2022" : [
+    {
         "id": 1,
         "time": "13:00",
         "tag": "",
@@ -23,11 +23,14 @@ export class App2021 extends LitElement {
         "iconid": "qi",
         "icon": "assets/2022/people/120/qi.png",
         "icon5": "assets/2022/people/500/qi.png",
-        "bio": ""
+        "bio": "",
+        "pdf": "",
+        "bilibili": "",
+        "aid": "",
+        "cid": "",
+        "youtube": ""
       }
     ],
-    "t2022" : {
-    },
     "t2021": [
       {
         "id": 1,
@@ -75,7 +78,16 @@ export class App2021 extends LitElement {
   static get styles() {
     return css`
       .p2021 {
-        padding: 0 16px;
+        padding: 16px 16px;
+        background: #62278d;
+        background: linear-gradient(to bottom,  rgba(61, 20, 136, 1) 0%, #62278d 80%, #229679 100%);
+        color: #fff;
+      }
+
+      .p2021 h2 {
+        margin: 0;
+        padding: 16px 0;
+        text-align: center;
       }
 
       .desc {
@@ -87,10 +99,22 @@ export class App2021 extends LitElement {
         margin-bottom: 1rem;
         border-radius: 0px;
         box-shadow: none;
+        background: rgba(0, 0, 0, 0.2);
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      fluent-card:hover {
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
       }
 
       fluent-card svg {
         width: 16px;
+        fill: rgba(255, 255, 255, 0.9);
+      }
+
+      fluent-card:hover svg {
+        fill: rgba(255, 255, 255, 1);
       }
 
       fluent-card h2 {
@@ -184,9 +208,8 @@ export class App2021 extends LitElement {
           <div id="schedule">
             ${unsafeHTML(fluentdata)}
           </div>
+          <app-footer-home></app-footer-home>
         </div>
-
-        <app-footer></app-footer>
       `;
     } else {
       return html`<div>No data</div>`;

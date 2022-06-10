@@ -8,9 +8,14 @@ export class AppFooter extends LitElement {
 
   static get styles() {
     return css`
+      app-footer {
+        background: transparent !important;
+      }
+
       footer {
         padding: 0 16px 16px 16px;
-        font-size: 12px;
+        font-size: 14px;
+        background: transparent;
       }
 
       .suggest {

@@ -7,6 +7,7 @@ export class AppNews extends LitElement {
     return css`
     .about {
       padding: 0 16px;
+      margin: 2rem 0px 0rem;
     }
 
     fluent-card {

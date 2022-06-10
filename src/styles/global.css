@@ -11,6 +11,7 @@
   --neutral-stroke-control-hover: transparent !important;
   --neutral-fill-active: transparent !important;
   --neutral-stroke-control-active: transparent !important;
+  --stroke-width: 0 !important;
 }
 
 html, body {

@@ -1,6 +1,6 @@
 {
   "name": "PWA Developer Day 2022",
-  "devday": [
+  "t2022": [
     {
       "id": 1,
       "time": "13:00",
@@ -13,7 +13,12 @@
       "iconid": "qi",
       "icon": "assets/2022/people/120/qi.png",
       "icon5": "assets/2022/people/500/qi.png",
-      "bio": ""
+      "bio": "",
+      "pdf": "",
+      "bilibili": "",
+      "aid": "",
+      "cid": "",
+      "youtube": ""
     },
     {
       "id": 2,
@@ -27,7 +32,12 @@
       "iconid": "alex",
       "icon": "assets/2022/people/120/alex.png",
       "icon5": "assets/2022/people/500/alex.png",
-      "bio": ""
+      "bio": "",
+      "pdf": "",
+      "bilibili": "",
+      "aid": "",
+      "cid": "",
+      "youtube": ""
     },
     {
       "id": 3,
@@ -41,7 +51,12 @@
       "iconid": "edwin",
       "icon": "assets/2022/people/120/edwin.png",
       "icon5": "assets/2022/people/500/edwin.png",
-      "bio": "从业 20 余年，历经软件开发到产品经理，前端应用到云计算之间的风云变幻。曾在英特尔工作了 14 年，主要从事与性能优化、GPU 驱动程序和 Chromium 内核优化相关的软件开发和团队管理。之后，受 Chromium 新架构/创新的启发，有一段短暂的 H5 WebOS 创业经历，2016 年加入微软云计算团队，在 Azure RDS for MySQL 和区块链 PaaS 服务上工作了4年多，作为 Chormium 忠粉，在微软 Edge 浏览器全面采用 Chromium 内核后，加入 Edge PWA 团队，为构建 WebOS 的梦想再出发！"
+      "bio": "从业 20 余年，历经软件开发到产品经理，前端应用到云计算之间的风云变幻。曾在英特尔工作了 14 年，主要从事与性能优化、GPU 驱动程序和 Chromium 内核优化相关的软件开发和团队管理。之后，受 Chromium 新架构/创新的启发，有一段短暂的 H5 WebOS 创业经历，2016 年加入微软云计算团队，在 Azure RDS for MySQL 和区块链 PaaS 服务上工作了4年多，作为 Chormium 忠粉，在微软 Edge 浏览器全面采用 Chromium 内核后，加入 Edge PWA 团队，为构建 WebOS 的梦想再出发！",
+      "pdf": "",
+      "bilibili": "",
+      "aid": "",
+      "cid": "",
+      "youtube": ""
     },
     {
       "id": 4,
@@ -55,7 +70,12 @@
       "iconid": "alex",
       "icon": "assets/2022/people/120/alex.png",
       "icon5": "assets/2022/people/500/alex.png",
-      "bio": ""
+      "bio": "",
+      "pdf": "",
+      "bilibili": "",
+      "aid": "",
+      "cid": "",
+      "youtube": ""
     },
     {
       "id": 5,
@@ -69,7 +89,12 @@
       "iconid": "harry",
       "icon": "assets/2022/people/120/harry.png",
       "icon5": "assets/2022/people/500/harry.png",
-      "bio": ""
+      "bio": "",
+      "pdf": "",
+      "bilibili": "",
+      "aid": "",
+      "cid": "",
+      "youtube": ""
     },
     {
       "id": 6,
@@ -83,7 +108,12 @@
       "iconid": "belem",
       "icon": "assets/2022/people/120/belem.png",
       "icon5": "assets/2022/people/500/belem.png",
-      "bio": ""
+      "bio": "",
+      "pdf": "",
+      "bilibili": "",
+      "aid": "",
+      "cid": "",
+      "youtube": ""
     },
     {
       "id": 7,
@@ -97,11 +127,14 @@
       "iconid": "alex",
       "icon": "assets/2022/people/120/alex.png",
       "icon5": "assets/2022/people/500/alex.png",
-      "bio": ""
+      "bio": "",
+      "pdf": "",
+      "bilibili": "",
+      "aid": "",
+      "cid": "",
+      "youtube": "" 
     }
   ],
-  "t2022" : {
-  },
   "t2021": [
     {
       "id": 1,
@@ -114,7 +147,7 @@
       "icon": "",
       "icon5": "assets/2022/people/500/qi.png",
       "bio": "",
-      "pdf": "https://d3i5xkfad89fac.cloudfront.net/pwa/2021/slides/02.pdf",
+      "pdf": "https://pan.baidu.com/s/1Oc-zoQlG9JZ54LxT3vu5gg?pwd=pwa2",
       "bilibili": "https://www.bilibili.com/video/BV1Kv4y1G7L8",
       "aid": "554870624",
       "cid": "741436422",
@@ -131,7 +164,7 @@
       "icon": "",
       "icon5": "",
       "bio": "花名书呆，阿里巴巴 ICBU 事业部高级前端工程师。有比较丰富的中后台及 HTML5 开发经验，喜欢研究业务和用技术解决业务问题。",
-      "pdf": "https://d3i5xkfad89fac.cloudfront.net/pwa/2021/slides/02.pdf",
+      "pdf": "https://pan.baidu.com/s/1zCALJgOPl5eXNIXgO2I7zw?pwd=pwa2",
       "bilibili": "https://www.bilibili.com/video/BV1mY4y1x7m2",
       "aid": "639768194",
       "cid": "741443070",
@@ -148,7 +181,7 @@
       "icon": "",
       "icon5": "",
       "bio": "专注于 Web、PWA，目前负责 PWA Runtime 系统及相关生态方向的研发。",
-      "pdf": "https://d3i5xkfad89fac.cloudfront.net/pwa/2021/slides/03.pdf",
+      "pdf": "https://pan.baidu.com/s/1sDaQuc3V0aykyZibq86jog?pwd=pwa2",
       "bilibili": "https://www.bilibili.com/video/BV1dU4y197qx",
       "aid": "684788626",
       "cid": "741444668",
@@ -177,11 +210,11 @@
       "title": "当操作系统遇上 PWA",
       "des": "",
       "speaker": "Diego González",
-      "pos": "PWA",
+      "pos": "",
       "com": "微软 Edge",
       "icon": "",
       "icon5": "",
-      "bio": "来自微软Edge，在哥斯达黎加从事 PWA 工作。",
+      "bio": "来自微软 Edge，在哥斯达黎加从事 PWA 工作。",
       "pdf": "",
       "bilibili": "https://www.bilibili.com/video/BV1Vr4y1V7hH",
       "aid": "769793862",
@@ -199,7 +232,7 @@
       "icon": "",
       "icon5": "",
       "bio": "自 2010 年开始一直进行 Web 技术的研究和开发，曾跻身于 Chromium 浏览器及其衍生的 Web Runtime、Web IDE、Node.js 等多种技术和平台，贡献有多项产品和专利。",
-      "pdf": "https://d3i5xkfad89fac.cloudfront.net/pwa/2021/slides/06.pdf",
+      "pdf": "https://pan.baidu.com/s/1xbfGQNru7XO1xq_Kzl1o_A?pwd=pwa2",
       "bilibili": "https://www.bilibili.com/video/BV1US4y1i7Gw",
       "aid": "727366389",
       "cid": "741450056",
@@ -216,7 +249,7 @@
       "icon": "",
       "icon5": "",
       "bio": "微信小程序跨平台框架负责人，Chromium 和 WebKit 内核爱好者。",
-      "pdf": "https://d3i5xkfad89fac.cloudfront.net/pwa/2021/slides/07.pdf",
+      "pdf": "https://pan.baidu.com/s/1ehIq3KK77XiWe21iPMJtRg?pwd=pwa2",
       "bilibili": "https://www.bilibili.com/video/BV1xt4y1H7YV",
       "aid": "982365682",
       "cid": "741450056",
