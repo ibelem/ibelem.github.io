@@ -75,7 +75,7 @@ export class AppHome extends LitElement {
       width: 100%;
       position: absolute;
       overflow: hidden;
-      background: url(/assets/img/vbg.png) no-repeat center center/cover;
+      /* background: url(/assets/img/vbg.png) no-repeat center center/cover; */
       z-index: -1000;
     }
 
@@ -287,7 +287,9 @@ export class AppHome extends LitElement {
       return html`
         <div>
           <div id="superhero">
-            <video src="/assets/img/vbg.mp4" loop muted autoplay></video>
+            <video playsinline loop muted autoplay poster="/assets/img/vbg.png">
+              <source src="/assets/img/vbg.mp4" type="video/mp4">
+            </video>
             <div class="overlay"></div>
           </div>
           <app-header-home></app-header-home>

@@ -1,13 +1,10 @@
 import { LitElement } from 'lit';
 import '@pwabuilder/pwainstall';
 export declare class AppHome extends LitElement {
-    subtitle: string;
-    title: string;
-    time: string;
     description: string;
     jsondata: {
         name: string;
-        devday: {
+        t2022: {
             id: number;
             time: string;
             tag: string;
@@ -20,8 +17,12 @@ export declare class AppHome extends LitElement {
             icon: string;
             icon5: string;
             bio: string;
+            pdf: string;
+            bilibili: string;
+            aid: string;
+            cid: string;
+            youtube: string;
         }[];
-        t2022: {};
         t2021: {
             id: number;
             tag: string;

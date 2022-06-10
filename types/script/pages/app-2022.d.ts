@@ -7,7 +7,7 @@ export declare class App2022 extends LitElement {
     description: string;
     jsondata: {
         name: string;
-        devday: {
+        t2022: {
             id: number;
             time: string;
             tag: string;
@@ -20,8 +20,12 @@ export declare class App2022 extends LitElement {
             icon: string;
             icon5: string;
             bio: string;
+            pdf: string;
+            bilibili: string;
+            aid: string;
+            cid: string;
+            youtube: string;
         }[];
-        t2022: {};
         t2021: {
             id: number;
             tag: string;
