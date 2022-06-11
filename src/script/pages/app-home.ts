@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property, customElement } from 'lit/decorators.js';
+import { property, customElement, query } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import '@pwabuilder/pwainstall';
 
@@ -56,10 +56,32 @@ export class AppHome extends LitElement {
     ]
   };
 
+  @query('#herovideo') _herovideo: HTMLVideoElement;
+  @query('#manualplay') _manualplay: HTMLButtonElement;
+  @property({ type: String }) playpromise = ``
+
+  private _playHeroVideo() {
+    this._herovideo.play();
+  }
+
+  private _checkVideoAutoPlay() {
+    let promise = this._herovideo.play();
+
+    if (promise !== undefined) {
+      promise.then(_ => {
+        this.playpromise = 'Autoplay started!';
+        console.log("+++++++++ Autoplay started!");
+      }).catch(_ => {
+        this.playpromise = 'Autoplay was prevented!';
+        console.log("--------- Autoplay was prevented!");
+      });
+    }
+  }
+
   async connectedCallback() {
     super.connectedCallback();
     await this.fetchData();
-
+    this._checkVideoAutoPlay();
   }
 
   async fetchData() {
@@ -82,6 +104,19 @@ export class AppHome extends LitElement {
     video {
       min-width: 100%;
       min-height: 100vh;
+    }
+
+    #manualplay {
+      color: rgba(255, 255, 255, 0.5);
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    #manualplay:hover {
+      color: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(255, 255, 255, 1);
     }
 
     .overlay {
@@ -282,12 +317,13 @@ export class AppHome extends LitElement {
         `;
 
         fluentcard += t;
+
       }
 
       return html`
         <div>
           <div id="superhero">
-            <video playsinline loop muted autoplay poster="/assets/img/vbg.png">
+            <video playsinline loop muted autoplay poster="/assets/img/vbg.png" id="herovideo">
               <source src="/assets/img/vbg.mp4" type="video/mp4">
             </video>
             <div class="overlay"></div>
@@ -296,6 +332,10 @@ export class AppHome extends LitElement {
         </div>
         
         <div class="home">
+          <div style="margin: 0 auto 16px auto; text-align:center">
+            <span id="playpromise">${this.playpromise}</span>
+            <button id ="manualplay" @click="${this._playHeroVideo}">Play</button>
+          </div>
           <fluent-card class="box"> ${this.description} </fluent-card>
           <div id="schedule">
             ${unsafeHTML(fluentcard)}

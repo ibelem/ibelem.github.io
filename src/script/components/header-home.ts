@@ -240,7 +240,7 @@ export class AppHeaderHome extends LitElement {
             <h1>在线 免费 分享</h1>
             <h1 class="h1b">助您使用 PWA 获得成功</h1>
             <div class="register">
-              <a href="" title="即刻预约">
+              <a href="" title="即刻预约" id="book">
                 即刻预约
               </a>
             </div>

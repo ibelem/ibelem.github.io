@@ -41,6 +41,11 @@ export declare class AppHome extends LitElement {
             youtube: string;
         }[];
     };
+    _herovideo: HTMLVideoElement;
+    _manualplay: HTMLButtonElement;
+    playpromise: string;
+    private _playHeroVideo;
+    private _checkVideoAutoPlay;
     connectedCallback(): Promise<void>;
     fetchData(): Promise<void>;
     static get styles(): import("lit").CSSResult;
