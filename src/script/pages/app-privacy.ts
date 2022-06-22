@@ -15,6 +15,12 @@ export class AppPrivacy extends LitElement {
       margin-bottom: 1rem;
       border-radius: 0px;
       box-shadow: none;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    fluent-card:hover {
+      background: rgba(255, 255, 255, 0.4);
+      color: #000;
     }
 
     fluent-card h3 {

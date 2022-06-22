@@ -58,10 +58,17 @@ export class AppHome extends LitElement {
 
   @query('#herovideo') _herovideo: HTMLVideoElement;
   @query('#manualplay') _manualplay: HTMLButtonElement;
+  @query('#manualpause') _manualpause: HTMLButtonElement;
   @property({ type: String }) playpromise = ``
 
   private _playHeroVideo() {
     this._herovideo.play();
+  }
+
+  private _pauseHeroVideo() {
+    if (!this._herovideo.paused) {
+      this._herovideo.pause();
+    }
   }
 
   private _checkVideoAutoPlay() {
@@ -70,10 +77,10 @@ export class AppHome extends LitElement {
     if (promise !== undefined) {
       promise.then(_ => {
         this.playpromise = 'Autoplay started!';
-        console.log("+++++++++ Autoplay started!");
+        console.log("+ Autoplay started!");
       }).catch(_ => {
         this.playpromise = 'Autoplay was prevented!';
-        console.log("--------- Autoplay was prevented!");
+        console.log("- Autoplay was prevented!");
       });
     }
   }
@@ -98,23 +105,25 @@ export class AppHome extends LitElement {
       position: absolute;
       overflow: hidden;
       /* background: url(/assets/img/vbg.png) no-repeat center center/cover; */
-      z-index: -1000;
+      z-index: 0;
     }
 
     video {
       min-width: 100%;
       min-height: 100vh;
+      z-index: 0;
     }
 
-    #manualplay {
+    #manualplay, #manualpause {
       color: rgba(255, 255, 255, 0.5);
       background: transparent;
       border: 1px solid rgba(255, 255, 255, 0.5);
       padding: 10px 20px;
       cursor: pointer;
+      margin: auto 4px;
     }
 
-    #manualplay:hover {
+    #manualplay:hover, #manualpause:hover {
       color: rgba(255, 255, 255, 1);
       border: 1px solid rgba(255, 255, 255, 1);
     }
@@ -127,12 +136,12 @@ export class AppHome extends LitElement {
       left: 0;
       background-image: linear-gradient(0deg, rgba(61, 20, 136, .5) 5%, rgba(0, 0, 0, .8) 20%, rgba(0, 0, 0, .3) 100%);
       /* bbackground-size: 20px 20px; */
+      z-index: 0;
     }
 
     .home {
-      background: #62278d;
-      background: linear-gradient(to bottom,  rgba(61, 20, 136, 1) 0%, #62278d 80%, #229679 100%);
-      color: #fff;
+      background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+      color: #3D3D3D;
     }
 
       pwa-install {
@@ -143,7 +152,7 @@ export class AppHome extends LitElement {
       }
 
       pwa-install:hover {
-        border: 2px solid #fff;
+        border: 2px solid rgba(255, 255, 255, 1);
         border-radius: 50% 50%;
       }
 
@@ -152,21 +161,21 @@ export class AppHome extends LitElement {
       }
 
       pwa-install svg {
-        fill: #fff;
+        fill: rgba(255, 255, 255, 0.8);
         width: 20px;
         height: 20px;
         margin: 4px 0px -2px 0px;
       }
 
       #schedule, .box {
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.2);
         border-bottom: 0px;
         margin-bottom: 16px;
       }
 
       fluent-card {
         padding: 1rem;
-        color: #fff;
+        color: #3D3D3D;
         border: 0px;
         border-radius: 0px;
         background: transparent;
@@ -174,7 +183,7 @@ export class AppHome extends LitElement {
       }
 
       fluent-card:hover {
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(255, 255, 255, 0.4);
       }
 
       #schedule fluent-card {
@@ -203,7 +212,7 @@ export class AppHome extends LitElement {
       }
 
       :host {
-        --install-button-color: #3d1488;
+        --install-button-color: rgba(61, 20, 136, 1);
       }
 
       .time, .divider, .topic {
@@ -217,13 +226,18 @@ export class AppHome extends LitElement {
       .divider svg {
         width: 20px;
         height: 20px;
-        fill: rgba(255, 255, 255, 0.9);
+        fill: #3d3d3d;
         margin-bottom:-5px;
       }
 
       .title {
         font-weight: 500;
         font-size: clamp(20px, 3vw, 28px);
+        color: rgba(61, 20, 136, 0.9);
+      }
+
+      #schedule fluent-card:hover .title {
+        color: rgba(61, 20, 136, 1);
       }
 
       .details {
@@ -278,6 +292,13 @@ export class AppHome extends LitElement {
       .home {
         padding: 16px;
       }
+
+      #playbar {
+        margin: 0 auto 16px auto;
+        text-align:center;
+        display: none;
+      }
+
      `;
   }
 
@@ -323,18 +344,17 @@ export class AppHome extends LitElement {
       return html`
         <div>
           <div id="superhero">
-            <video playsinline loop muted autoplay poster="/assets/img/vbg.png" id="herovideo">
-              <source src="/assets/img/vbg.mp4" type="video/mp4">
-            </video>
+            <video poster="/assets/img/video.png" autoplay="" playsinline="" loop="" muted="" src="/assets/img/vbg.mp4" id="herovideo"></video>
             <div class="overlay"></div>
           </div>
           <app-header-home></app-header-home>
         </div>
         
         <div class="home">
-          <div style="margin: 0 auto 16px auto; text-align:center">
+          <div id="playbar">
             <span id="playpromise">${this.playpromise}</span>
             <button id ="manualplay" @click="${this._playHeroVideo}">Play</button>
+            <button id ="manualpause" @click="${this._pauseHeroVideo}">Pause</button>
           </div>
           <fluent-card class="box"> ${this.description} </fluent-card>
           <div id="schedule">

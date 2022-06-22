@@ -9,7 +9,7 @@ export class AppHeader extends LitElement {
   static get styles() {
     return css`
      header {
-      background-color: #3d1488;
+      /* background-color: rgba(61, 20, 136, 1); */
       padding: 8px 16px 4px 16px;
      }
 
@@ -31,19 +31,19 @@ export class AppHeader extends LitElement {
       .share svg {
         width: 24px;
         height: 24px;
-        fill: rgba(255, 255, 255, 0.9);
+        fill: rgba(61, 20, 136, 0.9);
       }
 
       .share:hover svg {
-        fill: #fff;
+        fill: rgba(61, 20, 136, 1);
       }
 
       .hf svg {
-        fill: rgba(255, 255, 255, 0.9);
+        fill: rgba(61, 20, 136, 0.9);
       }
 
       .hf:hover svg {
-        fill: #fff;
+        fill: rgba(61, 20, 136, 1);
       }
 
       tx {
@@ -62,14 +62,14 @@ export class AppHeader extends LitElement {
         margin-left: -14px;
         width: 18px;
         height: 18px;
-        fill: rgba(255, 255, 255, 0.9);
+        fill: rgba(61, 20, 136, 0.9);
       }
 
       .back:hover svg {
         margin-left: -14px;
         width: 18px;
         height: 18px;
-        fill: rgba(255, 255, 255, 1);
+        fill: rgba(61, 20, 136, 1);
       }
 
       @media(prefers-color-scheme: light) {

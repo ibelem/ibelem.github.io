@@ -1,8 +1,8 @@
 import { LitElement, css, html } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
 
-@customElement('app-nav')
-export class AppNav extends LitElement {
+@customElement('app-nav-home')
+export class AppNavHome extends LitElement {
 
   @property({ type: Boolean}) enableBack: boolean = false;
 
@@ -50,7 +50,7 @@ export class AppNav extends LitElement {
       margin-bottom: 4px;
       position: relative;
       
-      background: rgba(61, 20, 136, 0.9);
+      background: rgba(255, 255, 255, 0.9);
       border-radius: 3px;
       
       z-index: 1;
@@ -63,7 +63,7 @@ export class AppNav extends LitElement {
     }
 
     #menuToggle:hover span {
-      background: rgba(61, 20, 136, 1);
+      background: rgba(255, 255, 255, 1);
     }
 
     #menuToggle span:first-child
@@ -80,12 +80,12 @@ export class AppNav extends LitElement {
     {
       opacity: 1;
       transform: rotate(45deg) translate(0px, 0px);
-      background: rgba(61, 20, 136, 0.9);
+      background: rgba(255, 255, 255, 0.9);
     }
 
     #menuToggle:hover input:checked ~ span
     {
-      background: rgba(61, 20, 136, 1);
+      background: rgba(255, 255, 255, 1);
     }
 
     #menuToggle input:checked ~ span:nth-last-child(3)

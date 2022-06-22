@@ -23,6 +23,7 @@ export class AppFooter extends LitElement {
         text-align: center;
         padding: 16px;
       }
+      
       footer a {
         color: rgba(61, 20, 136, 0.9);
         text-decoration: none;

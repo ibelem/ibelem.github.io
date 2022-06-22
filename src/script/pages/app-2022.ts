@@ -64,10 +64,21 @@ export class App2022 extends LitElement {
       ]
     };
 
+  @property({ type: String }) screenwidth = "";
+  @property({ type: String }) screenheight = "";
+
+  screenres() {
+    let sw = screen.availWidth;
+    let rsw = sw - 32;
+    let rsh = (rsw * 9)/16;
+    this.screenwidth = rsw.toString();
+    this.screenheight = rsh.toString();
+  }
+
   async connectedCallback() {
     super.connectedCallback();
+    this.screenres();
     await this.fetchData();
-
   }
 
   async fetchData() {
@@ -78,10 +89,8 @@ export class App2022 extends LitElement {
 
   static get styles() {
     return css`
-    .p2022 {
-      background: #62278d;
-      background: linear-gradient(to bottom,  rgba(61, 20, 136, 1) 0%, #62278d 80%, #229679 100%);
-      color: #fff;
+    .section {
+      color: #3d3d3d;
     }
 
       pwa-install {
@@ -92,7 +101,7 @@ export class App2022 extends LitElement {
       }
 
       pwa-install:hover {
-        border: 2px solid #fff;
+        border: 2px solid rgba(255, 255, 255, 1);
         border-radius: 50% 50%;
       }
 
@@ -101,16 +110,17 @@ export class App2022 extends LitElement {
       }
 
       pwa-install svg {
-        fill: #fff;
+        fill: rgba(255, 255, 255, 0.8);
         width: 20px;
         height: 20px;
         margin: 4px 0px -2px 0px;
       }
 
       .hero {
-        padding: 3rem 0;
+        margin-top: -6rem;
+        padding: 0rem 0px 6rem;
         text-align: center;
-        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
       }
 
       .hero h1 {
@@ -125,49 +135,64 @@ export class App2022 extends LitElement {
         margin-top: -2rem;
       }
 
+      .hero h2, .hero h3 {
+        color: rgba(61, 20, 136, 0.9);
+      }
+
+      .hero:hover h2, .hero:hover h3 {
+        color: rgba(61, 20, 136, 1);
+      }
+
       .hero h2 {
         margin: 0px;
         font-size: clamp(26px, 4vw, 44px);
         letter-spacing: 4px;
       }
+
       .hero h3 {
         margin: 0rem auto;
         font-size: clamp(20px, 3vw, 28px);
         letter-spacing: 2px;
       }
 
-      #schedule, .box {
-        background: rgba(0, 0, 0, 0.2);
-        border-bottom: 0px;
-        margin-bottom: 16px;
+      .scroll100 {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+      }
+
+      .section {
+        display: flex;
+        height: 100vh;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .box {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 32px;
+        height: auto;
       }
 
       fluent-card {
         padding: 1rem;
-        color: #fff;
+        color: #3d3d3d;
         border: 0px;
         border-radius: 0px;
-        background: transparent;
         box-shadow: none;
+        background: rgba(255, 255, 255, 0.2);
       }
 
       fluent-card:hover {
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(255, 255, 255, 0.4);
+        color: #000;
       }
-
-      #schedule fluent-card {
-        display: flex;
-        align-items: center;
-      }
-
-      fluent-card {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      }
-
-      fluent-card:last-child {
-        border-bottom:0px;
-      }
-
+ 
       @media (min-width: 1024px) {
       }
 
@@ -181,27 +206,24 @@ export class App2022 extends LitElement {
       }
 
       :host {
-        --install-button-color: #3d1488;
+        --install-button-color: rgba(61, 20, 136, 1);
       }
 
-      .time, .divider, .topic {
+      .time, .topic {
         padding: 0 4px;
+        display: flex;
+        flex-direction: column;
       }
 
-      .divider {
-        margin: 0px;
-      }
-
-      .divider svg {
-        width: 20px;
-        height: 20px;
-        fill: rgba(255, 255, 255, 0.9);
-        margin-bottom:-5px;
-      }
-
+      
       .title {
         font-weight: 500;
         font-size: clamp(20px, 3vw, 28px);
+        color: rgba(61, 20, 136, 0.9);
+      }
+
+      fluent-card:hover .title {
+        color: rgba(61, 20, 136, 1);
       }
 
       .details {
@@ -213,6 +235,8 @@ export class App2022 extends LitElement {
         margin: 16px auto;
         font-size: 12px;
         letter-spacing: 2px;
+        max-height: 30vh;
+        overflow-y: auto;
       }
 
       .avatar_ {
@@ -259,9 +283,16 @@ export class App2022 extends LitElement {
         background-image: url('assets/2022/people/120/belem.png');
       }
 
-      .p2022 {
-        padding: 16px;
+      .bili {
+        margin: 16px auto;
+        text-align: center;
       }
+
+      iframe {
+        max-width: 480px;
+        max-height: 320px; 
+      }
+
      `;
   }
 
@@ -279,13 +310,13 @@ export class App2022 extends LitElement {
     if (this.jsondata) {
 
       let fluentcard = '';
+      let t = '';
 
       for(let i of this.jsondata.t2022) {
-        let t = `
-          <fluent-card>
-            <div class="time">${i.time}</div>
-            <div class="divider">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg>  
+        t = `
+          <fluent-card class="section">
+            <div class="bili">
+              <iframe width="${this.screenwidth}" height="${this.screenheight}" src="https://player.bilibili.com/player.html?cid=${t.cid}&aid=${t.aid}&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
             </div>
             <div class="topic">
               <div class="title">${i.title}</div>
@@ -306,27 +337,24 @@ export class App2022 extends LitElement {
 
       return html`
         <app-header ?enableBack="${true}"></app-header>
-        <div class="p2022">
-          <div class="hero">
-            <h3>${this.subtitle}</h3>
-            <h2>${this.title}</h2>
-            <h3 class="h3b">${this.time}</h3>
+        <div class="scroll100">
+          <div class="p2022 section">
+            <div class="hero">
+              <h3>${this.subtitle}</h3>
+              <h2>${this.title}</h2>
+              <h3 class="h3b">${this.time}</h3>
+            </div>
+            <fluent-card class="box"> ${this.description}</fluent-card>
           </div>
-          <fluent-card class="box"> ${this.description} </fluent-card>
-
-          <div id="schedule">
-            ${unsafeHTML(fluentcard)}
-          </div>
-          <pwa-install title="安装 中国 PWA 开发者日">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <path
-                d="M480 352h-133.5l-45.25 45.25C289.2 409.3 273.1 416 256 416s-33.16-6.656-45.25-18.75L165.5 352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96C512 366.3 497.7 352 480 352zM432 456c-13.2 0-24-10.8-24-24c0-13.2 10.8-24 24-24s24 10.8 24 24C456 445.2 445.2 456 432 456zM233.4 374.6C239.6 380.9 247.8 384 256 384s16.38-3.125 22.62-9.375l128-128c12.49-12.5 12.49-32.75 0-45.25c-12.5-12.5-32.76-12.5-45.25 0L288 274.8V32c0-17.67-14.33-32-32-32C238.3 0 224 14.33 224 32v242.8L150.6 201.4c-12.49-12.5-32.75-12.5-45.25 0c-12.49 12.5-12.49 32.75 0 45.25L233.4 374.6z"
-              />
-            </svg>
-          </pwa-install>
-
-          <app-footer-home></app-footer-home>
+          ${unsafeHTML(fluentcard)}
         </div>
+        <pwa-install title="安装 中国 PWA 开发者日">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M480 352h-133.5l-45.25 45.25C289.2 409.3 273.1 416 256 416s-33.16-6.656-45.25-18.75L165.5 352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96C512 366.3 497.7 352 480 352zM432 456c-13.2 0-24-10.8-24-24c0-13.2 10.8-24 24-24s24 10.8 24 24C456 445.2 445.2 456 432 456zM233.4 374.6C239.6 380.9 247.8 384 256 384s16.38-3.125 22.62-9.375l128-128c12.49-12.5 12.49-32.75 0-45.25c-12.5-12.5-32.76-12.5-45.25 0L288 274.8V32c0-17.67-14.33-32-32-32C238.3 0 224 14.33 224 32v242.8L150.6 201.4c-12.49-12.5-32.75-12.5-45.25 0c-12.49 12.5-12.49 32.75 0 45.25L233.4 374.6z"
+            />
+          </svg>
+        </pwa-install>
       `;
     } else {
       return html`<div>No data</div>`;

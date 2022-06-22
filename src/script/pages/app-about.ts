@@ -8,6 +8,7 @@ export class AppAbout extends LitElement {
     .about {
       padding: 0 16px;
       margin: 2rem 0 0rem 0;
+      color: #3d3d3d;
     }
 
     fluent-card {
@@ -15,6 +16,12 @@ export class AppAbout extends LitElement {
       margin-bottom: 1rem;
       border-radius: 0px;
       box-shadow: none;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    fluent-card:hover {
+      background: rgba(255, 255, 255, 0.4);
+      color: #000;
     }
 
     fluent-card h3 {

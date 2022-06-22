@@ -66,7 +66,6 @@ export class App2021 extends LitElement {
     super.connectedCallback();
     this.screenres();
     await this.fetchData();
-
   }
 
   async fetchData() {
@@ -79,9 +78,7 @@ export class App2021 extends LitElement {
     return css`
       .p2021 {
         padding: 16px 16px;
-        background: #62278d;
-        background: linear-gradient(to bottom,  rgba(61, 20, 136, 1) 0%, #62278d 80%, #229679 100%);
-        color: #fff;
+        color: #3d3d3d;
       }
 
       .p2021 h2 {
@@ -99,22 +96,22 @@ export class App2021 extends LitElement {
         margin-bottom: 1rem;
         border-radius: 0px;
         box-shadow: none;
-        background: rgba(0, 0, 0, 0.2);
-        color: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.2);
+        color: #3d3d3d;
       }
 
       fluent-card:hover {
-        background: rgba(0, 0, 0, 0.4);
-        color: #fff;
+        background: rgba(255, 255, 255, 0.4);
+        color: #000;
       }
 
       fluent-card svg {
         width: 16px;
-        fill: rgba(255, 255, 255, 0.9);
+        fill: #3d3d3d;
       }
 
       fluent-card:hover svg {
-        fill: rgba(255, 255, 255, 1);
+        fill: #3d3d3d;
       }
 
       fluent-card h2 {

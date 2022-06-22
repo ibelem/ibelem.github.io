@@ -43,8 +43,10 @@ export declare class AppHome extends LitElement {
     };
     _herovideo: HTMLVideoElement;
     _manualplay: HTMLButtonElement;
+    _manualpause: HTMLButtonElement;
     playpromise: string;
     private _playHeroVideo;
+    private _pauseHeroVideo;
     private _checkVideoAutoPlay;
     connectedCallback(): Promise<void>;
     fetchData(): Promise<void>;

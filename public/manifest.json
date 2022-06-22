@@ -5,10 +5,10 @@
   "display": "standalone",
   "start_url": "/",
   "short_name": "中国 PWA 开发者日",
-  "theme_color": "#3d1488",
+  "theme_color": "#E3FDF5",
   "description": "2022 中国 PWA 开发者日，分享 PWA 技术进展及 PWA 生态的实践与落地。",
   "orientation": "any",
-  "background_color": "#3d1488",
+  "background_color": "#E3FDF5",
   "related_applications": [],
   "prefer_related_applications": false,
   "icons": [
