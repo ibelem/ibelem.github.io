@@ -44,6 +44,9 @@ export declare class App2022 extends LitElement {
             youtube: string;
         }[];
     };
+    screenwidth: string;
+    screenheight: string;
+    screenres(): void;
     connectedCallback(): Promise<void>;
     fetchData(): Promise<void>;
     static get styles(): import("lit").CSSResult;

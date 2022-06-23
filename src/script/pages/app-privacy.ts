@@ -8,6 +8,9 @@ export class AppPrivacy extends LitElement {
     .about {
       padding: 0 16px;
       margin: 2rem 0 0rem 0;
+      background-image: linear-gradient(180deg, #ffffff 0%, #E3FDF5 10%, #FFE6FA 100%);
+      height: 100%;
+      min-height: calc(100vh - 56px);
     }
 
     fluent-card {
@@ -15,11 +18,11 @@ export class AppPrivacy extends LitElement {
       margin-bottom: 1rem;
       border-radius: 0px;
       box-shadow: none;
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.8);
     }
 
     fluent-card:hover {
-      background: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.95);
       color: #000;
     }
 
@@ -56,8 +59,8 @@ export class AppPrivacy extends LitElement {
           <p>我们不收集您的个人数据，更不会使用和共享您的个人数据。</p>
           <p>我们不使用 Cookie 和类似的技术。</p>
         </fluent-card>
+        <app-footer></app-footer>
       </div>
-      <app-footer></app-footer>
     `;
   }
 }

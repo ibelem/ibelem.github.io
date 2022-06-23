@@ -57,6 +57,7 @@ export class AppHome extends LitElement {
   };
 
   @query('#herovideo') _herovideo: HTMLVideoElement;
+  @query('#herocanvas') _herocanvas: HTMLCanvasElement;
   @query('#manualplay') _manualplay: HTMLButtonElement;
   @query('#manualpause') _manualpause: HTMLButtonElement;
   @property({ type: String }) playpromise = ``
@@ -84,7 +85,7 @@ export class AppHome extends LitElement {
       });
     }
   }
-
+ 
   async connectedCallback() {
     super.connectedCallback();
     await this.fetchData();
@@ -115,17 +116,17 @@ export class AppHome extends LitElement {
     }
 
     #manualplay, #manualpause {
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(0, 0, 0, 0.5);
       background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.5);
+      border: 1px solid rgba(0, 0, 0, 0.5);
       padding: 10px 20px;
       cursor: pointer;
       margin: auto 4px;
     }
 
     #manualplay:hover, #manualpause:hover {
-      color: rgba(255, 255, 255, 1);
-      border: 1px solid rgba(255, 255, 255, 1);
+      color: rgba(0, 0, 0, 1);
+      border: 1px solid rgba(0, 0, 0, 1);
     }
 
     .overlay {
@@ -134,14 +135,15 @@ export class AppHome extends LitElement {
       position: absolute;
       top: 0;
       left: 0;
-      background-image: linear-gradient(0deg, rgba(61, 20, 136, .5) 5%, rgba(0, 0, 0, .8) 20%, rgba(0, 0, 0, .3) 100%);
+      background-image: linear-gradient(0deg, rgba(227, 253, 245, 0.3) 5%, rgba(0, 0, 0, .2) 20%, rgba(0, 0, 0, .1) 100%);
       /* bbackground-size: 20px 20px; */
       z-index: 0;
     }
 
     .home {
-      background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
       color: #3D3D3D;
+      background-image: linear-gradient(180deg, #ffffff 0%, #E3FDF5 10%, #FFE6FA 100%);
+      height: 100%;
     }
 
       pwa-install {
@@ -161,14 +163,14 @@ export class AppHome extends LitElement {
       }
 
       pwa-install svg {
-        fill: rgba(255, 255, 255, 0.8);
+        fill: rgba(255, 255, 255, 0.95);
         width: 20px;
         height: 20px;
         margin: 4px 0px -2px 0px;
       }
 
       #schedule, .box {
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.8);
         border-bottom: 0px;
         margin-bottom: 16px;
       }
@@ -183,7 +185,7 @@ export class AppHome extends LitElement {
       }
 
       fluent-card:hover {
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.95);
       }
 
       #schedule fluent-card {
@@ -192,7 +194,7 @@ export class AppHome extends LitElement {
       }
 
       fluent-card {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(227, 253, 245, 0.9);
       }
 
       fluent-card:last-child {
@@ -296,7 +298,6 @@ export class AppHome extends LitElement {
       #playbar {
         margin: 0 auto 16px auto;
         text-align:center;
-        display: none;
       }
 
      `;
@@ -344,7 +345,7 @@ export class AppHome extends LitElement {
       return html`
         <div>
           <div id="superhero">
-            <video poster="/assets/img/video.png" autoplay="" playsinline="" loop="" muted="" src="/assets/img/vbg.mp4" id="herovideo"></video>
+            <video poster="/assets/img/vbg.png" autoplay="" playsinline="" loop="" muted="" src="/assets/img/vbg.mp4" id="herovideo"></video>
             <div class="overlay"></div>
           </div>
           <app-header-home></app-header-home>

@@ -79,6 +79,8 @@ export class App2021 extends LitElement {
       .p2021 {
         padding: 16px 16px;
         color: #3d3d3d;
+        background-image: linear-gradient(180deg, #ffffff 0%, #E3FDF5 10%, #FFE6FA 100%);
+        height: 100%;
       }
 
       .p2021 h2 {
@@ -96,12 +98,12 @@ export class App2021 extends LitElement {
         margin-bottom: 1rem;
         border-radius: 0px;
         box-shadow: none;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.8);
         color: #3d3d3d;
       }
 
       fluent-card:hover {
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.95);
         color: #000;
       }
 
@@ -123,7 +125,7 @@ export class App2021 extends LitElement {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        border-top: 1px solid rgb(243, 243, 243);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
         padding-top: 16px;
       }
 

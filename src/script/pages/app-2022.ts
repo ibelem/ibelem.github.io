@@ -37,10 +37,10 @@ export class App2022 extends LitElement {
             "icon5": "assets/2022/people/500/qi.png",
             "bio": "",
             "pdf": "",
-            "bilibili": "",
-            "aid": "",
-            "cid": "",
-            "youtube": ""
+            "bilibili": "https://www.bilibili.com/video/BV1Kv4y1G7L8",
+            "aid": "554870624",
+            "cid": "741436422",
+            "youtube": "https://youtu.be/npMpZHMizUc" 
           }
         ],
       "t2021": [
@@ -110,7 +110,7 @@ export class App2022 extends LitElement {
       }
 
       pwa-install svg {
-        fill: rgba(255, 255, 255, 0.8);
+        fill: rgba(255, 255, 255, 0.95);
         width: 20px;
         height: 20px;
         margin: 4px 0px -2px 0px;
@@ -120,7 +120,6 @@ export class App2022 extends LitElement {
         margin-top: -6rem;
         padding: 0rem 0px 6rem;
         text-align: center;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
       }
 
       .hero h1 {
@@ -171,10 +170,11 @@ export class App2022 extends LitElement {
         width: 100%;
         flex-direction: column;
         justify-content: center;
+        background-image: linear-gradient(180deg, #ffffff 0%, #E3FDF5 10%, #FFE6FA 100%);
       }
 
       .box {
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.8);
         padding: 32px;
         height: auto;
       }
@@ -185,11 +185,11 @@ export class App2022 extends LitElement {
         border: 0px;
         border-radius: 0px;
         box-shadow: none;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.8);
       }
 
       fluent-card:hover {
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.95);
         color: #000;
       }
  
@@ -316,7 +316,7 @@ export class App2022 extends LitElement {
         t = `
           <fluent-card class="section">
             <div class="bili">
-              <iframe width="${this.screenwidth}" height="${this.screenheight}" src="https://player.bilibili.com/player.html?cid=${t.cid}&aid=${t.aid}&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+              <iframe width="${this.screenwidth}" height="${this.screenheight}" src="https://player.bilibili.com/player.html?cid=${i.cid}&aid=${i.aid}&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
             </div>
             <div class="topic">
               <div class="title">${i.title}</div>
