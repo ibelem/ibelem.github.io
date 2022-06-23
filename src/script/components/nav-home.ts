@@ -8,8 +8,6 @@ export class AppNavHome extends LitElement {
 
   static get styles() {
     return css`
-
-      
     #menuToggle
     {
       display: block;
@@ -19,7 +17,7 @@ export class AppNavHome extends LitElement {
       height: 18px;
       width: 18px;
       
-      z-index: 1;
+      z-index: 3;
       
       -webkit-user-select: none;
       user-select: none;

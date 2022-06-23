@@ -92,13 +92,6 @@ export class AppIndex extends LitElement {
             ]
           },
           {
-            path: '/mp',
-            component: 'app-mediaplayer',
-            action: async () => {
-              await import('./script/pages/app-mediaplayer.js');
-            },
-          },
-          {
             path: '/about',
             component: 'app-about',
             action: async () => {

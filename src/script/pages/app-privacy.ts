@@ -8,9 +8,6 @@ export class AppPrivacy extends LitElement {
     .about {
       padding: 0 16px;
       margin: 2rem 0 0rem 0;
-      background-image: linear-gradient(180deg, #ffffff 0%, #E3FDF5 10%, #FFE6FA 100%);
-      height: 100%;
-      min-height: calc(100vh - 56px);
     }
 
     fluent-card {

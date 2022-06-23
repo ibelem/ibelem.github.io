@@ -2,9 +2,15 @@ import { LitElement, css, html } from 'lit';
 import { property, customElement, query } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import '@pwabuilder/pwainstall';
+import * as PIXI from "https://cdn.skypack.dev/pixi.js";
+import { KawaseBlurFilter } from "https://cdn.skypack.dev/@pixi/filter-kawase-blur";
+import SimplexNoise from "https://cdn.skypack.dev/simplex-noise";
+import hsl from "https://cdn.skypack.dev/hsl-to-hex";
+import debounce from "https://cdn.skypack.dev/debounce";
 
 @customElement('app-home')
 export class AppHome extends LitElement {
+  
   @property({ type: String }) description = `
     为加速推动渐进式 Web 应用 (PWA) 在中国的发展，微软与英特尔携手举办“第二届中国 PWA 开发者日”。
     本次活动邀请一众业界大咖围绕 PWA 展开分享，探讨最新技术进展，及 PWA 生态的实践与落地。
@@ -56,8 +62,8 @@ export class AppHome extends LitElement {
     ]
   };
 
+  @query('.orb-canvas') canvas: HTMLCanvasElement;  
   @query('#herovideo') _herovideo: HTMLVideoElement;
-  @query('#herocanvas') _herocanvas: HTMLCanvasElement;
   @query('#manualplay') _manualplay: HTMLButtonElement;
   @query('#manualpause') _manualpause: HTMLButtonElement;
   @property({ type: String }) playpromise = ``
@@ -84,12 +90,49 @@ export class AppHome extends LitElement {
         console.log("- Autoplay was prevented!");
       });
     }
+  }  
+
+  private _showCanvas = () => {
+    console.log(this.canvas)
+    const app = new PIXI.Application({
+      // render to <canvas class="orb-canvas"></canvas>
+      view: this.canvas,
+      resizeTo: window,
+      backgroundAlpha: true
+    });
+
+    const colorPalette = new ColorPalette();
+
+    app.stage.filters = [new KawaseBlurFilter(30, 10, true)];
+
+    const orbs:[] = [];
+
+    for (let i = 0; i < 10; i++) {
+      const orb = new Orb(colorPalette.randomColor());
+      app.stage.addChild(orb.graphics);
+      orbs.push(orb);
+    }
+
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      app.ticker.add(() => {
+        orbs.forEach((orb) => {
+          orb.update();
+          orb.render();
+        });
+      });
+    } else {
+      orbs.forEach((orb) => {
+        orb.update();
+        orb.render();
+      });
+    }
   }
  
   async connectedCallback() {
     super.connectedCallback();
     await this.fetchData();
-    this._checkVideoAutoPlay();
+    this._showCanvas();
+    // this._checkVideoAutoPlay();
   }
 
   async fetchData() {
@@ -100,12 +143,20 @@ export class AppHome extends LitElement {
 
   static get styles() {
     return css`
+    .orb-canvas {
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    /*
     #superhero {
       height: 100vh;
       width: 100%;
       position: absolute;
       overflow: hidden;
-      /* background: url(/assets/img/vbg.png) no-repeat center center/cover; */
       z-index: 0;
     }
 
@@ -135,14 +186,14 @@ export class AppHome extends LitElement {
       position: absolute;
       top: 0;
       left: 0;
-      background-image: linear-gradient(0deg, rgba(227, 253, 245, 0.3) 5%, rgba(0, 0, 0, .2) 20%, rgba(0, 0, 0, .1) 100%);
-      /* bbackground-size: 20px 20px; */
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, .1) 20%, rgba(0, 0, 0, .2) 100%);
       z-index: 0;
     }
+    */
 
     .home {
       color: #3D3D3D;
-      background-image: linear-gradient(180deg, #ffffff 0%, #E3FDF5 10%, #FFE6FA 100%);
+      background-image: linear-gradient(180deg, #ffffff 10%, #E3FDF5 20%, #FFE6FA 100%);
       height: 100%;
     }
 
@@ -169,32 +220,37 @@ export class AppHome extends LitElement {
         margin: 4px 0px -2px 0px;
       }
 
-      #schedule, .box {
-        background: rgba(255, 255, 255, 0.8);
-        border-bottom: 0px;
+      fluent-card.box {
         margin-bottom: 16px;
       }
 
       fluent-card {
         padding: 1rem;
         color: #3D3D3D;
-        border: 0px;
+        border: 0;
         border-radius: 0px;
-        background: transparent;
-        box-shadow: none;
+        background: rgba(255, 255, 255, 0.8);
+        margin-bottom: 16px;
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.02);
       }
 
-      fluent-card:hover {
+      #schedule {
+        box-shadow: none;
+        border: 0px;
+      }
+
+      .box {
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.02);
+      }
+
+      fluent-card.box:hover, fluent-card:hover {
         background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
       }
 
       #schedule fluent-card {
         display: flex;
         align-items: center;
-      }
-
-      fluent-card {
-        border-bottom: 1px solid rgba(227, 253, 245, 0.9);
       }
 
       fluent-card:last-child {
@@ -344,19 +400,18 @@ export class AppHome extends LitElement {
 
       return html`
         <div>
-          <div id="superhero">
-            <video poster="/assets/img/vbg.png" autoplay="" playsinline="" loop="" muted="" src="/assets/img/vbg.mp4" id="herovideo"></video>
-            <div class="overlay"></div>
-          </div>
+          <canvas class="orb-canvas"></canvas>
           <app-header-home></app-header-home>
         </div>
         
-        <div class="home">
+        <div class="home" id="home">
+          <!-- 
           <div id="playbar">
             <span id="playpromise">${this.playpromise}</span>
             <button id ="manualplay" @click="${this._playHeroVideo}">Play</button>
             <button id ="manualpause" @click="${this._pauseHeroVideo}">Pause</button>
           </div>
+          -->
           <fluent-card class="box"> ${this.description} </fluent-card>
           <div id="schedule">
             ${unsafeHTML(fluentcard)}
@@ -380,3 +435,186 @@ export class AppHome extends LitElement {
   }
 }
 
+
+
+function random(min:number, max:number) {
+  return Math.random() * (max - min) + min;
+}
+
+// map a number from 1 range to another
+function map(n:any, start1:any, end1:any, start2:any, end2:any) {
+  return ((n - start1) / (end1 - start1)) * (end2 - start2) + start2;
+}
+
+// Create a new simplex noise instance
+const simplex = new SimplexNoise();
+
+// ColorPalette class
+class ColorPalette {
+  hue: number;
+  complimentaryHue1: number;
+  complimentaryHue2: number;
+  saturation: number;
+  lightness: number;
+  baseColor: any;
+  complimentaryColor1: any;
+  complimentaryColor2: any;
+  colorChoices: any[];
+  constructor() {
+    this.setColors();
+    this.setCustomProperties();
+  }
+
+  setColors() {
+    // pick a random hue somewhere between 220 and 360
+    this.hue = ~~random(220, 360);
+    this.complimentaryHue1 = this.hue + 30;
+    this.complimentaryHue2 = this.hue + 60;
+    // define a fixed saturation and lightness
+    this.saturation = 95;
+    this.lightness = 50;
+
+    // define a base color
+    this.baseColor = hsl(this.hue, this.saturation, this.lightness);
+    // define a complimentary color, 30 degress away from the base
+    this.complimentaryColor1 = hsl(
+      this.complimentaryHue1,
+      this.saturation,
+      this.lightness
+    );
+    // define a second complimentary color, 60 degrees away from the base
+    this.complimentaryColor2 = hsl(
+      this.complimentaryHue2,
+      this.saturation,
+      this.lightness
+    );
+
+    // store the color choices in an array so that a random one can be picked later
+    this.colorChoices = [
+      this.baseColor,
+      this.complimentaryColor1,
+      this.complimentaryColor2
+    ];
+  }
+
+  randomColor() {
+    // pick a random color
+    return this.colorChoices[~~random(0, this.colorChoices.length)].replace(
+      "#",
+      "0x"
+    );
+  }
+
+  setCustomProperties() {
+    // set CSS custom properties so that the colors defined here can be used throughout the UI
+    document.documentElement.style.setProperty("--hue", this.hue.toString());
+    document.documentElement.style.setProperty(
+      "--hue-complimentary1",
+      this.complimentaryHue1.toString()
+    );
+    document.documentElement.style.setProperty(
+      "--hue-complimentary2",
+      this.complimentaryHue2.toString()
+    );
+  }
+}
+
+// Orb class
+class Orb {
+  bounds: { x: { min: number; max: number; }; y: { min: number; max: number; }; };
+  x: number;
+  y: number;
+  scale: number;
+  fill: number;
+  radius: number;
+  xOff: number;
+  yOff: number;
+  inc: number;
+  graphics: any;
+  // Pixi takes hex colors as hexidecimal literals (0x rather than a string with '#')
+  constructor(fill = 0x000000) {
+    // bounds = the area an orb is "allowed" to move within
+    this.bounds = this.setBounds();
+    // initialise the orb's { x, y } values to a random point within it's bounds
+    this.x = random(this.bounds["x"].min, this.bounds["x"].max);
+    this.y = random(this.bounds["y"].min, this.bounds["y"].max);
+
+    // how large the orb is vs it's original radius (this will modulate over time)
+    this.scale = 1;
+
+    // what color is the orb?
+    this.fill = fill;
+
+    // the original radius of the orb, set relative to window height
+    this.radius = random(window.innerHeight / 6, window.innerHeight / 3);
+
+    // starting points in "time" for the noise/self similar random values
+    this.xOff = random(0, 1000);
+    this.yOff = random(0, 1000);
+    // how quickly the noise/self similar random values step through time
+    this.inc = 0.002;
+
+    // PIXI.Graphics is used to draw 2d primitives (in this case a circle) to the canvas
+    this.graphics = new PIXI.Graphics();
+    this.graphics.alpha = 0.825;
+
+    window.addEventListener(
+      "resize",
+      debounce(() => {
+        this.bounds = this.setBounds();
+      }, 250)
+    );
+  }
+
+  setBounds() {
+    // how far from the { x, y } origin can each orb move
+    const maxDist =
+      window.innerWidth < 1000 ? window.innerWidth / 3 : window.innerWidth / 5;
+    // the { x, y } origin for each orb (the bottom right of the screen)
+    const originX = window.innerWidth / 1.25;
+    const originY =
+      window.innerWidth < 1000
+        ? window.innerHeight
+        : window.innerHeight / 1.375;
+
+    // allow each orb to move x distance away from it's x / y origin
+    return {
+      x: {
+        min: originX - maxDist,
+        max: originX + maxDist
+      },
+      y: {
+        min: originY - maxDist,
+        max: originY + maxDist
+      }
+    };
+  }
+
+  update() {
+    // self similar "psuedo-random" or noise values at a given point in "time"
+    const xNoise = simplex.noise2D(this.xOff, this.xOff);
+    const yNoise = simplex.noise2D(this.yOff, this.yOff);
+    const scaleNoise = simplex.noise2D(this.xOff, this.yOff);
+
+    // map the xNoise/yNoise values (between -1 and 1) to a point within the orb's bounds
+    this.x = map(xNoise, -1, 1, this.bounds["x"].min, this.bounds["x"].max);
+    this.y = map(yNoise, -1, 1, this.bounds["y"].min, this.bounds["y"].max);
+    // map scaleNoise (between -1 and 1) to a scale value somewhere between half of the orb's original size, and 100% of it's original size
+    this.scale = map(scaleNoise, -1, 1, 0.5, 1);
+
+    this.xOff += this.inc;
+    this.yOff += this.inc;
+  }
+
+  render() {
+    this.graphics.x = this.x;
+    this.graphics.y = this.y;
+    this.graphics.scale.set(this.scale);
+
+    this.graphics.clear();
+
+    this.graphics.beginFill(this.fill);
+    this.graphics.drawCircle(0, 0, this.radius);
+    this.graphics.endFill();
+  }
+}

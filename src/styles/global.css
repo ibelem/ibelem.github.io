@@ -5,6 +5,7 @@
 */
 
 :root {
+  --hue: 326;
   --neutral-fill-rest: transparent !important;
   --neutral-stroke-control-rest: transparent !important;
   --neutral-fill-hover: transparent !important;
@@ -12,6 +13,16 @@
   --neutral-fill-active: transparent !important;
   --neutral-stroke-control-active: transparent !important;
   --stroke-width: 0 !important;
+  --dark-color: hsl(var(--hue), 100%, 9%);
+  --light-color: hsl(var(--hue), 95%, 98%);
+  --base: hsl(var(--hue), 95%, 50%);
+  --complimentary1: hsl(var(--hue-complimentary1), 95%, 50%);
+  --complimentary2: hsl(var(--hue-complimentary2), 95%, 50%);
+  --bg-gradient: linear-gradient(
+    to bottom,
+    hsl(var(--hue), 95%, 99%),
+    hsl(var(--hue), 95%, 84%)
+  );
 }
 
 html, body {
@@ -19,11 +30,24 @@ html, body {
   font-family: 'Segoe UI', SegoeUI, 'Microsoft YaHei', 微软雅黑, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(180deg, #ffffff 10%, #E3FDF5 20%, #FFE6FA 100%);
   height: 100%;
 }
 
 .home {
   padding: 16px;
+}
+
+fluent-card {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.02);
+}
+
+fluent-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -42,6 +42,7 @@ export declare class AppHome extends LitElement {
         }[];
     };
     _herovideo: HTMLVideoElement;
+    _herocanvas: HTMLCanvasElement;
     _manualplay: HTMLButtonElement;
     _manualpause: HTMLButtonElement;
     playpromise: string;

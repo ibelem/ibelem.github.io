@@ -76,6 +76,10 @@ export class App2021 extends LitElement {
 
   static get styles() {
     return css`
+      canvas {
+        display: none;
+      }
+
       .p2021 {
         padding: 16px 16px;
         color: #3d3d3d;

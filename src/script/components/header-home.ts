@@ -16,6 +16,19 @@ export class AppHeaderHome extends LitElement {
       width: 100%;
       z-index: 1000;
      }
+     
+    .text-gradient {
+      background-image: linear-gradient(
+        45deg,
+        rgba(119, 255, 51, 1) 10%,
+        rgba(51, 187, 255, 1) 60%,
+        rgba(255, 255, 255)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
 
      .topbar {
       padding: 8px 16px 4px 16px;
@@ -36,7 +49,6 @@ export class AppHeaderHome extends LitElement {
         height: 90vh;
         justify-content: center;
         align-items: center;
-        z-index: 0;
       }
 
       .hero:hover {
@@ -73,17 +85,15 @@ export class AppHeaderHome extends LitElement {
         margin: 0px;
         font-size: clamp(26px, 4vw, 44px);
         letter-spacing: 4px;
-        z-index: 2;
       }
       .hero h3 {
         margin: 0rem auto;
         font-size: clamp(20px, 3vw, 28px);
         letter-spacing: 2px;
-        z-index: 2;
       }
 
       .super {
-        z-index: 0;
+        z-index: 2;
       }
 
       #sidepromote {
@@ -97,7 +107,7 @@ export class AppHeaderHome extends LitElement {
 
       .share {
         cursor: pointer;
-        margin-left: -33px;
+        margin-left: -32px;
       }
 
       .share svg {
@@ -261,8 +271,8 @@ export class AppHeaderHome extends LitElement {
             <h3>${this.subtitle}</h3>
             <h2>${this.title}</h2>
             <h3 class="h3b">${this.time}</h3>
-            <h1>在线 免费 分享</h1>
-            <h1 class="h1b">助您使用 PWA 获得成功</h1>
+            <h1 class="text-gradient">在线 免费 分享</h1>
+            <h1 class="h1b text-gradient">助您使用 PWA 获得成功</h1>
             <div class="register">
               <a href="" title="即刻预约" id="book">
                 即刻预约

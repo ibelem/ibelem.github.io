@@ -89,9 +89,13 @@ export class App2022 extends LitElement {
 
   static get styles() {
     return css`
-    .section {
-      color: #3d3d3d;
-    }
+      .p2022 {
+        background-image: linear-gradient(180deg, #ffffff 10%, #E3FDF5 20%, #FFE6FA 100%);
+        height: 100%;
+      }
+      .section {
+        color: #3d3d3d;
+      }
 
       pwa-install {
         position: fixed;
@@ -154,23 +158,11 @@ export class App2022 extends LitElement {
         letter-spacing: 2px;
       }
 
-      .scroll100 {
-        height: 100vh;
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-      }
-
       .section {
         display: flex;
         height: 100vh;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
         flex-direction: column;
         justify-content: center;
-        background-image: linear-gradient(180deg, #ffffff 0%, #E3FDF5 10%, #FFE6FA 100%);
       }
 
       .box {
@@ -237,6 +229,29 @@ export class App2022 extends LitElement {
         letter-spacing: 2px;
         max-height: 30vh;
         overflow-y: auto;
+      }
+
+      @media (max-width: 1024px) {
+        .p2022 {
+          background-image: none;
+          height: 100%;
+        }
+
+        .scroll100 {
+          height: 100vh;
+          overflow-y: scroll;
+          scroll-snap-type: y mandatory;
+        }
+
+        .section {
+          scroll-snap-align: start;
+          scroll-snap-stop: always;
+          object-fit: cover;
+          object-position: center;
+          width: 100%;
+          background-image: linear-gradient(180deg, #ffffff 0%, #E3FDF5 10%, #FFE6FA 100%);
+        }
+  
       }
 
       .avatar_ {
@@ -315,11 +330,11 @@ export class App2022 extends LitElement {
       for(let i of this.jsondata.t2022) {
         t = `
           <fluent-card class="section">
-            <div class="bili">
-              <iframe width="${this.screenwidth}" height="${this.screenheight}" src="https://player.bilibili.com/player.html?cid=${i.cid}&aid=${i.aid}&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-            </div>
             <div class="topic">
               <div class="title">${i.title}</div>
+              <div class="bili">
+                <iframe width="${this.screenwidth}" height="${this.screenheight}" src="https://player.bilibili.com/player.html?cid=${i.cid}&aid=${i.aid}&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+              </div>
               <div class="des">${i.des.replace(/\n/g, '<br>')}</div>
               <div class="details">
                 <div class="avatar" id="icon_${i.iconid}"></div>
