@@ -5,7 +5,7 @@
 */
 
 :root {
-  --hue: 500;
+  --hue: 328;
   --neutral-fill-rest: transparent !important;
   --neutral-stroke-control-rest: transparent !important;
   --neutral-fill-hover: transparent !important;
@@ -20,8 +20,8 @@
   --complimentary2: hsl(var(--hue-complimentary2), 95%, 50%);
   --bg-gradient: linear-gradient(
     to bottom,
-    hsl(var(--hue), 100%, 50%),
-    hsl(var(--hue), 100%, 20%)
+    hsl(var(--hue), 80%, 50%),
+    hsl(var(--hue), 80%, 20%)
   );
 }
 
