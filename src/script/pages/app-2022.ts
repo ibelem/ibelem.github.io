@@ -90,7 +90,7 @@ export class App2022 extends LitElement {
   static get styles() {
     return css`
       .p2022 {
-        background-image: linear-gradient(180deg, #ffffff 5%, #E3FDF5 10%, #FFE6FA 100%);
+        background-image: linear-gradient(180deg, #ffffff 2%, #E3FDF5 8%, #FFE6FA 100%);
         height: 100%;
       }
       .section {
@@ -110,7 +110,7 @@ export class App2022 extends LitElement {
       }
 
       #openButton:hover {
-        background: rgba(61, 20, 136, 0.8);
+        background: rgba(0,113,197, 0.8);
       }
 
       pwa-install svg {
@@ -139,11 +139,11 @@ export class App2022 extends LitElement {
       }
 
       .hero h2, .hero h3 {
-        color: rgba(61, 20, 136, 0.9);
+        color: rgba(0,113,197, 0.9);
       }
 
       .hero:hover h2, .hero:hover h3 {
-        color: rgba(61, 20, 136, 1);
+        color: rgba(0,113,197, 1);
       }
 
       .hero h2 {
@@ -168,6 +168,8 @@ export class App2022 extends LitElement {
       .box {
         padding: 32px;
         height: auto;
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.1);
       }
 
       fluent-card {
@@ -247,7 +249,7 @@ export class App2022 extends LitElement {
       }
 
       :host {
-        --install-button-color: rgba(61, 20, 136, 1);
+        --install-button-color: rgba(0,113,197, 1);
       }
 
       .time, .topic {
@@ -260,11 +262,11 @@ export class App2022 extends LitElement {
       .title {
         font-weight: 500;
         font-size: clamp(20px, 3vw, 28px);
-        color: rgba(61, 20, 136, 0.9);
+        color: rgba(0,113,197, 0.9);
       }
 
       fluent-card:hover .title {
-        color: rgba(61, 20, 136, 1);
+        color: rgba(0,113,197, 1);
       }
 
       .details {
@@ -274,7 +276,7 @@ export class App2022 extends LitElement {
 
       .des {
         margin: 16px auto;
-        font-size: 12px;
+        font-size: 13px;
         letter-spacing: 2px;
         max-height: 30vh;
         overflow-y: auto;
@@ -328,7 +330,7 @@ export class App2022 extends LitElement {
       }
 
       .team {
-        font-size: 12px;
+        font-size: 13px;
       }
 
       #icon_qi {

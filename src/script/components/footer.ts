@@ -25,14 +25,14 @@ export class AppFooter extends LitElement {
       }
       
       footer a {
-        color: rgba(61, 20, 136, 0.9);
+        color: rgba(0,113,197, 0.9);
         text-decoration: none;
         margin: 0 4px;
       }
 
       footer a:hover {
-        color: rgba(61, 20, 136, 1.0);
-        border-bottom: 1px dashed rgba(61, 20, 136, 1);
+        color: rgba(0,113,197, 1.0);
+        border-bottom: 1px dashed rgba(0,113,197, 1);
       }
 
       @media(prefers-color-scheme: light) {

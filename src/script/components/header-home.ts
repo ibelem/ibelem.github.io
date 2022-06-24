@@ -20,7 +20,7 @@ export class AppHeaderHome extends LitElement {
       background-image: linear-gradient(
         45deg,
         rgba(119, 255, 51, 1) 10%,
-        rgba(51, 187, 255, 1) 60%,
+        rgba(0, 199, 253, 1) 60%,
         rgba(255, 255, 255)
       );
       -webkit-background-clip: text;
@@ -42,7 +42,7 @@ export class AppHeaderHome extends LitElement {
       .hero {
         display: flex;
         text-align: center;
-        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.03);
         color: rgba(255, 255, 255, 0.9);
         height: calc(100vh - 56px);
         justify-content: center;
@@ -76,7 +76,19 @@ export class AppHeaderHome extends LitElement {
       }
 
       .hero h2, .hero h3 {
-        text-shadow: 1px 1px 1px rgba(61, 20, 136, 0.5);
+        text-shadow: 1px 1px 1px rgba(0,113,197, 0.1);
+      }
+
+      .hero h3 {
+        color: rgba(0, 113, 197, 0.9); 
+      }
+ 
+      .hero h2 {
+        color: rgba(0, 113, 197, 1.0); 
+      }
+ 
+      .hero:hover h3 {
+        color: rgba(0, 113, 197, 1.0); 
       }
 
       .hero .h1b {
@@ -115,19 +127,19 @@ export class AppHeaderHome extends LitElement {
       .share svg {
         width: 24px;
         height: 24px;
-        fill: rgba(255, 255, 255, 0.9);
+        fill: rgba(0, 113, 197, 0.9);
       }
 
       .share:hover svg {
-        fill: #fff;
+        fill: rgba(0, 113, 197, 1);
       }
 
       .hf svg {
-        fill: rgba(255, 255, 255, 0.9);
+        fill: rgba(0, 113, 197, 0.9);
       }
 
       .hf:hover svg {
-        fill: #fff;
+        fill: rgba(0, 113, 197, 1.0);
       }
 
       #back-button-block {
@@ -153,6 +165,8 @@ export class AppHeaderHome extends LitElement {
       @media(prefers-color-scheme: light) {
       }
 
+      
+
       .register {
         margin: 4rem auto;
         text-align: center;
@@ -173,7 +187,7 @@ export class AppHeaderHome extends LitElement {
 
         font-weight: 600;
         letter-spacing: 2px;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(0, 199, 253, 0.9);
         padding: 12px 36px;
         box-sizing: border-box;
         text-decoration: none;
@@ -181,12 +195,16 @@ export class AppHeaderHome extends LitElement {
 
       .register a:hover {
         box-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
-        color: #fff;
+        color: rgba(0, 113, 197, 1.0); 
         border-image-source: conic-gradient(
           hsl(100 100% 60%) 40%,
           hsl(200 100% 60%) 0
         );
         letter-spacing: 8px;
+      }
+
+      .joint {
+        color: rgba(255, 255, 255, 0.9) !important;
       }
 
       .coll {
@@ -213,6 +231,47 @@ export class AppHeaderHome extends LitElement {
         margin-top: -6px;
       }
 
+      /*
+
+      .webapi {
+        position: absolute;
+        bottom: 0px;
+        display: block;
+        left:0px;
+        width: 100%;
+        overflow: hidden;
+        color: #fff;
+        font-size: 10px;
+        background: rgba(0, 199, 253, 0.9);
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      .webapi div {
+        animation: marquee linear 60s infinite;
+        position: relative;
+        white-space: nowrap;
+      }
+
+      .webapi span {
+        margin: 0 16px;
+      }
+
+      @keyframes marquee {
+        from {transform: translateX(0);}
+        to {transform: translateX(-800%);}
+      }
+
+      .webapi:hover {
+        background: rgba(0, 113, 197, 1.0);
+      }
+
+      .webapi:hover div {
+        animation-play-state: paused;
+      }
+
+      */
+
       @media only screen and (max-width: 640px) {
         .coll {
           grid-column-gap: 16px;
@@ -226,6 +285,18 @@ export class AppHeaderHome extends LitElement {
           width: 80px;
           height: 32px;
         }
+      }
+
+      @media only screen and (max-width: 420px) {
+
+      }
+
+      @media only screen and (min-width: 421px) and (max-width: 1023px) {
+
+      }
+
+      @media only screen and (min-width: 1024px) {
+
       }
 
       @media only screen and (max-width: 420px) and (orientation: portrait) {
@@ -323,6 +394,62 @@ export class AppHeaderHome extends LitElement {
  
           </div>
         </div>
+        <!-- 
+        <div class="webapi"><div>
+        <span>Absolute Orientation Sensor</span>
+        <span>Add to Home Screen</span>
+        <span>Async Clipboard</span>
+        <span>Background Fetch</span>
+        <span>Badging</span>
+        <span>Cache Storage</span>
+        <span>Compression Streams</span>
+        <span>Contact Picker</span>
+        <span>Content Index</span>
+        <span>Declarative Link Capturing</span>
+        <span>Device Memory</span>
+        <span>Digital Goods</span>
+        <span>EyeDropper</span>
+        <span>File Handling</span>
+        <span>File System Access</span>
+        <span>Gamepad</span>
+        <span>getInstalledRelatedApps</span>
+        <span>Gyroscope</span>
+        <span>HapticsDevice</span>
+        <span>Launch Handler</span>
+        <span>Linear Acceleration Sensor</span>
+        <span>Local Font Access</span>
+        <span>Media Capabilities</span>
+        <span>Media Session</span>
+        <span>Navigation Preload</span>
+        <span>Notification Triggers</span>
+        <span>Payment Request</span>
+        <span>Periodic Background Sync</span>
+        <span>Persistent Storage</span>
+        <span>Pointer Lock</span>
+        <span>Protocol Handlers</span>
+        <span>Push</span>
+        <span>Relative Orientation Sensor</span>
+        <span>Screen Wake Lock</span>
+        <span>Service Worker</span>
+        <span>Shape Detection (Barcodes)</span>
+        <span>Shortcuts</span>
+        <span>Storage Estimation</span>
+        <span>Tabbed Application Mode</span>
+        <span>URL Handlers</span>
+        <span>VirtualKeyboard</span>
+        <span>Web Assembly (Wasm)</span>
+        <span>Web Share</span>
+        <span>WebBluetooth</span>
+        <span>WebGPU</span>
+        <span>WebNN</span>
+        <span>WebHID</span>
+        <span>WebNFC</span>
+        <span>WebOTP</span>
+        <span>WebSerial</span>
+        <span>WebUSB</span>
+        <span>Window Controls Overlay</span>
+        </div></div>
+        -->
       </header>
     `;
   }

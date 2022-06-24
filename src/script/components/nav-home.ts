@@ -48,7 +48,7 @@ export class AppNavHome extends LitElement {
       margin-bottom: 4px;
       position: relative;
       
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(0, 113, 197, 0.9);
       border-radius: 3px;
       
       z-index: 1;
@@ -61,7 +61,7 @@ export class AppNavHome extends LitElement {
     }
 
     #menuToggle:hover span {
-      background: rgba(255, 255, 255, 1);
+      background: rgba(0, 113, 197, 1.0);
     }
 
     #menuToggle span:first-child
@@ -78,12 +78,12 @@ export class AppNavHome extends LitElement {
     {
       opacity: 1;
       transform: rotate(45deg) translate(0px, 0px);
-      background: rgba(255, 255, 255, 0.9);
+      background:  rgba(0, 113, 197, 0.9);
     }
 
     #menuToggle:hover input:checked ~ span
     {
-      background: rgba(255, 255, 255, 1);
+      background:  rgba(0, 113, 197, 1.0);
     }
 
     #menuToggle input:checked ~ span:nth-last-child(3)
@@ -129,7 +129,7 @@ export class AppNavHome extends LitElement {
 
     #menu div:hover
     {
-      background: rgba(61, 20, 136, 1);
+      background: rgba(0,113,197, 1);
     }
 
     #menu div:hover fluent-anchor, #menu .promote:hover div {
@@ -139,7 +139,7 @@ export class AppNavHome extends LitElement {
     #menu fluent-anchor {
       font-size: clamp(18px, 3vw, 32px);
       transition: color 0.3s ease;
-      color: rgba(61, 20, 136, 1);
+      color: rgba(0,113,197, 1);
       margin: 0px auto;
     }
 
@@ -160,7 +160,7 @@ export class AppNavHome extends LitElement {
       }
     }
     .promote div {
-      font-size: 12px;
+      font-size: 13px;
       height: 12px;
       font-weight: 500;
       padding: 0px !important;

@@ -30,19 +30,19 @@ export class AppHeader extends LitElement {
       .share svg {
         width: 24px;
         height: 24px;
-        fill: rgba(61, 20, 136, 0.9);
+        fill: rgba(0,113,197, 0.9);
       }
 
       .share:hover svg {
-        fill: rgba(61, 20, 136, 1);
+        fill: rgba(0,113,197, 1);
       }
 
       .hf svg {
-        fill: rgba(61, 20, 136, 0.9);
+        fill: rgba(0,113,197, 0.9);
       }
 
       .hf:hover svg {
-        fill: rgba(61, 20, 136, 1);
+        fill: rgba(0,113,197, 1);
       }
 
       tx {
@@ -61,14 +61,14 @@ export class AppHeader extends LitElement {
         margin-left: -14px;
         width: 18px;
         height: 18px;
-        fill: rgba(61, 20, 136, 0.9);
+        fill: rgba(0,113,197, 0.9);
       }
 
       .back:hover svg {
         margin-left: -14px;
         width: 18px;
         height: 18px;
-        fill: rgba(61, 20, 136, 1);
+        fill: rgba(0,113,197, 1);
       }
 
       @media(prefers-color-scheme: light) {

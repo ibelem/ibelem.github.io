@@ -143,8 +143,9 @@ export class AppHome extends LitElement {
   static get styles() {
     return css`
     #herohome {
-      background: var(--bg-gradient);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, hsl(0, 82, 57, 85%) 10%, hsl(252, 82, 57) 100%);
     }
+
     .orb-canvas {
       height: 100vh;
       width: 100%;
@@ -195,7 +196,7 @@ export class AppHome extends LitElement {
 
     .home {
       color: #3D3D3D;
-      background-image: linear-gradient(180deg, #ffffff 5%, #E3FDF5 10%, #FFE6FA 100%);
+      background-image: linear-gradient(180deg, #ffffff 2%, #E3FDF5 8%, #FFE6FA 100%);
       height: 100%;
     }
 
@@ -212,7 +213,7 @@ export class AppHome extends LitElement {
       }
 
       #openButton:hover {
-        background: rgba(61, 20, 136, 0.8);
+        background: rgba(0,113,197, 0.8);
       }
 
       pwa-install svg {
@@ -242,7 +243,8 @@ export class AppHome extends LitElement {
       }
 
       .box {
-        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.02);
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.1);
       }
 
       fluent-card.box:hover, fluent-card:hover {
@@ -272,7 +274,7 @@ export class AppHome extends LitElement {
       }
 
       :host {
-        --install-button-color: rgba(61, 20, 136, 1);
+        --install-button-color: rgba(0,113,197, 1);
       }
 
       .time, .divider, .topic {
@@ -293,11 +295,11 @@ export class AppHome extends LitElement {
       .title {
         font-weight: 500;
         font-size: clamp(20px, 3vw, 28px);
-        color: rgba(61, 20, 136, 0.9);
+        color: rgba(0,113,197, 0.9);
       }
 
       #schedule fluent-card:hover .title {
-        color: rgba(61, 20, 136, 1);
+        color: rgba(0,113,197, 1);
       }
 
       .details {
@@ -330,7 +332,7 @@ export class AppHome extends LitElement {
       }
 
       .team {
-        font-size: 12px;
+        font-size: 13px;
       }
 
       #icon_qi {

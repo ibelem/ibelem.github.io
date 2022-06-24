@@ -91,6 +91,7 @@ export class App2021 extends LitElement {
         margin: 0;
         padding: 16px 0;
         text-align: center;
+        color: rgba(0, 113, 197, 0.9);
       }
 
       .desc {
@@ -102,7 +103,7 @@ export class App2021 extends LitElement {
         margin-bottom: 1rem;
         border-radius: 0px;
         box-shadow: none;
-        background: rgba(255, 255, 255, 0.8);
+        background: rgba(255, 255, 255, 0.5);
         color: #3d3d3d;
       }
 
