@@ -5,7 +5,7 @@
 */
 
 :root {
-  --hue: 326;
+  --hue: 500;
   --neutral-fill-rest: transparent !important;
   --neutral-stroke-control-rest: transparent !important;
   --neutral-fill-hover: transparent !important;
@@ -20,8 +20,8 @@
   --complimentary2: hsl(var(--hue-complimentary2), 95%, 50%);
   --bg-gradient: linear-gradient(
     to bottom,
-    hsl(var(--hue), 95%, 99%),
-    hsl(var(--hue), 95%, 84%)
+    hsl(var(--hue), 100%, 50%),
+    hsl(var(--hue), 100%, 20%)
   );
 }
 
@@ -32,8 +32,8 @@ html, body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(180deg, #ffffff 10%, #E3FDF5 20%, #FFE6FA 100%);
-  height: 100%;
+  background: linear-gradient(180deg, #ffffff 5%, #E3FDF5 10%, #FFE6FA 100%);
+  background-repeat: no-repeat;
 }
 
 .home {

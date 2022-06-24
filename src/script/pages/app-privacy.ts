@@ -7,7 +7,9 @@ export class AppPrivacy extends LitElement {
     return css`
     .about {
       padding: 0 16px;
-      margin: 2rem 0 0rem 0;
+      margin: 1rem 0 0rem 0;
+      color: #3d3d3d;
+      min-height: calc(100vh - 76px);
     }
 
     fluent-card {
@@ -52,9 +54,9 @@ export class AppPrivacy extends LitElement {
       <div class="about">
         <h2>隐私条款</h2>
         <fluent-card>
-          <h3>我们十分重视您的隐私。</h3>
-          <p>我们不收集您的个人数据，更不会使用和共享您的个人数据。</p>
+          <h3>我们十分重视您的隐私</h3>
           <p>我们不使用 Cookie 和类似的技术。</p>
+          <p>我们不收集您的个人数据，更不会使用和共享您的个人数据。</p>
         </fluent-card>
         <app-footer></app-footer>
       </div>

@@ -14,7 +14,6 @@ export class AppHeaderHome extends LitElement {
      header {
       height: 100vh;
       width: 100%;
-      z-index: 1000;
      }
      
     .text-gradient {
@@ -38,21 +37,20 @@ export class AppHeaderHome extends LitElement {
         height: 40px;
         width: 60px;
         display: inline-flex;
-        z-index: 1000;
       }
 
       .hero {
         display: flex;
         text-align: center;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
         color: rgba(255, 255, 255, 0.9);
-        height: 90vh;
+        height: calc(100vh - 56px);
         justify-content: center;
         align-items: center;
       }
 
       .hero:hover {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1.0);
       }
 
       @media only screen and (max-width: 1024px) {
@@ -77,6 +75,10 @@ export class AppHeaderHome extends LitElement {
         font-weight: 900;
       }
 
+      .hero h2, .hero h3 {
+        text-shadow: 1px 1px 1px rgba(61, 20, 136, 0.5);
+      }
+
       .hero .h1b {
         margin-top: -2rem;
       }
@@ -89,11 +91,11 @@ export class AppHeaderHome extends LitElement {
       .hero h3 {
         margin: 0rem auto;
         font-size: clamp(20px, 3vw, 28px);
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
 
       .super {
-        z-index: 2;
+        z-index: 1;
       }
 
       #sidepromote {
@@ -225,6 +227,35 @@ export class AppHeaderHome extends LitElement {
           height: 32px;
         }
       }
+
+      @media only screen and (max-width: 420px) and (orientation: portrait) {
+        .hero h1 {
+          font-size: clamp(26px, 4vw, 44px)
+        }
+      }
+
+      @media only screen and (max-height: 400px) and (orientation: landscape) {
+        .hero h1 {
+          display: none;
+        }
+      }
+
+      @media only screen and (max-width: 1024px) and (orientation: landscape) {
+        .hero {
+          height: calc(100vh - 56px);
+        }
+
+        .hero h2 {
+          font-size: clamp(20px, 3vw, 28px);
+        }
+        .hero h3 {
+          font-size: clamp(16px, 2.4vw, 22px)
+        }
+
+        .register {
+          margin: 1rem auto;
+        }
+      }
     `;
   }
 
@@ -272,13 +303,13 @@ export class AppHeaderHome extends LitElement {
             <h2>${this.title}</h2>
             <h3 class="h3b">${this.time}</h3>
             <h1 class="text-gradient">在线 免费 分享</h1>
-            <h1 class="h1b text-gradient">助您使用 PWA 获得成功</h1>
+            <h1 class="h1b text-gradient">借助 PWA 获得成功</h1>
             <div class="register">
               <a href="" title="即刻预约" id="book">
                 即刻预约
               </a>
             </div>
-            <h3>联合主办</h3>
+            <h3 class="joint">联合主办</h3>
             <div class="coll">
               <div></div>
               <div id="intel"></div>

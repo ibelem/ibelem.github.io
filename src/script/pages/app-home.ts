@@ -2,11 +2,11 @@ import { LitElement, css, html } from 'lit';
 import { property, customElement, query } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import '@pwabuilder/pwainstall';
-import * as PIXI from "https://cdn.skypack.dev/pixi.js";
-import { KawaseBlurFilter } from "https://cdn.skypack.dev/@pixi/filter-kawase-blur";
-import SimplexNoise from "https://cdn.skypack.dev/simplex-noise";
-import hsl from "https://cdn.skypack.dev/hsl-to-hex";
-import debounce from "https://cdn.skypack.dev/debounce";
+import * as PIXI from "pixi.js";
+import { KawaseBlurFilter } from "@pixi/filter-kawase-blur";
+import SimplexNoise from 'simplex-noise';
+import hsl from "hsl-to-hex";
+import debounce from "debounce";
 
 @customElement('app-home')
 export class AppHome extends LitElement {
@@ -93,12 +93,11 @@ export class AppHome extends LitElement {
   }  
 
   private _showCanvas = () => {
-    console.log(this.canvas)
     const app = new PIXI.Application({
       // render to <canvas class="orb-canvas"></canvas>
       view: this.canvas,
       resizeTo: window,
-      backgroundAlpha: true
+      transparent: true
     });
 
     const colorPalette = new ColorPalette();
@@ -143,6 +142,9 @@ export class AppHome extends LitElement {
 
   static get styles() {
     return css`
+    #herohome {
+      background: var(--bg-gradient);
+    }
     .orb-canvas {
       height: 100vh;
       width: 100%;
@@ -193,7 +195,7 @@ export class AppHome extends LitElement {
 
     .home {
       color: #3D3D3D;
-      background-image: linear-gradient(180deg, #ffffff 10%, #E3FDF5 20%, #FFE6FA 100%);
+      background-image: linear-gradient(180deg, #ffffff 5%, #E3FDF5 10%, #FFE6FA 100%);
       height: 100%;
     }
 
@@ -399,7 +401,7 @@ export class AppHome extends LitElement {
       }
 
       return html`
-        <div>
+        <div id="herohome">
           <canvas class="orb-canvas"></canvas>
           <app-header-home></app-header-home>
         </div>

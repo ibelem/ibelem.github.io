@@ -13,9 +13,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@pixi/filter-kawase-blur": "^4.1.5",
     "@pwabuilder/pwainstall": "^1.6.7",
+    "@types/debounce": "^1.2.1",
+    "@types/hsl-to-hex": "^1.0.0",
     "@vaadin/router": "^1.7.4",
+    "debounce": "^1.2.1",
+    "hsl-to-hex": "^1.0.0",
     "lit": "^2.2.5",
+    "pixi.js": "^6.4.2",
+    "simplex-noise": "^3.0.1",
     "workbox-build": "^6.5.3",
     "workbox-core": "^6.5.3",
     "workbox-precaching": "^6.5.3"

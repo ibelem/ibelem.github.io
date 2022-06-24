@@ -90,7 +90,7 @@ export class App2022 extends LitElement {
   static get styles() {
     return css`
       .p2022 {
-        background-image: linear-gradient(180deg, #ffffff 10%, #E3FDF5 20%, #FFE6FA 100%);
+        background-image: linear-gradient(180deg, #ffffff 5%, #E3FDF5 10%, #FFE6FA 100%);
         height: 100%;
       }
       .section {
@@ -166,7 +166,6 @@ export class App2022 extends LitElement {
       }
 
       .box {
-        background: rgba(255, 255, 255, 0.8);
         padding: 32px;
         height: auto;
       }
@@ -186,6 +185,56 @@ export class App2022 extends LitElement {
       }
  
       @media (min-width: 1024px) {
+        .hero {
+          margin: 1rem auto;
+          padding: 0rem 0px 1rem;
+        }
+
+        .title {
+          margin: 1rem auto;
+          text-align: center;
+        }
+        
+        .section {
+          height: auto;
+          background: transparent;
+        }
+
+        fluent-card {
+          background: transparent;
+        }
+
+        fluent-card:hover {
+          background: transparent;
+        }
+
+        .topic {
+          display: grid !important;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 1fr;
+          grid-column-gap: 16px;
+          grid-row-gap: 0px;
+          flex-direction: none;
+        }
+
+        * {
+          scrollbar-width: thin;
+          scrollbar-color: rgba(0, 0, 0, 0.2) #ffffff;
+        }
+     
+        *::-webkit-scrollbar {
+          width: 5px;
+        }
+    
+        *::-webkit-scrollbar-track {
+          background: transparent;
+        }
+    
+        *::-webkit-scrollbar-thumb {
+          background-color: rgba(0, 0, 0, 0.2);
+          border-radius: 3px;
+          border: 0px solid transparent;
+        }
       }
 
       @media (horizontal-viewport-segments: 2) {
@@ -330,17 +379,19 @@ export class App2022 extends LitElement {
       for(let i of this.jsondata.t2022) {
         t = `
           <fluent-card class="section">
+            <div class="title">${i.title}</div>
             <div class="topic">
-              <div class="title">${i.title}</div>
               <div class="bili">
                 <iframe width="${this.screenwidth}" height="${this.screenheight}" src="https://player.bilibili.com/player.html?cid=${i.cid}&aid=${i.aid}&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
               </div>
-              <div class="des">${i.des.replace(/\n/g, '<br>')}</div>
-              <div class="details">
-                <div class="avatar" id="icon_${i.iconid}"></div>
-                <div class="description">
-                  <div class="nametitle">${i.speaker} / ${i.pos}</div>
-                  <div class="team">${i.com}</div>
+              <div>
+                <div class="des">${i.des.replace(/\n/g, '<br>')}</div>
+                <div class="details">
+                  <div class="avatar" id="icon_${i.iconid}"></div>
+                  <div class="description">
+                    <div class="nametitle">${i.speaker} / ${i.pos}</div>
+                    <div class="team">${i.com}</div>
+                  </div>
                 </div>
               </div>
             </div>
