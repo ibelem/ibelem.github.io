@@ -114,6 +114,13 @@ export class AppIndex extends LitElement {
             },
           },
           {
+            path: '/sample-local-font-access',
+            component: 'sample-lfa',
+            action: async () => {
+              await import('./script/pages/sample-lfa.js');
+            },
+          },
+          {
             path: '/tutorial',
             component: 'app-tutorial',
             action: async () => {

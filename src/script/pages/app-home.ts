@@ -233,8 +233,7 @@ export class AppHome extends LitElement {
         border: 0;
         border-radius: 0px;
         background: rgba(255, 255, 255, 0.8);
-        margin-bottom: 16px;
-        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.02);
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
       }
 
       #schedule {

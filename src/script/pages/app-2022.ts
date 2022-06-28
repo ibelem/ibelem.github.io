@@ -466,6 +466,10 @@ export class App2022 extends LitElement {
           max-height: 10vh;
         }
       }
+      
+      .bio a, .des a {
+        color: rgba(255, 255, 255, 0.8);
+      }
 
      `;
   }

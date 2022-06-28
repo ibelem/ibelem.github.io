@@ -27,13 +27,10 @@ export class AppSample extends LitElement {
     <div class="about">  
       <fluent-breadcrumb>
         <fluent-breadcrumb-item href="/">首页</fluent-breadcrumb-item>
-        <fluent-breadcrumb-item href="/mediaplayer">播放</fluent-breadcrumb-item>
+        <fluent-breadcrumb-item href="/sample">示例</fluent-breadcrumb-item>
+        <fluent-breadcrumb-item href="/sample-local-font-access">Local Font Access API</fluent-breadcrumb-item>
       </fluent-breadcrumb>
-
-      <h2>媒体播放器</h2>
-      <fluent-card>
-        
-      </fluent-card>
+ 
     </div>
     <app-footer></app-footer>
     `;
