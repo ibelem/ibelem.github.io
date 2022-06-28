@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property, customElement } from 'lit/decorators.js';
+import { property, customElement, query, queryAll } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 
 @customElement('app-2021')
@@ -53,6 +53,8 @@ export class App2021 extends LitElement {
   };
   @property({ type: String }) screenwidth = "";
   @property({ type: String }) screenheight = "";
+  @property({ type: String }) topic = "";
+  @queryAll('.ids') ids!: NodeListOf<HTMLElement>;
 
   screenres() {
     let sw = screen.availWidth;
@@ -62,10 +64,27 @@ export class App2021 extends LitElement {
     this.screenheight = rsh.toString();
   }
 
+  async scrollToId() {
+    const path = location.pathname.replace('/2021/', '')
+    console.log(path)
+    console.log('----------------');
+    console.log(this.ids);
+ 
+    for(let i of this.ids) {
+      if (i.id === 'id_' + path) {
+        console.log(i);
+        i.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+      }
+      
+    }
+    // document.querySelector(`#id_${path}`)?.scrollIntoView();
+  }
+
   async connectedCallback() {
     super.connectedCallback();
     this.screenres();
     await this.fetchData();
+    await this.scrollToId();
   }
 
   async fetchData() {
@@ -95,7 +114,7 @@ export class App2021 extends LitElement {
       }
 
       .desc {
-        margin: 16px auto;
+        margin: 16px 16px 32px 16px;
       }
 
       fluent-card {
@@ -144,8 +163,36 @@ export class App2021 extends LitElement {
       }
 
       iframe {
-        max-width: 720px;
-        max-height: 480px; 
+        max-width: 420px;
+        max-height: 240px; 
+      }
+
+      @media only screen and (min-width: 1024px) {
+        .p2021 {
+          padding-left: 32px;
+        }
+
+        #schedule {
+          display: grid;
+          align-items: center;
+          justify-items: center;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          grid-column-gap: 16px;
+          grid-row-gap: 16px;
+        }
+
+        .des {
+          min-height: 80px;
+        }
+
+        .bio {
+          min-height: 40px;
+        }
+
+        fluent-card {
+          margin-bottom: 0rem;
+        }
       }
 
     `;
@@ -172,16 +219,16 @@ export class App2021 extends LitElement {
         }
 
         let i = `
-          <fluent-card>
+          <fluent-card id="id_${t.id}" class="ids">
             <h2> ${t.title}</h2>
-            <div> ${t.des} </div>
+            <div class="des"> ${t.des} </div>
 
             <div class="bili">
               <iframe width="${this.screenwidth}" height="${this.screenheight}" src="https://player.bilibili.com/player.html?cid=${t.cid}&aid=${t.aid}&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
             </div>
             <div class="description">
-              <div class="nametitle"><strong>${t.speaker}</strong> ${t.pos} ${t.com}</div>
-              <div> ${t.bio} </div>
+              <div class="nametitle"><strong>${t.speaker}</strong> ${t.com}${t.pos}</div>
+              <div class="bio"> ${t.bio} </div>
             </div>
 
             <div class="resources">

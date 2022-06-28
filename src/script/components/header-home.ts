@@ -6,7 +6,7 @@ export class AppHeaderHome extends LitElement {
 
   @property({ type: Boolean}) enableBack: boolean = false;
   @property({ type: String }) subtitle = '第二届';
-  @property({ type: String }) title = '中国 PWA 开发者日';
+  @property({ type: String }) title = '';
   @property({ type: String }) time = '8 月 6 日 (周六) 13:00 - 17:00';
 
   static get styles() {
@@ -86,7 +86,11 @@ export class AppHeaderHome extends LitElement {
       .hero h2 {
         color: rgba(0, 113, 197, 1.0); 
       }
- 
+
+      .hero h2 svg {
+        margin: 0;
+      }
+
       .hero:hover h3 {
         color: rgba(0, 113, 197, 1.0); 
       }
@@ -107,7 +111,7 @@ export class AppHeaderHome extends LitElement {
       }
 
       .super {
-        z-index: 1;
+        z-index: 0;
       }
 
       #sidepromote {
@@ -116,7 +120,7 @@ export class AppHeaderHome extends LitElement {
 
       .hf {
         align-self: center;
-        z-index: 1;
+        z-index: 0;
       }
 
       .share {
@@ -303,6 +307,18 @@ export class AppHeaderHome extends LitElement {
         .hero h1 {
           font-size: clamp(26px, 4vw, 44px)
         }
+
+        .hero h2 {
+          margin: 0.5rem auto;
+        }
+        
+        .hero .h3b {
+          font-size: clamp(14px, 2.2vw, 18px)
+        }
+
+        .hero .h1b {
+          margin-top: -1.5rem;
+        }
       }
 
       @media only screen and (max-height: 400px) and (orientation: landscape) {
@@ -371,7 +387,7 @@ export class AppHeaderHome extends LitElement {
         <div class="hero">
           <div class="super">
             <h3>${this.subtitle}</h3>
-            <h2>${this.title}</h2>
+            <h2>中国 <pwa-logo></pwa-logo> 开发者日</h2>
             <h3 class="h3b">${this.time}</h3>
             <h1 class="text-gradient">在线 免费 分享</h1>
             <h1 class="h1b text-gradient">借助 PWA 获得成功</h1>

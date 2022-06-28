@@ -89,10 +89,6 @@ export class App2022 extends LitElement {
 
   static get styles() {
     return css`
-      .p2022 {
-        background-image: linear-gradient(180deg, #ffffff 2%, #E3FDF5 8%, #FFE6FA 100%);
-        height: 100%;
-      }
       .section {
         color: #3d3d3d;
       }
@@ -160,7 +156,7 @@ export class App2022 extends LitElement {
 
       .section {
         display: flex;
-        height: 100vh;
+        height: calc(100vh - 56px);
         flex-direction: column;
         justify-content: center;
       }
@@ -178,11 +174,11 @@ export class App2022 extends LitElement {
         border: 0px;
         border-radius: 0px;
         box-shadow: none;
-        background: rgba(255, 255, 255, 0.8);
+        background: rgba(255, 255, 255, 0.2);
       }
 
       fluent-card:hover {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.6);
         color: #000;
       }
  
@@ -217,6 +213,7 @@ export class App2022 extends LitElement {
           grid-column-gap: 16px;
           grid-row-gap: 0px;
           flex-direction: none;
+          align-items: center;
         }
 
         * {
@@ -237,6 +234,7 @@ export class App2022 extends LitElement {
           border-radius: 3px;
           border: 0px solid transparent;
         }
+        
       }
 
       @media (horizontal-viewport-segments: 2) {
@@ -276,10 +274,22 @@ export class App2022 extends LitElement {
 
       .des {
         margin: 16px auto;
+        padding: 16px;
         font-size: 13px;
-        letter-spacing: 2px;
-        max-height: 30vh;
         overflow-y: auto;
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .bio {
+        margin: 16px auto;
+        padding: 16px;
+        font-size: 13px;
+        overflow-y: auto;
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .des:hover, .bio:hover {
+        background: rgba(255, 255, 255, 0.4);
       }
 
       @media (max-width: 1024px) {
@@ -300,7 +310,7 @@ export class App2022 extends LitElement {
           object-fit: cover;
           object-position: center;
           width: 100%;
-          background-image: linear-gradient(180deg, #ffffff 0%, #E3FDF5 10%, #FFE6FA 100%);
+          background-image: linear-gradient(180deg,  rgba(227, 253, 245, 0.7) 5%, #E3FDF5 10%, #FFE6FA 100%);
         }
   
       }
@@ -359,6 +369,104 @@ export class App2022 extends LitElement {
         max-height: 320px; 
       }
 
+      #scrollicon svg {
+        display: none;
+      }
+
+      @keyframes flickerAnimation { 
+        0%   { opacity:1; }
+        50%  { opacity:0; }
+        100% { opacity:1; }
+      }
+
+      @media only screen and (max-height: 400px) and (orientation: landscape) {
+        .p2022 {
+          height: calc(100vh - 56px);
+        }
+        .hero {
+          margin-top: 0;
+          padding: 0;
+        }
+        #scrollicon {
+          margin: 0px auto;
+          text-align: center;
+          position: absolute;
+          bottom: 16px;
+          width: 100%;
+        }
+        #scrollicon svg {
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          cursor: pointer;
+          animation: flickerAnimation 2s infinite;
+        }
+        #scrollicon svg path {
+          fill: rgba(255, 255, 255, 0.8);
+        }
+        #scrollicon:hover svg path {
+          fill: rgba(255, 255, 255, 1.0);
+        }
+
+        .topic {
+          display: grid !important;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 1fr;
+          grid-column-gap: 16px;
+          grid-row-gap: 0px;
+          flex-direction: none;
+          align-items: center;
+        }
+        iframe {
+          max-width: 288px;
+          max-height: calc((100vh - 56px)*0.6);
+        }
+
+        .bili {
+          margin: 6px auto;
+        }
+        .des {
+          max-height: 10vh;
+        }
+        .bio {
+          max-height: 10vh;
+        }
+ 
+      }
+
+      @media only screen and (max-width: 420px) and (orientation: portrait) {
+        #scrollicon {
+          margin: 0px auto;
+          text-align: center;
+          position: absolute;
+          bottom: 16px;
+          width: 100%;
+        }
+        #scrollicon svg {
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          cursor: pointer;
+          animation: flickerAnimation 2s infinite;
+        }
+        #scrollicon svg path {
+          fill: rgba(255, 255, 255, 0.8);
+        }
+        #scrollicon:hover svg path {
+          fill: rgba(255, 255, 255, 1.0);
+        }
+
+        .bili {
+          margin: 6px auto;
+        }
+        .des {
+          max-height: 10vh;
+        }
+        .bio {
+          max-height: 10vh;
+        }
+      }
+
      `;
   }
 
@@ -388,6 +496,7 @@ export class App2022 extends LitElement {
               </div>
               <div>
                 <div class="des">${i.des.replace(/\n/g, '<br>')}</div>
+                <div class="bio">${i.bio}</div>
                 <div class="details">
                   <div class="avatar" id="icon_${i.iconid}"></div>
                   <div class="description">
@@ -413,6 +522,11 @@ export class App2022 extends LitElement {
               <h3 class="h3b">${this.time}</h3>
             </div>
             <fluent-card class="box"> ${this.description}</fluent-card>
+            <div id="scrollicon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path d="M169.4 278.6C175.6 284.9 183.8 288 192 288s16.38-3.125 22.62-9.375l160-160c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0L192 210.8L54.63 73.38c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25L169.4 278.6zM329.4 265.4L192 402.8L54.63 265.4c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25l160 160C175.6 476.9 183.8 480 192 480s16.38-3.125 22.62-9.375l160-160c12.5-12.5 12.5-32.75 0-45.25S341.9 252.9 329.4 265.4z"/>
+              </svg>
+            </div>
           </div>
           ${unsafeHTML(fluentcard)}
         </div>

@@ -41,6 +41,10 @@ export class AppAbout extends LitElement {
 
     @media (min-width: 1024px) {
     }
+
+    .spam {
+      display: none;
+    }
     `;
   }
 
@@ -72,6 +76,11 @@ export class AppAbout extends LitElement {
             <ul>
               <li>宋青见 微软首席产品经理</li>
               <li>张敏 英特尔软件技术经理</li>
+            </ul>  
+          </p>
+          <p>联系我们: 
+          <ul>
+              <li>pwadeveloperday<span class="spam">spam</span>@<span class="spam">spam</span>outlook<span class="spam">spam</span>.com</li>
             </ul>  
           </p>
           </fluent-card>

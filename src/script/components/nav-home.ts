@@ -17,8 +17,6 @@ export class AppNavHome extends LitElement {
       height: 18px;
       width: 18px;
       
-      z-index: 3;
-      
       -webkit-user-select: none;
       user-select: none;
     }
@@ -35,7 +33,6 @@ export class AppNavHome extends LitElement {
       cursor: pointer;
       
       opacity: 0;
-      z-index: 2;
       
       -webkit-touch-callout: none;
     }
@@ -50,8 +47,6 @@ export class AppNavHome extends LitElement {
       
       background: rgba(0, 113, 197, 0.9);
       border-radius: 3px;
-      
-      z-index: 1;
       
       transform-origin: 4px 0px;
       
@@ -119,6 +114,7 @@ export class AppNavHome extends LitElement {
       flex-direction: column;
       justify-content: center;
       box-shadow: 0px 1px 9px -2px rgba(0,0,0,0.75);
+      z-index: 1;
     }
 
     #menu div {

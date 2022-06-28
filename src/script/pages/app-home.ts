@@ -409,7 +409,7 @@ export class AppHome extends LitElement {
         </div>
         
         <div class="home" id="home">
-          <!-- 
+          <!--
           <div id="playbar">
             <span id="playpromise">${this.playpromise}</span>
             <button id ="manualplay" @click="${this._playHeroVideo}">Play</button>

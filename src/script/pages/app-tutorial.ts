@@ -8,11 +8,17 @@ export class AppTutorial extends LitElement {
     .about {
       padding: 0 16px;
       margin: 2rem 0px 0rem;
+      min-height: calc(100vh - 174px);
     }
 
     fluent-card {
       border-radius: 0px;
       box-shadow: none;
+      background: rgba(255, 255, 255, 1);
+    }
+
+    .control[href]:hover {
+      background: rgba(255, 255, 255, 0.4);
     }
 
     fluent-anchor svg {
@@ -31,6 +37,7 @@ export class AppTutorial extends LitElement {
       color: red;
       display: block;
       list-style: circle;
+      background: transparent !important;
     }
 
     @media(prefers-color-scheme: light) {

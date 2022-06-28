@@ -15,6 +15,12 @@ export class AppNews extends LitElement {
       margin-bottom: 1rem;
       border-radius: 0px;
       box-shadow: none;
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    fluent-card:hover {
+      background: rgba(255, 255, 255, 0.95);
+      color: rgb(0, 0, 0);
     }
 
     @media(prefers-color-scheme: light) {
@@ -36,8 +42,9 @@ export class AppNews extends LitElement {
     return html`
       <app-header ?enableBack="${true}"></app-header>
       <div class="about">
+        <h2>PWA 技术新闻</h2>
         <fluent-card>
-          <h2>PWA 技术新闻</h2>
+          
         </fluent-card>
       </div>
       <app-footer></app-footer>
