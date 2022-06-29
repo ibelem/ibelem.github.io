@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import fs from 'fs';
 import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vitejs.dev/config/
@@ -7,6 +8,12 @@ export default defineConfig({
     sourcemap: true,
     assetsDir: "code",
   },
+  server: { 
+    https: {
+      key: fs.readFileSync('./.cert/key.pem'),
+      cert: fs.readFileSync('./.cert/cert.pem'),
+    },
+   },
   plugins: [
     VitePWA({
       // you can remove base and scope pwa plugin will use the base on vite: defaults to /

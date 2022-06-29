@@ -16,6 +16,7 @@
   --dark-color: hsl(var(--hue), 100%, 9%);
   --light-color: hsl(var(--hue), 95%, 98%);
   --base: hsl(var(--hue), 95%, 50%);
+  --body-font: "dynamic-font";
   --complimentary1: hsl(var(--hue-complimentary1), 95%, 50%);
   --complimentary2: hsl(var(--hue-complimentary2), 95%, 50%);
   --bg-gradient: linear-gradient(

@@ -21,7 +21,7 @@ export class AppFooterHome extends LitElement {
       }
 
       footer a {
-        color: rgba(0,113,197, 0.9);
+        color: rgba(61, 61, 61, 1);
         text-decoration: none;
         margin: 0 4px;
       }

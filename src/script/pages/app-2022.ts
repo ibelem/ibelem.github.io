@@ -165,7 +165,11 @@ export class App2022 extends LitElement {
         padding: 32px;
         height: auto;
         box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0);
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .box:hover {
+        background: rgba(255, 255, 255, 0.4);
       }
 
       fluent-card {
@@ -210,7 +214,6 @@ export class App2022 extends LitElement {
           display: grid !important;
           grid-template-columns: repeat(2, 1fr);
           grid-template-rows: 1fr;
-          grid-column-gap: 16px;
           grid-row-gap: 0px;
           flex-direction: none;
           align-items: center;
@@ -295,7 +298,6 @@ export class App2022 extends LitElement {
       @media (max-width: 1024px) {
         .p2022 {
           background-image: none;
-          height: 100%;
         }
 
         .scroll100 {
@@ -379,7 +381,7 @@ export class App2022 extends LitElement {
         100% { opacity:1; }
       }
 
-      @media only screen and (max-height: 400px) and (orientation: landscape) {
+      @media only screen and (max-height: 415px) and (orientation: landscape) {
         .p2022 {
           height: calc(100vh - 56px);
         }
@@ -402,10 +404,10 @@ export class App2022 extends LitElement {
           animation: flickerAnimation 2s infinite;
         }
         #scrollicon svg path {
-          fill: rgba(255, 255, 255, 0.8);
+          fill: rgba(0, 113, 197, 0.8);
         }
         #scrollicon:hover svg path {
-          fill: rgba(255, 255, 255, 1.0);
+          fill: rgba(0, 113, 197, 1);
         }
 
         .topic {
@@ -420,6 +422,11 @@ export class App2022 extends LitElement {
         iframe {
           max-width: 288px;
           max-height: calc((100vh - 56px)*0.6);
+        }
+
+        .box {
+          padding: 16px;
+          margin: 16px auto;
         }
 
         .bili {
@@ -450,17 +457,29 @@ export class App2022 extends LitElement {
           animation: flickerAnimation 2s infinite;
         }
         #scrollicon svg path {
-          fill: rgba(255, 255, 255, 0.8);
+          fill: rgba(0, 113, 197, 0.8);
         }
         #scrollicon:hover svg path {
-          fill: rgba(255, 255, 255, 1.0);
+          fill: rgba(0, 113, 197, 1);
         }
 
         .bili {
-          margin: 6px auto;
+          margin: 16px auto;
         }
+      }
+
+      @media only screen and (max-width: 420px) and (max-height: 668px) and (orientation: portrait) {
         .des {
+          max-height: 14vh;
+        }
+        .bio {
           max-height: 10vh;
+        }
+      }
+
+      @media only screen and (max-width: 420px) and (min-height: 669px) and (orientation: portrait) {
+        .des {
+          max-height: 24vh;
         }
         .bio {
           max-height: 10vh;
@@ -468,7 +487,15 @@ export class App2022 extends LitElement {
       }
       
       .bio a, .des a {
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(0, 113, 197, 0.8);
+        text-decoration: none;
+        border-bottom: 1px dashed rgba(0, 113, 197, 1);;
+      }
+
+      .bio a:hover, .des a:hover {
+        color: rgba(0,113,197, 1);
+        text-decoration: none;
+        border-bottom: 1px dashed rgba(0,113,197, 1);
       }
 
      `;
@@ -522,7 +549,7 @@ export class App2022 extends LitElement {
           <div class="p2022 section">
             <div class="hero">
               <h3>${this.subtitle}</h3>
-              <h2>${this.title}</h2>
+              <h2>中国 <pwa-logo></pwa-logo> 开发者日</h2>
               <h3 class="h3b">${this.time}</h3>
             </div>
             <fluent-card class="box"> ${this.description}</fluent-card>
