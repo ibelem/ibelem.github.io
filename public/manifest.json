@@ -1,5 +1,5 @@
 {
-  "id": "/",
+  "id": "pwadevday",
   "scope": "/",
   "name": "中国 PWA 开发者日",
   "display": "standalone",
@@ -58,6 +58,16 @@
       "type": "image/png"
     }
   ],
+  "file_handlers": [
+    {
+      "action": "/sample/file-handling?media",
+      "accept": {
+        "video/*": [".mp4",".mkv",".webm",".3gp",".avi",".mpeg",".mpg",".ogg",".mp3",".wmv",".wav",".mov"],
+        "audio/*": [".mp4",".mkv",".webm",".3gp",".avi",".mpeg",".mpg",".ogg",".mp3",".wmv",".wav",".mov"]
+      },
+      "launch_type": "single-client"
+    }
+  ],
   "screenshots": [
     {
       "src": "assets/screenshots/screen.png",
@@ -67,7 +77,9 @@
   ],
   "features": [
     "渐进式 Web 应用 (PWA)",
-    "历届中国 PWA 开发者日资料",
+    "渐进式 Web 应用 (PWA)示例",
+    "历届中国 PWA 开发者日视频",
+    "历届中国 PWA 开发者日演讲材料",
     "PWA 技术及商业落地"
   ],
   "categories": [

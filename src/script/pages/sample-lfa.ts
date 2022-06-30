@@ -172,12 +172,17 @@ export class SampleLFA extends LitElement {
       min-height: calc(100vh - 76px);
     }
 
+    h2 {
+      font-size: 1.2rem;
+      color: rgba(0, 113, 197, 0.9);
+    }
+
     fluent-card {
       padding: 1rem;
       margin-bottom: 1rem;
       border-radius: 0px;
       box-shadow: none;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.5);
     }
 
     fluent-card:hover {
@@ -216,20 +221,24 @@ export class SampleLFA extends LitElement {
 
     .previewv {
       margin: 16px auto;
-      text-align: center;
+      text-align: left;
       writing-mode:vertical-rl;
       letter-spacing: 4px;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
 
-    .previewv h2, .previewv h3 {
-      margin: 16px auto;
+    .previewv h3, .previewv h4 {
+      margin: 0 auto;
+    }
+
+    .previewv h4 {
+      margin-left: 16px;
     }
 
     a {
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none;
-      border-bottom: 1px dashed rgba(255, 255, 255, 0.6);;
+      border-bottom: 0px dashed rgba(255, 255, 255, 0.6);;
     }
 
     a:hover {
@@ -249,6 +258,24 @@ export class SampleLFA extends LitElement {
     #st:hover {
       color: rgba(255, 255, 255, 1.0);
     }
+
+    .tut {
+      padding: 16px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .tut a {
+      color: rgba(0, 113, 197, 0.9);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(0, 113, 197, 0.6);
+    }
+
+    .tut a:hover {
+      color: rgba(0, 113, 197, 1);
+      border-bottom: 1px dashed rgba(0, 113, 197, 0.9);
+    }
+
     .w3c {
       padding: 16px;
       margin: 0 auto;
@@ -260,11 +287,15 @@ export class SampleLFA extends LitElement {
     }
     
     .imp {
-      display: block;
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
       padding: 16px;
       margin: 0 auto;
       text-align: center;
       background-color: rgba(0, 113, 197, 0.9);
+      align-items: center;
+      justify-content: space-around;
     }
     .imp:hover {
       background-color: rgba(0, 113, 197, 1.0);
@@ -288,8 +319,7 @@ export class SampleLFA extends LitElement {
 
     .des {
       border: 1px solid rgba(255, 255, 255, 0.2);
-      margin: 0 4px;
-      display: inline-block;
+      padding: 2px 8px;
     }
 
     .cate, .det {
@@ -310,6 +340,15 @@ export class SampleLFA extends LitElement {
       margin: 16px auto;
     }
 
+    .w3clogo {
+      margin-right: 6px;
+    }
+
+    fluent-card button.btn {
+      border: 1px solid rgba(rgba(0, 113, 197, 0.9);
+      background: rgba(255, 255, 255, 0.9);
+      color: #3D3D3D;
+    }
     `;
   }
 
@@ -325,7 +364,7 @@ export class SampleLFA extends LitElement {
           <fluent-breadcrumb-item href="/">首页</fluent-breadcrumb-item>
           <fluent-breadcrumb-item href="/sample">示例</fluent-breadcrumb-item>
         </fluent-breadcrumb>
-        <h2>本地字体访问 API (Local Font Access API)</h2>
+        <h2>本地字体访问 (Local Font Access) API</h2>
         <fluent-card>
           <div class="content">
             <div>
@@ -333,7 +372,7 @@ export class SampleLFA extends LitElement {
                 状态: <div id="status"></div>
               </div>
               <div class="q">
-              <button class="button" @click="${this._loadFonts}">
+              <button @click="${this._loadFonts}">
                 枚举本地字体
               </button>
               <select class="select" id="fonts-select" @change="${this._onFontSelected}">
@@ -352,16 +391,16 @@ export class SampleLFA extends LitElement {
                 <div id="font-info-style" class="font-info-item"></div>
                 <div id="font-info-family" class="font-info-item"></div>
                 <div id="font-info-outline-format" class="font-info-item"></div>
-                <div class="previewv">
+                <div class="previewv" contenteditable="true">
                   <h3>滕王阁序</h3>
                   <h4>王勃</h4>
                   <div>
-                    落霞与孤鹜齐飞，<br>秋水共长天一色。
+                    云销雨霁，<br>彩彻区明。<br>落霞与孤鹜齐飞，<br>秋水共长天一色。
                   </div>  
                 </div>
-                <div class="preview">
-                  <h3>中国 PWA 开发者日 - PWA 的特点</h3>
+                <div class="preview" contenteditable="true">
                   <div>
+                    中国 PWA 开发者日 PWA 的特点
                     可发现 (Discoverable) 
                     可安装 (Installable) 
                     可链接 (Linkable) 
@@ -380,28 +419,32 @@ export class SampleLFA extends LitElement {
           启用 chrome://flags/#font-access
         </fluent-card>
         <fluent-card id="st">
-          <div class="w3c"><icon-w3c></icon-w3c> <a href="https://wicg.github.io/local-font-access/" title="Local Font Access API">Local Font Access API</a></div>
+          <div class="tut">
+            <icon-webdev></icon-webdev> 
+            <a href="https://web.dev/local-fonts/" title="Use advanced typography with local fonts">
+              教程：本地字体的高级排版
+            </a>
+          </div>
+          <div class="w3c"><icon-w3c class="w3clogo"></icon-w3c> <a href="https://wicg.github.io/local-font-access/" title="Local Font Access API">Local Font Access API</a></div>
           <div class="imp">
-            <icon-chr class="yes"></icon-chr>
-            <icon-edg class="yes"></icon-edg> <icon-ope class="yes"></icon-ope> <icon-viv class="yes"></icon-viv>
-            <a href="https://chromestatus.com/feature/6234451761692672">M103</a>
-            <icon-saf class="no"></icon-saf> <icon-fir class="no"></icon-fir>
             <div class="des">
-              <div class="cate">
-                <icon-des class="yes"></icon-des> 
-              </div>
+              <a href="https://chromestatus.com/feature/6234451761692672" title="在 Chromium 103 版本支持">🐡 M103</a>
+            </div>
+            <div class="des">
               <div class="det">
-                <icon-mac class="yes"></icon-mac> <icon-win class="yes"></icon-win> <icon-lin class="yes"></icon-lin> 
+              <icon-chr class="yes" title="Google Chrome 浏览器"></icon-chr>
+              <icon-edg class="yes" title="微软 Edge 浏览器"></icon-edg> <icon-ope class="yes" title="Opera 浏览器"></icon-ope> <icon-viv class="yes" title="Vivaldi 浏览器"></icon-viv>
+              <icon-saf class="no" title="Apple Safari 浏览器"></icon-saf> <icon-fir class="no" title="Mozilla Firefox 浏览器"></icon-fir>
               </div>
             </div>
             <div class="des">
-              <div class="cate">   
-                <icon-mob class="no"></icon-mob>
+              <div class="det">
+                <icon-mac class="yes" title="Mac"></icon-mac> <icon-win class="yes" title="Windows"></icon-win> <icon-lin class="yes" title="Linux"></icon-lin> 
               </div>
               <div class="det">
-                <icon-and class="no"></icon-and> <icon-ios class="no"></icon-ios>
+                <icon-and class="no" title="Android"></icon-and> <icon-ios class="no" title="iOS"></icon-ios>
               </div>
-            </div>    
+            </div>   
           </div>
         </fluent-card>
         <app-footer></app-footer>

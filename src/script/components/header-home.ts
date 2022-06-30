@@ -7,7 +7,7 @@ export class AppHeaderHome extends LitElement {
   @property({ type: Boolean}) enableBack: boolean = false;
   @property({ type: String }) subtitle = '第二届';
   @property({ type: String }) title = '';
-  @property({ type: String }) time = '8 月 6 日 (周六) 13:00 - 17:00';
+  @property({ type: String }) time = '8 月 6 日 (周六) 09:00 - 17:00';
 
   static get styles() {
     return css`

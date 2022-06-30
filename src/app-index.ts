@@ -24,6 +24,7 @@ import './script/components/icon-edg';
 import './script/components/icon-fir';
 import './script/components/icon-ope';
 import './script/components/icon-viv';
+import './script/components/icon-webdev';
 import './script/components/footer';
 import './script/components/footer-home';
 import './styles/global.css';
@@ -129,10 +130,24 @@ export class AppIndex extends LitElement {
             },
           },
           {
-            path: '/sample-local-font-access',
+            path: '/sample/local-font-access',
             component: 'sample-lfa',
             action: async () => {
               await import('./script/pages/sample-lfa.js');
+            },
+          },
+          {
+            path: '/sample/file-handling',
+            component: 'sample-fh',
+            action: async () => {
+              await import('./script/pages/sample-fh.js');
+            },
+          },
+          {
+            path: '/sample/file-system-access',
+            component: 'sample-video',
+            action: async () => {
+              await import('./script/pages/sample-video.js');
             },
           },
           {

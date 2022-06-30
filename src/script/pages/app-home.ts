@@ -277,7 +277,7 @@ export class AppHome extends LitElement {
       }
 
       .time, .divider, .topic {
-        padding: 0 4px;
+        padding: 0 2px;
       }
 
       .divider {
@@ -285,10 +285,10 @@ export class AppHome extends LitElement {
       }
 
       .divider svg {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         fill: #3d3d3d;
-        margin-bottom:-5px;
+        margin-bottom:-2px;
       }
 
       .title {
@@ -359,6 +359,27 @@ export class AppHome extends LitElement {
         text-align:center;
       }
 
+      .promote div {
+        font-size: 13px;
+        height: 12px;
+        font-weight: 500;
+        padding: 0px !important;
+      }
+      .promote svg {
+        width: 20px;
+        height: 20px;
+        margin-bottom: -2px;
+      }
+
+      @media only screen and (max-width: 420px) and (orientation: portrait) {
+        .nametitle {
+          height: 20px;
+          white-space: nowrap;
+          max-width: 158px;
+          overflow: hidden;
+        }
+      }
+
      `;
   }
 
@@ -389,7 +410,8 @@ export class AppHome extends LitElement {
               <div class="details">
                 <div class="avatar" id="icon_${i.iconid}"></div>
                 <div class="description">
-                  <div class="nametitle">${i.speaker} / ${i.pos}</div>
+                  <div class="nametitle">${i.speaker}</div>
+                  <div class="team">${i.pos}</div>
                   <div class="team">${i.com}</div>
                 </div>
               </div>
@@ -419,6 +441,7 @@ export class AppHome extends LitElement {
           <div id="schedule">
             ${unsafeHTML(fluentcard)}
           </div>
+
           <pwa-install title="安装 中国 PWA 开发者日">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path

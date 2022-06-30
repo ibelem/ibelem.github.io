@@ -194,9 +194,8 @@ export class AppNav extends LitElement {
         <div id="menu"> 
           <div><fluent-anchor href="/2022" appearance="primary">2022</fluent-anchor></div>
           <div><fluent-anchor href="/2021" appearance="primary">2021</fluent-anchor></div>
-          <div><fluent-anchor href="/news" appearance="primary">新闻</fluent-anchor></div>
           <div><fluent-anchor href="/tutorial" appearance="primary">教程</fluent-anchor></div>
-          <div><fluent-anchor href="/sample" appearance="primary">示例</fluent-anchor></div>
+          <div><fluent-anchor href="/" appearance="primary">示例</fluent-anchor></div>
           <div class="promote">
             <div>推荐访问</div>
             <fluent-anchor href="https://pwasummit.org/" appearance="primary">
