@@ -37,6 +37,7 @@ export class AppSample extends LitElement {
     fluent-card ul li {
       display: block;
       list-style: circle;
+      margin: 8px auto;
     }
 
     fluent-card ul li a {

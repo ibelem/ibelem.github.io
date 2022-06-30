@@ -350,6 +350,13 @@ export class AppHome extends LitElement {
         background-image: url('assets/2022/people/120/belem.png');
       }
 
+      #icon_haoyu {
+        background-image: url('assets/2022/people/120/haoyu.png');
+      }
+      #icon_pwabuilder {
+        background-image: url('assets/2022/people/120/pwabuilder.png');
+      }
+
       .home {
         padding: 16px;
       }
