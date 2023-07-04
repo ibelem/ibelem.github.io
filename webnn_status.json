@@ -1,0 +1,1579 @@
+{
+  "impl_status": [
+    {
+      "op": "batchNormalization",
+      "op_id": "batchnorm",
+      "version": "v1",
+      "wpt": "batch_normalization",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "",
+      "notes": ""
+    },
+    {
+      "op": "clamp",
+      "op_id": "clamp",
+      "version": "v1",
+      "wpt": "clamp",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "clamp",
+        "relu6"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "ReluN1To1"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Clip"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "concat",
+      "op_id": "concat",
+      "version": "v1",
+      "wpt": "concat",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "concatenate2",
+        "concatenate3",
+        "concatenate4"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Concatenation"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Concat"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "conv2d",
+      "op_id": "conv2d",
+      "version": "v1",
+      "wpt": "conv2d",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "convolution_2d"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Conv2d",
+        "DepthwiseConv2d"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Conv"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "convTranspose2d",
+      "op_id": "convtranspose2d",
+      "version": "v1",
+      "wpt": "conv_transpose2d",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "deconvolution_2d"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "TransposeConv",
+        "Convolution2DTransposeBias"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ConvTranspose"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / add",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "add2"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Add"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Add"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / sub",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "subtract"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Sub"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Sub"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / mul",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "multiply2"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Mul"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Mul"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / div",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "divide"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Div"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Div"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / max",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "maximum2"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Maximum"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Max"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / min",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "minimum2"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Minimum"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Min"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary pow",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "square",
+        "square root"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Sqrt",
+        "Square"
+      ],
+      "tflite_done": false,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Pow"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / abs",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "abs"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Abs"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Abs"
+      ],
+      "ort_done": false,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / ceil",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "ceiling"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Ceil"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Ceil"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / cos",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Cos"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / exp",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Exp"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / floor",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "floor"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Floor"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Floor"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / log",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / neg",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "negate"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Neg"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Neg"
+      ],
+      "ort_done": false,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / sin",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Sin"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / tan",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Tan"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "elu",
+      "op_id": "elu",
+      "version": "v1",
+      "wpt": "elu",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "elu"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Elu"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Elu"
+      ],
+      "ort_done": false,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "gemm",
+      "op_id": "gemm",
+      "version": "v1",
+      "wpt": "gemm",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "fully_connected"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "FullyConnected"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Gemm"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "gru",
+      "op_id": "gru",
+      "version": "v1",
+      "wpt": "",
+      "wpt_done": false,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "gruCell",
+      "op_id": "grucell",
+      "version": "v1",
+      "wpt": "",
+      "wpt_done": false,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "hardSigmoid",
+      "op_id": "hard-sigmoid",
+      "version": "v1",
+      "wpt": "hard_sigmoid",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "hardSwish",
+      "op_id": "hard-swish",
+      "version": "v1",
+      "wpt": "hard_swish",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "hardswish"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "HardSwish"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "HardSwish"
+      ],
+      "ort_done": false,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "instanceNormalization",
+      "op_id": "nstancenorm",
+      "version": "v1",
+      "wpt": "",
+      "wpt_done": false,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "leakyRelu",
+      "op_id": "leakyrelu",
+      "version": "v1",
+      "wpt": "leaky_relu",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "leaky_relu"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "LeakyRelu"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "LeakyRelu"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "linear",
+      "op_id": "linear",
+      "version": "v1",
+      "wpt": "linear",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "lstm",
+      "op_id": "lstm",
+      "version": "v1",
+      "wpt": "",
+      "wpt_done": false,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "lstmCell",
+      "op_id": "lstmcell",
+      "version": "v1",
+      "wpt": "",
+      "wpt_done": false,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "matmul",
+      "op_id": "matmul",
+      "version": "v1",
+      "wpt": "matmul",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "MatMul"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "pad",
+      "op_id": "pad",
+      "version": "v1",
+      "wpt": "pad",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "static_constant_pad"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Pad"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Pad"
+      ],
+      "ort_done": false,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "pooling / averagePool2d",
+      "op_id": "pool2d",
+      "version": "v1",
+      "wpt": "pooling",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "average_pooling_2d"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "AveragePool2d",
+        "Mean"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "GlobalAveragePool",
+        "AveragePool"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "pooling / l2Pool2d",
+      "op_id": "pool2d",
+      "version": "v1",
+      "wpt": "pooling",
+      "wpt_done": false,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "pooling maxPool2d",
+      "op_id": "pool2d",
+      "version": "v1",
+      "wpt": "pooling",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "max_pooling_2d"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "MaxPool2d"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "GlobalMaxPool",
+        "MaxPool"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "prelu",
+      "op_id": "prelu",
+      "version": "v1",
+      "wpt": "prelu",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "prelu"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Prelu"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Prelu"
+      ],
+      "ort_done": false,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceL1",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceL2",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceLogSum",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceLogSumExp",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceMax",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceMax"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceMean",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "static_mean"
+      ],
+      "xnnpack_done": false,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceMean"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceMin",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceProduct",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceSum",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "global_sum_pooling_1d",
+        "global_sum_pooling_d"
+      ],
+      "xnnpack_done": false,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceSumSquare",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "relu",
+      "op_id": "relu",
+      "version": "v1",
+      "wpt": "relu",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "clamp"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Relu"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Relu"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "resample2d",
+      "op_id": "resample2d",
+      "version": "v1",
+      "wpt": "",
+      "wpt_done": false,
+      "xnnpack_op": [
+        "static_resize_bilinear_2d"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "ResizeBilinear"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Resize"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reshape",
+      "op_id": "reshape",
+      "version": "v1",
+      "wpt": "reshape",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "static_reshape"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Reshape"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Reshape"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "sigmoid",
+      "op_id": "sigmoid",
+      "version": "v1",
+      "wpt": "sigmoid",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "sigmoid"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Logistic"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Sigmoid"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "slice",
+      "op_id": "slice",
+      "version": "v1",
+      "wpt": "slice",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "static_slice"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Slice",
+        "StridedSlice"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Slice"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "softmax",
+      "op_id": "softmax",
+      "version": "v1",
+      "wpt": "softmax",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "softmax"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Softmax"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Softmax"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "softplus",
+      "op_id": "softplus",
+      "version": "v1",
+      "wpt": "softplus",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "softsign",
+      "op_id": "softsign",
+      "version": "v1",
+      "wpt": "softsign",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "split",
+      "op_id": "split",
+      "version": "v1",
+      "wpt": "split",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "even_split2",
+        "even_split3",
+        "even_split4",
+        "static_slice (uneven split)"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Split"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Split"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "squeeze",
+      "op_id": "squeeze",
+      "version": "v1",
+      "wpt": "squeeze",
+      "wpt_done": true,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Squeeze"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "tanh",
+      "op_id": "tanh",
+      "version": "v1",
+      "wpt": "tanh",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "tanh"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "transpose",
+      "op_id": "transpose",
+      "version": "v1",
+      "wpt": "transpose",
+      "wpt_done": true,
+      "xnnpack_op": [
+        "static_transpose"
+      ],
+      "xnnpack_done": true,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": "",
+      "dml_done": true,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Transpose"
+      ],
+      "tflite_done": true,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Transpose"
+      ],
+      "ort_done": true,
+      "ort_version_added": "main",
+      "notes": ""
+    }
+  ]
+}
