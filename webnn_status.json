@@ -11,7 +11,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -38,7 +40,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -66,7 +70,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -92,7 +98,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -119,7 +127,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -146,7 +156,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -172,7 +184,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -198,7 +212,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -224,7 +240,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -250,7 +268,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -276,7 +296,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -303,7 +325,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -330,7 +354,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -342,7 +368,7 @@
         "Abs"
       ],
       "ort_done": false,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -356,7 +382,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -382,7 +410,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -408,7 +438,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -434,7 +466,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -460,7 +494,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -472,7 +508,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -486,7 +522,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -512,7 +550,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -538,7 +578,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -564,7 +606,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -576,7 +620,7 @@
         "Elu"
       ],
       "ort_done": false,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -590,7 +634,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -616,7 +662,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -628,7 +676,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -642,7 +690,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -654,7 +704,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -668,7 +718,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -680,7 +732,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -694,7 +746,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -720,7 +774,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -746,7 +802,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -772,7 +830,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -784,7 +844,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -798,7 +858,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -810,7 +872,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -824,7 +886,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -836,7 +900,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -850,7 +914,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -876,7 +942,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -902,7 +970,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -930,7 +1000,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -942,7 +1014,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -956,7 +1028,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -983,7 +1057,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1009,7 +1085,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1021,7 +1099,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1035,7 +1113,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1047,7 +1127,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1061,7 +1141,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1073,7 +1155,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1087,7 +1169,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1099,7 +1183,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1113,7 +1197,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1139,7 +1225,9 @@
       ],
       "xnnpack_done": false,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1165,7 +1253,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1177,7 +1267,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1191,7 +1281,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1203,7 +1295,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1214,11 +1306,13 @@
       "wpt_done": true,
       "xnnpack_op": [
         "global_sum_pooling_1d",
-        "global_sum_pooling_d"
+        "global_sum_pooling_2d"
       ],
       "xnnpack_done": false,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1230,7 +1324,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1244,7 +1338,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1256,7 +1352,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1270,7 +1366,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1296,7 +1394,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1322,7 +1422,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1348,7 +1450,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1374,7 +1478,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1401,7 +1507,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1427,7 +1535,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1439,7 +1549,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1453,7 +1563,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1465,7 +1577,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1482,7 +1594,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1508,7 +1622,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1534,7 +1650,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
@@ -1546,7 +1664,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1560,7 +1678,9 @@
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
-      "dml_op": "",
+      "dml_op": [
+        ""
+      ],
       "dml_done": true,
       "dml_chromium_version_added": "",
       "tflite_op": [
