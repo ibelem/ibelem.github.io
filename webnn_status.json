@@ -39,7 +39,7 @@
         "relu6"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -69,7 +69,7 @@
         "concatenate4"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "113",
       "dml_op": [
         ""
       ],
@@ -97,7 +97,7 @@
         "convolution_2d"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -126,7 +126,7 @@
         "deconvolution_2d"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "113",
       "dml_op": [
         ""
       ],
@@ -155,7 +155,7 @@
         "add2"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -183,7 +183,7 @@
         "subtract"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -211,7 +211,7 @@
         "multiply2"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -239,7 +239,7 @@
         "divide"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -267,7 +267,7 @@
         "maximum2"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -295,7 +295,7 @@
         "minimum2"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -314,7 +314,7 @@
       "notes": ""
     },
     {
-      "op": "element-wise binary pow",
+      "op": "element-wise binary / pow",
       "op_id": "binary",
       "version": "v1",
       "wpt": "elementwise_binary",
@@ -324,7 +324,7 @@
         "square root"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "116",
       "dml_op": [
         ""
       ],
@@ -605,7 +605,7 @@
         "elu"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "115",
       "dml_op": [
         ""
       ],
@@ -633,7 +633,7 @@
         "fully_connected"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -745,7 +745,7 @@
         "hardswish"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -801,7 +801,7 @@
         "leaky_relu"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "113",
       "dml_op": [
         ""
       ],
@@ -941,7 +941,7 @@
         "static_constant_pad"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "114",
       "dml_op": [
         ""
       ],
@@ -969,7 +969,7 @@
         "average_pooling_2d"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -1027,7 +1027,7 @@
         "max_pooling_2d"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -1056,7 +1056,7 @@
         "prelu"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "115",
       "dml_op": [
         ""
       ],
@@ -1224,7 +1224,7 @@
         "static_mean"
       ],
       "xnnpack_done": false,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "116",
       "dml_op": [
         ""
       ],
@@ -1309,7 +1309,7 @@
         "global_sum_pooling_2d"
       ],
       "xnnpack_done": false,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "116",
       "dml_op": [
         ""
       ],
@@ -1365,7 +1365,7 @@
         "clamp"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -1393,7 +1393,7 @@
         "static_resize_bilinear_2d"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -1421,7 +1421,7 @@
         "static_reshape"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -1449,7 +1449,7 @@
         "sigmoid"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -1477,7 +1477,7 @@
         "static_slice"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "116",
       "dml_op": [
         ""
       ],
@@ -1506,7 +1506,7 @@
         "softmax"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "112",
       "dml_op": [
         ""
       ],
@@ -1593,7 +1593,7 @@
         "static_slice (uneven split)"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "116",
       "dml_op": [
         ""
       ],
@@ -1649,7 +1649,7 @@
         "tanh"
       ],
       "xnnpack_done": true,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_chromium_version_added": "116",
       "dml_op": [
         ""
       ],
