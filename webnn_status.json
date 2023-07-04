@@ -765,7 +765,7 @@
     },
     {
       "op": "instanceNormalization",
-      "op_id": "nstancenorm",
+      "op_id": "instancenorm",
       "version": "v1",
       "wpt": "",
       "wpt_done": false,
