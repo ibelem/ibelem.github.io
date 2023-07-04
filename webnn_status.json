@@ -536,7 +536,7 @@
         "Neg"
       ],
       "ort_done": false,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -760,7 +760,7 @@
         "HardSwish"
       ],
       "ort_done": false,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -788,7 +788,7 @@
         ""
       ],
       "ort_done": true,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -956,7 +956,7 @@
         "Pad"
       ],
       "ort_done": false,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
@@ -1071,7 +1071,7 @@
         "Prelu"
       ],
       "ort_done": false,
-      "ort_version_added": "main",
+      "ort_version_added": "",
       "notes": ""
     },
     {
