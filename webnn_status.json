@@ -35,8 +35,7 @@
       "wpt": "clamp",
       "wpt_done": true,
       "xnnpack_op": [
-        "clamp",
-        "relu6"
+        "clamp"
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
@@ -94,7 +93,8 @@
       "wpt": "conv2d",
       "wpt_done": true,
       "xnnpack_op": [
-        "convolution_2d"
+        "convolution_2d",
+        "depthwise_convolution_2d"
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
@@ -966,7 +966,8 @@
       "wpt": "pooling",
       "wpt_done": true,
       "xnnpack_op": [
-        "average_pooling_2d"
+        "average_pooling_2d",
+        "global_average_pooling_2d"
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
@@ -982,8 +983,8 @@
       "tflite_done": true,
       "tflite_version_added": "",
       "ort_op": [
-        "GlobalAveragePool",
-        "AveragePool"
+        "AveragePool",
+        "GlobalAveragePool"
       ],
       "ort_done": true,
       "ort_version_added": "main",
@@ -1018,7 +1019,7 @@
       "notes": ""
     },
     {
-      "op": "pooling maxPool2d",
+      "op": "pooling / maxPool2d",
       "op_id": "pool2d",
       "version": "v1",
       "wpt": "pooling",
