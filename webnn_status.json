@@ -321,7 +321,7 @@
       "wpt_done": true,
       "xnnpack_op": [
         "square",
-        "square root"
+        "square_root"
       ],
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M116",
