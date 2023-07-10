@@ -188,7 +188,7 @@
         "ELEMENT_WISE_SUBTRACT"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Sub"
       ],
@@ -216,7 +216,7 @@
         "ELEMENT_WISE_MULTIPLY"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Mul"
       ],
@@ -300,7 +300,7 @@
         "ELEMENT_WISE_MIN"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Minimum"
       ],
@@ -329,7 +329,7 @@
         "ELEMENT_WISE_POW"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Sqrt",
         "Square"
@@ -554,7 +554,7 @@
         "ELEMENT_WISE_SIN"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -582,7 +582,7 @@
         "ELEMENT_WISE_TAN"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -946,7 +946,7 @@
         "FILL_VALUE_SEQUENCE"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Pad"
       ],
@@ -1090,7 +1090,7 @@
         "REDUCE_FUNCTION_L1"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1118,7 +1118,7 @@
         "REDUCE_FUNCTION_L2"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1146,7 +1146,7 @@
         "REDUCE_FUNCTION_LOG_SUM"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1174,7 +1174,7 @@
         "REDUCE_FUNCTION_LOG_SUM_EXP"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1202,7 +1202,7 @@
         "REDUCE_FUNCTION_MAX"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1230,7 +1230,7 @@
         "REDUCE_FUNCTION_AVERAGE"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1258,7 +1258,7 @@
         "REDUCE_FUNCTION_MIN"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1286,7 +1286,7 @@
         "REDUCE_FUNCTION_MULTIPLY"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1315,7 +1315,7 @@
         "REDUCE_FUNCTION_SUM"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1343,7 +1343,7 @@
         "REDUCE_FUNCTION_SUM_SQUARE"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1399,7 +1399,7 @@
         "RESAMPLE"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "ResizeBilinear"
       ],
@@ -1427,7 +1427,7 @@
         "Not a DML node"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Reshape"
       ],
@@ -1455,7 +1455,7 @@
         "ACTIVATION_SIGMOID"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Logistic"
       ],
@@ -1483,7 +1483,7 @@
         "SLICE"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Slice",
         "StridedSlice"
@@ -1512,7 +1512,7 @@
         "ACTIVATION_SOFTMAX"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Softmax"
       ],
@@ -1599,7 +1599,7 @@
         "SPLIT"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Split"
       ],
@@ -1627,7 +1627,7 @@
         "Not a DML node"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1683,7 +1683,7 @@
         "Not a DML node"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Transpose"
       ],
