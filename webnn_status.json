@@ -15,7 +15,7 @@
         "BATCH_NORMALIZATION"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -42,7 +42,7 @@
       "dml_op": [
         "ELEMENT_WISE_CLIP"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "ReluN1To1"
@@ -73,7 +73,7 @@
         "JOIN"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Concatenation"
       ],
@@ -102,7 +102,7 @@
         "CONVOLUTION"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Conv2d",
         "DepthwiseConv2d"
@@ -131,7 +131,7 @@
         "CONVOLUTION"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "TransposeConv",
         "Convolution2DTransposeBias"
@@ -160,7 +160,7 @@
         "ELEMENT_WISE_ADD"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Add"
       ],
@@ -244,7 +244,7 @@
         "ELEMENT_WISE_DIVIDE"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Div"
       ],
@@ -386,7 +386,7 @@
         "ELEMENT_WISE_CEIL"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Ceil"
       ],
@@ -414,7 +414,7 @@
         "ELEMENT_WISE_COS"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -442,7 +442,7 @@
         "ELEMENT_WISE_EXP"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -470,7 +470,7 @@
         "ELEMENT_WISE_FLOOR"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Floor"
       ],
@@ -638,7 +638,7 @@
         "GEMM"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "FullyConnected"
       ],
@@ -750,7 +750,7 @@
         "Map to other op"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "HardSwish"
       ],
@@ -778,7 +778,7 @@
         "MEAN_VARIANCE_NORMALIZATION1"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -975,7 +975,7 @@
         "AVERAGE_POOLING"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "fork",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "AveragePool2d",
         "Mean"
@@ -1033,7 +1033,7 @@
         "MAX_POOLING2"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "MaxPool2d"
       ],
@@ -1371,7 +1371,7 @@
         "ACTIVATION_RELU"
       ],
       "dml_done": false,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Relu"
       ],
