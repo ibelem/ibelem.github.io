@@ -40,7 +40,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_CLIP"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -70,7 +70,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M113",
       "dml_op": [
-        ""
+        "JOIN"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -128,7 +128,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M113",
       "dml_op": [
-        ""
+        "CONVOLUTION"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -157,7 +157,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_ADD"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -185,7 +185,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_SUBTRACT"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -213,7 +213,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_MULTIPLY"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -241,7 +241,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_DIVIDE"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -269,7 +269,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_MAX"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -297,7 +297,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_MIN"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -326,7 +326,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M116",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_POW"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -355,7 +355,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M116",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_ABS"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -383,7 +383,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M116",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_CEIL"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -411,7 +411,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_COS"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -439,7 +439,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_EXP"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -467,7 +467,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M116",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_FLOOR"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -495,7 +495,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_LOG"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -523,7 +523,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M116",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_NEGATE"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -551,7 +551,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_SIN"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -579,7 +579,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_TAN"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -607,7 +607,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M115",
       "dml_op": [
-        ""
+        "ACTIVATION_ELU"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -635,7 +635,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "GEMM"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -803,7 +803,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M113",
       "dml_op": [
-        ""
+        "ACTIVATION_LEAKY_RELU"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -943,7 +943,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M114",
       "dml_op": [
-        ""
+        "FILL_VALUE_SEQUENCE"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -972,10 +972,10 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "AVERAGE_POOLING"
       ],
       "dml_done": true,
-      "dml_chromium_version_added": "",
+      "dml_chromium_version_added": "fork",
       "tflite_op": [
         "AveragePool2d",
         "Mean"
@@ -1030,7 +1030,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "MAX_POOLING2"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -1059,7 +1059,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M115",
       "dml_op": [
-        ""
+        "ACTIVATION_PARAMETERIZED_RELU"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -1368,7 +1368,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "ACTIVATION_RELU"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -1396,7 +1396,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "RESAMPLE"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -1424,7 +1424,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "Not a DML node"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -1452,7 +1452,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "ACTIVATION_SIGMOID"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -1480,7 +1480,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M116",
       "dml_op": [
-        ""
+        "SLICE"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -1509,7 +1509,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "ACTIVATION_SOFTMAX"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -1596,7 +1596,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M116",
       "dml_op": [
-        ""
+        "SPLIT"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
@@ -1680,7 +1680,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M113",
       "dml_op": [
-        ""
+        "Not a DML node"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
