@@ -99,7 +99,7 @@
       "xnnpack_done": true,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        ""
+        "CONVOLUTION"
       ],
       "dml_done": true,
       "dml_chromium_version_added": "",
