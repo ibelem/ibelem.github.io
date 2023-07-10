@@ -14,7 +14,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -72,7 +72,7 @@
       "dml_op": [
         "JOIN"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Concatenation"
@@ -101,7 +101,7 @@
       "dml_op": [
         "CONVOLUTION"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Conv2d",
@@ -130,7 +130,7 @@
       "dml_op": [
         "CONVOLUTION"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "TransposeConv",
@@ -159,7 +159,7 @@
       "dml_op": [
         "ELEMENT_WISE_ADD"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Add"
@@ -187,7 +187,7 @@
       "dml_op": [
         "ELEMENT_WISE_SUBTRACT"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Sub"
@@ -215,7 +215,7 @@
       "dml_op": [
         "ELEMENT_WISE_MULTIPLY"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Mul"
@@ -243,7 +243,7 @@
       "dml_op": [
         "ELEMENT_WISE_DIVIDE"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Div"
@@ -271,7 +271,7 @@
       "dml_op": [
         "ELEMENT_WISE_MAX"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Maximum"
@@ -299,7 +299,7 @@
       "dml_op": [
         "ELEMENT_WISE_MIN"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Minimum"
@@ -328,7 +328,7 @@
       "dml_op": [
         "ELEMENT_WISE_POW"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Sqrt",
@@ -357,7 +357,7 @@
       "dml_op": [
         "ELEMENT_WISE_ABS"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Abs"
@@ -385,7 +385,7 @@
       "dml_op": [
         "ELEMENT_WISE_CEIL"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Ceil"
@@ -413,7 +413,7 @@
       "dml_op": [
         "ELEMENT_WISE_COS"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -441,7 +441,7 @@
       "dml_op": [
         "ELEMENT_WISE_EXP"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -469,7 +469,7 @@
       "dml_op": [
         "ELEMENT_WISE_FLOOR"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Floor"
@@ -497,7 +497,7 @@
       "dml_op": [
         "ELEMENT_WISE_LOG"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -525,7 +525,7 @@
       "dml_op": [
         "ELEMENT_WISE_NEGATE"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Neg"
@@ -553,7 +553,7 @@
       "dml_op": [
         "ELEMENT_WISE_SIN"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -581,7 +581,7 @@
       "dml_op": [
         "ELEMENT_WISE_TAN"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -609,7 +609,7 @@
       "dml_op": [
         "ACTIVATION_ELU"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Elu"
@@ -637,7 +637,7 @@
       "dml_op": [
         "GEMM"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "FullyConnected"
@@ -665,7 +665,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -693,7 +693,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -721,7 +721,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -749,7 +749,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "HardSwish"
@@ -777,7 +777,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -805,7 +805,7 @@
       "dml_op": [
         "ACTIVATION_LEAKY_RELU"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "LeakyRelu"
@@ -833,7 +833,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -861,7 +861,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -889,7 +889,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -917,7 +917,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -945,7 +945,7 @@
       "dml_op": [
         "FILL_VALUE_SEQUENCE"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Pad"
@@ -974,7 +974,7 @@
       "dml_op": [
         "AVERAGE_POOLING"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "fork",
       "tflite_op": [
         "AveragePool2d",
@@ -1004,7 +1004,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1032,7 +1032,7 @@
       "dml_op": [
         "MAX_POOLING2"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "MaxPool2d"
@@ -1061,7 +1061,7 @@
       "dml_op": [
         "ACTIVATION_PARAMETERIZED_RELU"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Prelu"
@@ -1089,7 +1089,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1117,7 +1117,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1145,7 +1145,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1173,7 +1173,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1201,7 +1201,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1229,7 +1229,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1257,7 +1257,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1285,7 +1285,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1314,7 +1314,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1342,7 +1342,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1370,7 +1370,7 @@
       "dml_op": [
         "ACTIVATION_RELU"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Relu"
@@ -1398,7 +1398,7 @@
       "dml_op": [
         "RESAMPLE"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "ResizeBilinear"
@@ -1426,7 +1426,7 @@
       "dml_op": [
         "Not a DML node"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Reshape"
@@ -1454,7 +1454,7 @@
       "dml_op": [
         "ACTIVATION_SIGMOID"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Logistic"
@@ -1482,7 +1482,7 @@
       "dml_op": [
         "SLICE"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Slice",
@@ -1511,7 +1511,7 @@
       "dml_op": [
         "ACTIVATION_SOFTMAX"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Softmax"
@@ -1539,7 +1539,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1567,7 +1567,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1598,7 +1598,7 @@
       "dml_op": [
         "SPLIT"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Split"
@@ -1626,7 +1626,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1654,7 +1654,7 @@
       "dml_op": [
         ""
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
@@ -1682,7 +1682,7 @@
       "dml_op": [
         "Not a DML node"
       ],
-      "dml_done": true,
+      "dml_done": false,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Transpose"
