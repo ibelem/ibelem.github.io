@@ -9,7 +9,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "BATCH_NORMALIZATION"
@@ -19,12 +19,12 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -42,12 +42,12 @@
       "dml_op": [
         "ELEMENT_WISE_CLIP"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "ReluN1To1"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Clip"
@@ -77,7 +77,7 @@
       "tflite_op": [
         "Concatenation"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Concat"
@@ -107,7 +107,7 @@
         "Conv2d",
         "DepthwiseConv2d"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Conv"
@@ -136,7 +136,7 @@
         "TransposeConv",
         "Convolution2DTransposeBias"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "ConvTranspose"
@@ -164,7 +164,7 @@
       "tflite_op": [
         "Add"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Add"
@@ -192,7 +192,7 @@
       "tflite_op": [
         "Sub"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Sub"
@@ -220,7 +220,7 @@
       "tflite_op": [
         "Mul"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Mul"
@@ -248,7 +248,7 @@
       "tflite_op": [
         "Div"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Div"
@@ -271,12 +271,12 @@
       "dml_op": [
         "ELEMENT_WISE_MAX"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Maximum"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Max"
@@ -304,7 +304,7 @@
       "tflite_op": [
         "Minimum"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Min"
@@ -357,17 +357,17 @@
       "dml_op": [
         "ELEMENT_WISE_ABS"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Abs"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         "Abs"
       ],
-      "ort_progress": 3,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -390,7 +390,7 @@
       "tflite_op": [
         "Ceil"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Ceil"
@@ -408,7 +408,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "ELEMENT_WISE_COS"
@@ -418,7 +418,7 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         "Cos"
@@ -436,7 +436,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "ELEMENT_WISE_EXP"
@@ -446,7 +446,7 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         "Exp"
@@ -474,7 +474,7 @@
       "tflite_op": [
         "Floor"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Floor"
@@ -492,22 +492,22 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "ELEMENT_WISE_LOG"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -525,17 +525,17 @@
       "dml_op": [
         "ELEMENT_WISE_NEGATE"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Neg"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Neg"
       ],
-      "ort_progress": 3,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -548,7 +548,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "ELEMENT_WISE_SIN"
@@ -558,7 +558,7 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         "Sin"
@@ -576,7 +576,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "ELEMENT_WISE_TAN"
@@ -586,7 +586,7 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         "Tan"
@@ -609,12 +609,12 @@
       "dml_op": [
         "ACTIVATION_ELU"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Elu"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Elu"
@@ -642,7 +642,7 @@
       "tflite_op": [
         "FullyConnected"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Gemm"
@@ -660,22 +660,22 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "GRU"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -688,22 +688,22 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "GRU"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -716,22 +716,22 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "ACTIVATION_HARD_SIGMOID"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -754,7 +754,7 @@
       "tflite_op": [
         "HardSwish"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "HardSwish"
@@ -772,7 +772,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "MEAN_VARIANCE_NORMALIZATION1"
@@ -782,12 +782,12 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -805,12 +805,12 @@
       "dml_op": [
         "ACTIVATION_LEAKY_RELU"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "LeakyRelu"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         "LeakyRelu"
@@ -828,22 +828,22 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "ACTIVATION_LINEAR"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -856,22 +856,22 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "LSTM"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -884,22 +884,22 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "LSTM"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -912,17 +912,17 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "GEMM"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         "MatMul"
@@ -950,7 +950,7 @@
       "tflite_op": [
         "Pad"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Pad"
@@ -980,7 +980,7 @@
         "AveragePool2d",
         "Mean"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "AveragePool",
@@ -999,22 +999,22 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "LP_POOLING"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1037,7 +1037,7 @@
       "tflite_op": [
         "MaxPool2d"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "GlobalMaxPool",
@@ -1061,12 +1061,12 @@
       "dml_op": [
         "ACTIVATION_PARAMETERIZED_RELU"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         "Prelu"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Prelu"
@@ -1084,7 +1084,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "REDUCE_FUNCTION_L1"
@@ -1094,12 +1094,12 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1112,7 +1112,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "REDUCE_FUNCTION_L2"
@@ -1122,12 +1122,12 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1140,7 +1140,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "REDUCE_FUNCTION_LOG_SUM"
@@ -1150,12 +1150,12 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1168,7 +1168,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "REDUCE_FUNCTION_LOG_SUM_EXP"
@@ -1178,12 +1178,12 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1196,7 +1196,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "REDUCE_FUNCTION_MAX"
@@ -1206,12 +1206,12 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         "ReduceMax"
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "main",
       "notes": ""
     },
@@ -1234,7 +1234,7 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         "ReduceMean"
@@ -1252,7 +1252,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "REDUCE_FUNCTION_MIN"
@@ -1262,12 +1262,12 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1280,7 +1280,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "REDUCE_FUNCTION_MULTIPLY"
@@ -1290,12 +1290,12 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1319,12 +1319,12 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1337,7 +1337,7 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "REDUCE_FUNCTION_SUM_SQUARE"
@@ -1347,12 +1347,12 @@
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1375,7 +1375,7 @@
       "tflite_op": [
         "Relu"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Relu"
@@ -1403,7 +1403,7 @@
       "tflite_op": [
         "ResizeBilinear"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Resize"
@@ -1424,14 +1424,14 @@
       "xnnpack_progress": 4,
       "xnnpack_chromium_version_added": "M112",
       "dml_op": [
-        "Not a DML node"
+        "Supported by tensor strides"
       ],
       "dml_progress": 3,
       "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Reshape"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Reshape"
@@ -1459,7 +1459,7 @@
       "tflite_op": [
         "Logistic"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Sigmoid"
@@ -1488,7 +1488,7 @@
         "Slice",
         "StridedSlice"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Slice"
@@ -1516,7 +1516,7 @@
       "tflite_op": [
         "Softmax"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Softmax"
@@ -1534,22 +1534,22 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "ACTIVATION_SOFTPLUS"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1562,22 +1562,22 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
         "ACTIVATION_SOFTSIGN"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1603,7 +1603,7 @@
       "tflite_op": [
         "Split"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Split"
@@ -1621,17 +1621,17 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 4,
+      "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
-        "Not a DML node"
+        "Supported by tensor strides"
       ],
       "dml_progress": 3,
       "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         "Squeeze"
@@ -1654,17 +1654,17 @@
       "dml_op": [
         "ACTIVATION_TANH"
       ],
-      "dml_progress": 3,
+      "dml_progress": 2,
       "dml_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
         ""
       ],
-      "ort_progress": 4,
+      "ort_progress": 2,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1680,14 +1680,14 @@
       "xnnpack_progress": 4,
       "xnnpack_chromium_version_added": "M113",
       "dml_op": [
-        "Not a DML node"
+        "Supported by tensor strides"
       ],
       "dml_progress": 3,
       "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Transpose"
       ],
-      "tflite_progress": 4,
+      "tflite_progress": 3,
       "tflite_version_added": "",
       "ort_op": [
         "Transpose"
