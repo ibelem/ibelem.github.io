@@ -48,7 +48,7 @@
         "ReluN1To1"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Clip"
       ],
@@ -78,7 +78,7 @@
         "Concatenation"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Concat"
       ],
@@ -108,7 +108,7 @@
         "DepthwiseConv2d"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Conv"
       ],
@@ -137,7 +137,7 @@
         "Convolution2DTransposeBias"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "ConvTranspose"
       ],
@@ -165,7 +165,7 @@
         "Add"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Add"
       ],
@@ -193,7 +193,7 @@
         "Sub"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Sub"
       ],
@@ -221,7 +221,7 @@
         "Mul"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Mul"
       ],
@@ -249,7 +249,7 @@
         "Div"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Div"
       ],
@@ -277,7 +277,7 @@
         "Maximum"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Max"
       ],
@@ -335,7 +335,7 @@
         "Square"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Pow"
       ],
@@ -362,12 +362,12 @@
       "tflite_op": [
         "Abs"
       ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Abs"
       ],
-      "ort_progress": 2,
+      "ort_progress": 3,
       "ort_version_added": "",
       "notes": ""
     },
@@ -391,7 +391,7 @@
         "Ceil"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Ceil"
       ],
@@ -475,7 +475,7 @@
         "Floor"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Floor"
       ],
@@ -531,11 +531,11 @@
         "Neg"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Neg"
       ],
-      "ort_progress": 2,
+      "ort_progress": 3,
       "ort_version_added": "",
       "notes": ""
     },
@@ -615,7 +615,7 @@
         "Elu"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Elu"
       ],
@@ -643,7 +643,7 @@
         "FullyConnected"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Gemm"
       ],
@@ -755,7 +755,7 @@
         "HardSwish"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "HardSwish"
       ],
@@ -810,8 +810,8 @@
       "tflite_op": [
         "LeakyRelu"
       ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "LeakyRelu"
       ],
@@ -951,7 +951,7 @@
         "Pad"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Pad"
       ],
@@ -981,7 +981,7 @@
         "Mean"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "AveragePool",
         "GlobalAveragePool"
@@ -1038,7 +1038,7 @@
         "MaxPool2d"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "GlobalMaxPool",
         "MaxPool"
@@ -1067,7 +1067,7 @@
         "Prelu"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Prelu"
       ],
@@ -1211,7 +1211,7 @@
       "ort_op": [
         "ReduceMax"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "main",
       "notes": ""
     },
@@ -1376,7 +1376,7 @@
         "Relu"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Relu"
       ],
@@ -1404,7 +1404,7 @@
         "ResizeBilinear"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Resize"
       ],
@@ -1432,7 +1432,7 @@
         "Reshape"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Reshape"
       ],
@@ -1460,7 +1460,7 @@
         "Logistic"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Sigmoid"
       ],
@@ -1489,7 +1489,7 @@
         "StridedSlice"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Slice"
       ],
@@ -1517,7 +1517,7 @@
         "Softmax"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Softmax"
       ],
@@ -1604,7 +1604,7 @@
         "Split"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Split"
       ],
@@ -1688,7 +1688,7 @@
         "Transpose"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Transpose"
       ],
