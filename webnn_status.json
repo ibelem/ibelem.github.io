@@ -305,7 +305,7 @@
         "Minimum"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "",
+      "tflite_version_added": "TensorFlow fork",
       "ort_op": [
         "Min"
       ],
@@ -367,7 +367,7 @@
       "ort_op": [
         "Abs"
       ],
-      "ort_progress": 3,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -535,7 +535,7 @@
       "ort_op": [
         "Neg"
       ],
-      "ort_progress": 3,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -619,7 +619,7 @@
       "ort_op": [
         "Elu"
       ],
-      "ort_progress": 3,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -729,9 +729,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "HardSigmoid"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -759,7 +759,7 @@
       "ort_op": [
         "HardSwish"
       ],
-      "ort_progress": 3,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -785,9 +785,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "InstanceNormalization"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -955,7 +955,7 @@
       "ort_op": [
         "Pad"
       ],
-      "ort_progress": 3,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1069,9 +1069,9 @@
       "tflite_progress": 3,
       "tflite_version_added": "TensorFlow fork",
       "ort_op": [
-        "Prelu"
+        "PRelu"
       ],
-      "ort_progress": 3,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1097,9 +1097,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "ReduceL1"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1125,9 +1125,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "ReduceL2"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1153,9 +1153,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "ReduceLogSum"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1181,9 +1181,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "ReduceLogSumExp"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1265,9 +1265,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "ReduceMin"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1293,9 +1293,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "ReduceProd"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1322,9 +1322,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "ReduceSum"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1350,9 +1350,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "ReduceSumSquare"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1547,9 +1547,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "Softplus"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1575,9 +1575,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "Softsign"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1662,9 +1662,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "Tanh"
       ],
-      "ort_progress": 2,
+      "ort_progress": 4,
       "ort_version_added": "",
       "notes": ""
     },
