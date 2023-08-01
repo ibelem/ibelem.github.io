@@ -368,7 +368,7 @@
         "Abs"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -536,7 +536,7 @@
         "Neg"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -620,7 +620,7 @@
         "Elu"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -732,7 +732,7 @@
         "HardSigmoid"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -760,7 +760,7 @@
         "HardSwish"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -788,7 +788,7 @@
         "InstanceNormalization"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -956,7 +956,7 @@
         "Pad"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1072,7 +1072,7 @@
         "PRelu"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1100,7 +1100,7 @@
         "ReduceL1"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1128,7 +1128,7 @@
         "ReduceL2"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1156,7 +1156,7 @@
         "ReduceLogSum"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1184,7 +1184,7 @@
         "ReduceLogSumExp"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1268,7 +1268,7 @@
         "ReduceMin"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1296,7 +1296,7 @@
         "ReduceProd"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1325,7 +1325,7 @@
         "ReduceSum"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1353,7 +1353,7 @@
         "ReduceSumSquare"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1550,7 +1550,7 @@
         "Softplus"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1578,7 +1578,7 @@
         "Softsign"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1665,7 +1665,7 @@
         "Tanh"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
