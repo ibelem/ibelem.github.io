@@ -917,8 +917,8 @@
       "dml_op": [
         "GEMM"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1563,13 +1563,13 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 3,
-      "xnnpack_chromium_version_added": "Chromium fork",
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
       "dml_op": [
         "ACTIVATION_SOFTSIGN"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
