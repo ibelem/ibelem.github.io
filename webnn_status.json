@@ -42,8 +42,8 @@
       "dml_op": [
         "ELEMENT_WISE_CLIP"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "ReluN1To1"
       ],
@@ -271,8 +271,8 @@
       "dml_op": [
         "ELEMENT_WISE_MAX"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Maximum"
       ],
@@ -357,8 +357,8 @@
       "dml_op": [
         "ELEMENT_WISE_ABS"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Abs"
       ],
@@ -497,8 +497,8 @@
       "dml_op": [
         "ELEMENT_WISE_LOG"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -525,8 +525,8 @@
       "dml_op": [
         "ELEMENT_WISE_NEGATE"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Neg"
       ],
@@ -609,8 +609,8 @@
       "dml_op": [
         "ACTIVATION_ELU"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Elu"
       ],
@@ -721,8 +721,8 @@
       "dml_op": [
         "ACTIVATION_HARD_SIGMOID"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -749,8 +749,8 @@
       "dml_op": [
         "Map to other op"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
       "tflite_op": [
         "HardSwish"
       ],
@@ -805,8 +805,8 @@
       "dml_op": [
         "ACTIVATION_LEAKY_RELU"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "LeakyRelu"
       ],
@@ -833,8 +833,8 @@
       "dml_op": [
         "ACTIVATION_LINEAR"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1004,8 +1004,8 @@
       "dml_op": [
         "LP_POOLING"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1062,8 +1062,8 @@
       "dml_op": [
         "ACTIVATION_PARAMETERIZED_RELU"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Prelu"
       ],
@@ -1540,8 +1540,8 @@
       "dml_op": [
         "ACTIVATION_SOFTPLUS"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1563,8 +1563,8 @@
       "xnnpack_op": [
         ""
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_progress": 3,
+      "xnnpack_chromium_version_added": "Chromium fork",
       "dml_op": [
         "ACTIVATION_SOFTSIGN"
       ],
@@ -1655,8 +1655,8 @@
       "dml_op": [
         "ACTIVATION_TANH"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
